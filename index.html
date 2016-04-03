@@ -19,7 +19,7 @@
     </head>
     <body>
         <!-- NAVBAR -->
-        <div class="navbar">
+        <section class="navbar" id="navbar_section">
             <ul>
                 <li>
                     <a>About Me</a>
@@ -37,82 +37,106 @@
                     <a>References</a>
                 </li>
             </ul>
-        </div>
+        </section>
 
 
         <!--LANDING-->
-        <section class="landing">
-                <img src="images/css-gradient-background.png">
-                <img class="background-image" src="images/Me.jpg">
-                <h1> Hello, I'm Doug </h1>
-                <p>Student Developer from New Jersey</p>
+        <section class="landing" id="landing_section">
+            <img src="images/css-gradient-background.png">
+            <img class="background-image" src="images/Me.jpg">
+            <h1> Hello, I'm Doug </h1>
+            <p>Student Developer from New Jersey</p>
         </section>
 
-        <div id="content">
-            <section id="about_me">
-            </section>
+        <!-- ABOUT ME -->
+        <section id="about_me" class="section-content">
+            <h1>About Me</h1>
+                <div class="description" id="about_description">
+                    <p>I am currenly a junior at Rutgers University pursing a major in computer science. <br/> My hobbies consist of  ultimate frisbee, programming, teaching, and running. </p>
+                <div>
+        </section>
 
-            <!-- EDUCATION SECTION -->
-            <section class="section-container education" id="education_section">
-                <div class="section-content">
-                    <h1>Edcuation</h1>
-                    <h2>Schooling<h2>
+        <!-- EDUCATION SECTION -->
+        <section class="section-content" id="education_section">
+                <h1>Edcuation</h1>
+                <div>
                     <p>Rutgers University</p>
-                    <h2>Relevant Courses</h2>
+                    
                     <p>Data Structures, Design and Analysis of Algotihms, Database, Design Patterns, Calculus I/II, Discrete I/II, Linear Algebra</p>
-            </section>
+                </div>
+        </section>
 
-            <!-- EXPERIENCE SECTION -->
-            <section class="section-container experience" id="experience_section">
-               
-                <div class="section-content" id="reccelerator_content">
-                    <h1>Reccelerator</h1>
-                    <a href="http://www.Reccelerator.com">Reccelerator.com</a>
-                    <p>Developed an online web payment portal with C# and the Stripe-payment API that enabled users to buy and post items to be sold to an online store. </p>
+        <!-- EXPERIENCE SECTION -->
+        <section class="section-content experience" id="experience_section">
+           
+            <h1>Experience</h1>
+
+            <ul>
+                <li>
+                    <h3>Reccelerator</h3>
+                    <p>Developed an online web payment portal with C# and the Stripe-payment API that enabled users to buy and post items to be sold to an online store.</p>
                     <p>Tracked users’ payments and subscriptions with Microsoft SQL and the LINQ C# database library to run analytics and build a dynamic data model.</p>
                     <p>Created and maintained dynamic web-pages with ASP.net, HTML, CSS, and JavaScript.</p>
-                </div>
+                </li>
+                
+                </li>
+                </li>
+            </ul>
 
-                <div class="section-content" id="ship_programming_team">
-                    <h1>Shippensburg Uni. Programming Team Captain:</h1>
-                    <p>Co-lead a team of 15 computer science students twice a week to learn and build upon their personal programming knowledge.</p> 
-                    <p>Competed in 4 yearly programming tournaments with 5 other computer science students and won a total of 5 programming tournaments.</p> 
-                    <p>Created problem-sets and developed solutions that tested an upcoming student’s abilities that determined if they placed to compete in programming competitions.</p>
-                </div>
-            </section>
 
-            <!-- LEADERSHIP SECTION -->
-            <section class= "section-container leadership" id="leadership_section">
+            <div class="section-content" id="reccelerator_content">
+                <h1>Reccelerator</h1>
+                <a href="http://www.Reccelerator.com">Reccelerator.com</a>
                
-                <div class="section-content" id="usacs_content">
-                    <h1>Undergraduate Student Alliance of Computer Scientists</h1>
-                    <p>Computer science tutor for 100 students in introductory computer science courses and aspiring students who are seeking outside knowledge.</p>
-                    <p>Mentored and developed projects with 5 computer science students who are pursuing an accelerated one-to-one out of class learning experience.</p>
-                </div>
+                
+            </div>
 
-                <div class="section-content" id="ship_game_dev_club_content">
-                    <h1>Shippensburg Game Development Club Secretary</h1>
-                    <p>Guided a group of 10 students through the creative and development related processes involved with game creation.<p>
-                    <p>Organized groups to work together and compete in international game-jam competitions.</p> 
-                </div>
-            </section>
+            <div class="section-content" id="ship_programming_team">
+                <h1>Shippensburg Uni. Programming Team Captain:</h1>
+                <p>Co-lead a team of 15 computer science students twice a week to learn and build upon their personal programming knowledge.</p> 
+                <p>Competed in 4 yearly programming tournaments with 5 other computer science students and won a total of 5 programming tournaments.</p> 
+                <p>Created problem-sets and developed solutions that tested an upcoming student’s abilities that determined if they placed to compete in programming competitions.</p>
+            </div>
 
-            <!-- PROJECT SECTION -->
-            <section class="section-container" id="project_section">
-            </section>
+            <div class="section-content" id="usacs_content">
+                <h1>Undergraduate Student Alliance of Computer Scientists</h1>
+                <p>Computer science tutor for 100 students in introductory computer science courses and aspiring students who are seeking outside knowledge.</p>
+                <p>Mentored and developed projects with 5 computer science students who are pursuing an accelerated one-to-one out of class learning experience.</p>
+            </div>
 
+            <div class="section-content" id="ship_game_dev_club_content">
+                <h1>Shippensburg Game Development Club Secretary</h1>
+                <p>Guided a group of 10 students through the creative and development related processes involved with game creation.<p>
+                <p>Organized groups to work together and compete in international game-jam competitions.</p> 
+            </div>
 
+        </section>
+
+        <!-- PROJECT SECTION -->
+        <section class="section-container" id="project_section">
+            <div class="section-content" id="pariah_projects">
+                <h1>Pariah: <a href="https://github.com/TheRealDoug/Pariah">www.github/TheRealDoug/Paraih</a></h1>
+                <p>2D Puzzle Platformer in which the user has to navigate levels by manipulating collidable platforms, inverting gravity, and utilizing lights to enable the player forward.</p>
+                <p>Technology used: Java, LibGDX/OpenGL game framework, box2D physics engine, box2D lighting engine, and Tiled Map Editor.</p>
+            </div>
+
+            <div class="section-content" id="physics_simulation_builder">
+                <h1>2D Physics Simulation Builder <a href="https://github.com/TheRealDoug/Phyics_Editor">www.github/TheRealDoug/Simulation_Builder</a></h1>
+                <p>2D Physics editor that allows a user to draw and create physics simulations, in which can</p>
+            </div>
+
+        </section>
 
         <script>
             $(document).ready(function()
             {
-                $(".navbar").hide(0).delay(300).fadeIn(300);
-                $(".landing").hide(0).delay(400).fadeIn(300);
-                $("#content").hide(0).delay(500).fadeIn(300);
+                //$(".navbar").hide(0).delay(300).fadeIn(300);
+                //$(".landing").hide(0).delay(400).fadeIn(300);
+                //$("#content").hide(0).delay(500).fadeIn(300);
+                //$("#education_section".hide(0);
+                //$("#experience_section").hide(0);
+                //$("#leadership_section").hide(0);
             })
         </script>
-
-
-
     </body>
 </html>
