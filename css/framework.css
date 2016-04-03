@@ -1,3 +1,9 @@
+body
+{
+	font-family: Arial;
+	margin:0;
+}
+
 .section-content
 {
 	width:100%;
@@ -9,15 +15,14 @@
 
 .description
 {
-
 	margin-left: 15%;
 	margin-right:15%;
 }
 
-body
+.table-frame
 {
-	font-family: Arial;
-	margin:0;
+	border-style:solid;
+	border-width: 2px;
 }
 
 .vertical-list
@@ -25,4 +30,12 @@ body
 	list-style-type:none;
 }
 
+.profile-image
+{
+	width:10%;
+	height:10%;
+	transform: rotate(90deg);
+	z-index:2;
+	left:0;
+}
 

@@ -16,6 +16,9 @@
 
         <!-- JQUERY LINK -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script>
+            
+        </script>
     </head>
     <body>
         <!-- NAVBAR -->
@@ -39,11 +42,10 @@
             </ul>
         </section>
 
-
         <!--LANDING-->
         <section class="landing" id="landing_section">
-            <img src="images/css-gradient-background.png">
-            <img class="background-image" src="images/Me.jpg">
+            <img class="background-image" src="images/css-gradient-background.png">
+            <img class="profile-image" src="images/Me.jpg">
             <h1> Hello, I'm Doug </h1>
             <p>Student Developer from New Jersey</p>
         </section>
@@ -51,9 +53,9 @@
         <!-- ABOUT ME -->
         <section id="about_me" class="section-content">
             <h1>About Me</h1>
-                <div class="description" id="about_description">
-                    <p>I am currenly a junior at Rutgers University pursing a major in computer science. <br/> My hobbies consist of  ultimate frisbee, programming, teaching, and running. </p>
-                <div>
+            <div class="description" id="about_description">
+                <p>I am currenly a junior at Rutgers University pursing a major in computer science. <br/> My hobbies consist of  ultimate frisbee, programming, teaching, and running. </p>
+            <div>
         </section>
 
         <!-- EDUCATION SECTION -->
@@ -61,7 +63,6 @@
                 <h1>Edcuation</h1>
                 <div>
                     <p>Rutgers University</p>
-                    
                     <p>Data Structures, Design and Analysis of Algotihms, Database, Design Patterns, Calculus I/II, Discrete I/II, Linear Algebra</p>
                 </div>
         </section>
@@ -71,58 +72,63 @@
            
             <h1>Experience</h1>
 
-            <ul>
-                <li>
-                    <h3>Reccelerator</h3>
-                    <p>Developed an online web payment portal with C# and the Stripe-payment API that enabled users to buy and post items to be sold to an online store.</p>
-                    <p>Tracked users’ payments and subscriptions with Microsoft SQL and the LINQ C# database library to run analytics and build a dynamic data model.</p>
-                    <p>Created and maintained dynamic web-pages with ASP.net, HTML, CSS, and JavaScript.</p>
-                </li>
-                
-                </li>
-                </li>
-            </ul>
+            <table table="description">
+                <tr>
+                    <td class="table-frame">
+                        <h3>Reccelerator</h3>
+                        <p>Developed an online web payment portal withC# and the Stripe-payment <br/>API that enabled users to buy and post items to be sold to an online store.</p>
+                        <p>Tracked users’ payments and subscriptions with Microsoft SQL and the<br/> LINQ C# database library to run analytics and build a dynamic data model.</p>
+                        <p>Created and maintained dynamic web-pages with ASP.net, HTML, CSS, and JavaScript.</p>
+                    </td>
 
+                    <td class="table-frame">
+                        <h1>Shippensburg Uni. Programming Team Captain:</h1>
+                        <p>Co-lead a team of 15 computer science students twice a week to learn and build upon their personal programming knowledge.</p> 
+                        <p>Competed in 4 yearly programming tournaments with 5 other computer science students and won a total of 5 programming tournaments.</p> 
+                        <p>Created problem-sets and developed solutions that tested an upcoming student’s abilities that determined if they placed to compete in programming competitions.</p>
+                    </td>
+                </tr>
+                <tr>
+                     <td class="table-frame">
+                        <h1>Undergraduate Student Alliance of Computer Scientists</h1>
+                        <p>Computer science tutor for 100 students in introductory computer science courses and aspiring students who are seeking outside knowledge.</p>
+                        <p>Mentored and developed projects with 5 computer science students who are pursuing an accelerated one-to-one out of class learning experience.</p>
+                    </td>
 
-            <div class="section-content" id="reccelerator_content">
-                <h1>Reccelerator</h1>
-                <a href="http://www.Reccelerator.com">Reccelerator.com</a>
-               
-                
-            </div>
-
-            <div class="section-content" id="ship_programming_team">
-                <h1>Shippensburg Uni. Programming Team Captain:</h1>
-                <p>Co-lead a team of 15 computer science students twice a week to learn and build upon their personal programming knowledge.</p> 
-                <p>Competed in 4 yearly programming tournaments with 5 other computer science students and won a total of 5 programming tournaments.</p> 
-                <p>Created problem-sets and developed solutions that tested an upcoming student’s abilities that determined if they placed to compete in programming competitions.</p>
-            </div>
-
-            <div class="section-content" id="usacs_content">
-                <h1>Undergraduate Student Alliance of Computer Scientists</h1>
-                <p>Computer science tutor for 100 students in introductory computer science courses and aspiring students who are seeking outside knowledge.</p>
-                <p>Mentored and developed projects with 5 computer science students who are pursuing an accelerated one-to-one out of class learning experience.</p>
-            </div>
-
-            <div class="section-content" id="ship_game_dev_club_content">
-                <h1>Shippensburg Game Development Club Secretary</h1>
-                <p>Guided a group of 10 students through the creative and development related processes involved with game creation.<p>
-                <p>Organized groups to work together and compete in international game-jam competitions.</p> 
-            </div>
+                    <td class="table-frame">
+                        <h1>Shippensburg Game Development Club Secretary</h1>
+                        <p>Guided a group of 10 students through the creative and development related processes involved with game creation.<p>
+                        <p>Organized groups to work together and compete in international game-jam competitions.</p> 
+                    </td>
+                </tr>
+                </table>
 
         </section>
 
         <!-- PROJECT SECTION -->
         <section class="section-container" id="project_section">
+            <h1>Projects</h1>
+
+            <table>
+                <tr>
+                    <td class="table-frame">
+                         <h1>Pariah: <a href="https://github.com/TheRealDoug/Pariah">www.github/TheRealDoug/Paraih</a></h1>
+                        <p>2D Puzzle Platformer in which the user has to navigate levels by manipulating collidable platforms, inverting gravity, and utilizing lights to enable the player forward.</p>
+                        <p>Technology used: Java, LibGDX/OpenGL game framework, box2D physics engine, box2D lighting engine, and Tiled Map Editor.</p>
+                    </td>
+                    <td class="table-frame">
+                        <h1>2D Physics Simulation Builder <a href="https://github.com/TheRealDoug/Phyics_Editor">www.github/TheRealDoug/Simulation_Builder</a></h1>
+                        <p>2D Physics editor that allows a user to draw and create physics simulations, in which can</p>
+                    </td>
+                </tr>
+            </table>
+
             <div class="section-content" id="pariah_projects">
-                <h1>Pariah: <a href="https://github.com/TheRealDoug/Pariah">www.github/TheRealDoug/Paraih</a></h1>
-                <p>2D Puzzle Platformer in which the user has to navigate levels by manipulating collidable platforms, inverting gravity, and utilizing lights to enable the player forward.</p>
-                <p>Technology used: Java, LibGDX/OpenGL game framework, box2D physics engine, box2D lighting engine, and Tiled Map Editor.</p>
+               
             </div>
 
             <div class="section-content" id="physics_simulation_builder">
-                <h1>2D Physics Simulation Builder <a href="https://github.com/TheRealDoug/Phyics_Editor">www.github/TheRealDoug/Simulation_Builder</a></h1>
-                <p>2D Physics editor that allows a user to draw and create physics simulations, in which can</p>
+                
             </div>
 
         </section>

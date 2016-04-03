@@ -11,16 +11,9 @@
 	overflow:hidden;
 }
 
-.landing img
-{
-	width:100%;
-	height:100%;
-	position : relative;
-	z-index:1;
-}
-
 .landing h1
 {
+	font-size: 350%;
 	display:block;
 	position:absolute;
 	width:100%;
@@ -33,6 +26,7 @@
 
 .landing p
 {
+	font-size:200%;
  	display:block;
 	position:absolute;
 	width:100%;
@@ -46,12 +40,11 @@
 .landing .background-image
 {
 	display:block;
-	width:20%;
-	height:50%;
+	width:100%;
+	height:100%;
 	top:30%;
 	left:15%;
 	margin-right: auto;
 	margin-left:auto;
 	z-index:2;
-	border-radius: 15%;
 }
