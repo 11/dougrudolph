@@ -1,0 +1,57 @@
+.landing
+{
+	color:#c0c0c0;
+	font-size:30;
+	text-align:center;
+	margin-top:45px;
+	height:100%;
+	width:100%;
+	position:relative;
+	clear:none;
+	overflow:hidden;
+}
+
+.landing img
+{
+	width:100%;
+	height:100%;
+	position:relative;
+	z-index:1;
+}
+
+.landing h1
+{
+	display:block;
+	position:absolute;
+	width:100%;
+	top:30%;
+	margin-top:10px;
+	left:20%;
+	z-index:2;
+	text-align:center;
+}
+
+.landing p
+{
+ 	display:block;
+	position:absolute;
+	width:100%;
+	top:30%;
+	margin-top:100px;
+	left:20%;
+	z-index:2;
+	text-align:center;
+}
+
+.landing .background-image
+{
+	display:block;
+	width:20%;
+	height:50%;
+	top:30%;
+	left:15%;
+	margin-right: auto;
+	margin-left:auto;
+	z-index:2;
+	border-radius: 15%;
+}

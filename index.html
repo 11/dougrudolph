@@ -3,12 +3,23 @@
     <head>
         <meta charset="utf-8"/>
         <title>Douglas Rudolph</title>
-        <link rel="stylesheet" type="text/css" href="css/home.css">
+
+        <!-- CSS STYLING FOR EACH PART OF THE RESUME - BUILD FRAMEWORK FOR IT LATER -->
+        <link rel="stylesheet" type="text/css" href="css/framework.css">
+        <link rel="stylesheet" type="text/css" href="css/landing.css">
+        <link rel="stylesheet" type="text/css" href="css/navbar.css">
+        <link rel="stylesheet" type="text/css" href="css/aboutme.css">
+        <link rel="stylesheet" type="text/css" href="css/education.css">
+        <link rel="stylesheet" type="text/css" href="css/leadership.css">
+        <link rel="stylesheet" type="text/css" href="css/projects.css">
+        <link rel="stylesheet" type="text/css" href="css/references.css">
+
+        <!-- JQUERY LINK -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     </head>
     <body>
         <!-- NAVBAR -->
-        <div id="navbar">
+        <div class="navbar">
             <ul>
                 <li>
                     <a>About Me</a>
@@ -27,30 +38,77 @@
                 </li>
             </ul>
         </div>
+
+
         <!--LANDING-->
-        <div class="landing">
-            <img src="images/css-gradient-background.png">
-            <h1> Hello, I'm Doug </h1>
-            <p>Student Developer from New Jersey</p>
-        </div>
+        <section class="landing">
+                <img src="images/css-gradient-background.png">
+                <img class="background-image" src="images/Me.jpg">
+                <h1> Hello, I'm Doug </h1>
+                <p>Student Developer from New Jersey</p>
+        </section>
+
         <div id="content">
-            <section id="About_Me">
-                <!--<img src="../images.Me.jpg" alt="ImageMe">-->
+            <section id="about_me">
             </section>
-            <section id="Education"></section>
-            <section id="Experience"></section>
-            <section = "Leadership">
+
+            <!-- EDUCATION SECTION -->
+            <section class="section-container education" id="education_section">
+                <div class="section-content">
+                    <h1>Edcuation</h1>
+                    <h2>Schooling<h2>
+                    <p>Rutgers University</p>
+                    <h2>Relevant Courses</h2>
+                    <p>Data Structures, Design and Analysis of Algotihms, Database, Design Patterns, Calculus I/II, Discrete I/II, Linear Algebra</p>
             </section>
-            <section = "Projects">
-            <a href="http://www.Reccelerator.com">Reccelerator.com</a>
+
+            <!-- EXPERIENCE SECTION -->
+            <section class="section-container experience" id="experience_section">
+               
+                <div class="section-content" id="reccelerator_content">
+                    <h1>Reccelerator</h1>
+                    <a href="http://www.Reccelerator.com">Reccelerator.com</a>
+                    <p>Developed an online web payment portal with C# and the Stripe-payment API that enabled users to buy and post items to be sold to an online store. </p>
+                    <p>Tracked users’ payments and subscriptions with Microsoft SQL and the LINQ C# database library to run analytics and build a dynamic data model.</p>
+                    <p>Created and maintained dynamic web-pages with ASP.net, HTML, CSS, and JavaScript.</p>
+                </div>
+
+                <div class="section-content" id="ship_programming_team">
+                    <h1>Shippensburg Uni. Programming Team Captain:</h1>
+                    <p>Co-lead a team of 15 computer science students twice a week to learn and build upon their personal programming knowledge.</p> 
+                    <p>Competed in 4 yearly programming tournaments with 5 other computer science students and won a total of 5 programming tournaments.</p> 
+                    <p>Created problem-sets and developed solutions that tested an upcoming student’s abilities that determined if they placed to compete in programming competitions.</p>
+                </div>
             </section>
-            <section id="References"></section>
-        </div>
+
+            <!-- LEADERSHIP SECTION -->
+            <section class= "section-container leadership" id="leadership_section">
+               
+                <div class="section-content" id="usacs_content">
+                    <h1>Undergraduate Student Alliance of Computer Scientists</h1>
+                    <p>Computer science tutor for 100 students in introductory computer science courses and aspiring students who are seeking outside knowledge.</p>
+                    <p>Mentored and developed projects with 5 computer science students who are pursuing an accelerated one-to-one out of class learning experience.</p>
+                </div>
+
+                <div class="section-content" id="ship_game_dev_club_content">
+                    <h1>Shippensburg Game Development Club Secretary</h1>
+                    <p>Guided a group of 10 students through the creative and development related processes involved with game creation.<p>
+                    <p>Organized groups to work together and compete in international game-jam competitions.</p> 
+                </div>
+            </section>
+
+            <!-- PROJECT SECTION -->
+            <section class="section-container" id="project_section">
+            </section>
+
+
+
         <script>
             $(document).ready(function()
             {
-                $("#navbar").hide(0);
-                $(".landing").hide(0).delay(300).fadeIn(1000);
+                $(".navbar").hide(0).delay(300).fadeIn(300);
+                $(".landing").hide(0).delay(400).fadeIn(300);
+                $("#content").hide(0).delay(500).fadeIn(300);
             })
         </script>
 
