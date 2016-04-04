@@ -32,10 +32,15 @@ body
 
 .profile-image
 {
-	width:10%;
-	height:10%;
+	position: absolute;
+	width:20%;
+	height:28%;
 	transform: rotate(90deg);
 	z-index:2;
-	left:0;
+	left:15%;
+	top:30%;
+	border-style: solid;
+	border-color: #c0c0c0;
+	border-radius: 10%;
 }
 

@@ -42,16 +42,16 @@
             </ul>
         </section>
 
+        <img src="images/Me.jpg" class="profile-image" id="profile_image">
         <!--LANDING-->
         <section class="landing" id="landing_section">
             <img class="background-image" src="images/css-gradient-background.png">
-            <img class="profile-image" src="images/Me.jpg">
             <h1> Hello, I'm Doug </h1>
             <p>Student Developer from New Jersey</p>
         </section>
 
         <!-- ABOUT ME -->
-        <section id="about_me" class="section-content">
+        <section class="section-content" id="about_me_section" >
             <h1>About Me</h1>
             <div class="description" id="about_description">
                 <p>I am currenly a junior at Rutgers University pursing a major in computer science. <br/> My hobbies consist of  ultimate frisbee, programming, teaching, and running. </p>
@@ -122,26 +122,23 @@
                     </td>
                 </tr>
             </table>
-
-            <div class="section-content" id="pariah_projects">
-               
-            </div>
-
-            <div class="section-content" id="physics_simulation_builder">
-                
-            </div>
-
         </section>
 
         <script>
+
+            var time=1000;
+
             $(document).ready(function()
             {
-                //$(".navbar").hide(0).delay(300).fadeIn(300);
-                //$(".landing").hide(0).delay(400).fadeIn(300);
-                //$("#content").hide(0).delay(500).fadeIn(300);
-                //$("#education_section".hide(0);
-                //$("#experience_section").hide(0);
-                //$("#leadership_section").hide(0);
+                $("#navbar_section").hide(0).fadeIn(time);
+                $("#profile_image").hide(0).delay(500).fadeIn(time);
+                $("#landing_section").hide(0).delay(500).fadeIn(time);
+                $("#about_me_section").hide(0).delay(1000).fadeIn(time);
+                $("#education_section").hide(0).delay(1500).fadeIn(time);
+                $("#experience_section").hide(0).delay(2000).fadeIn(time);
+                $("#project_section").hide(0).delay(2500).fadeIn(time);
+
+                
             })
         </script>
     </body>
