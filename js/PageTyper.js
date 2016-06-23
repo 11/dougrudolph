@@ -1,16 +1,17 @@
-function write(pageText, elementId, delay)
+
+function write(currentText, elementId, delay)
 {
   var element = document.getElementById(elementId);
   var charCount=0;
 
   setInterval(function(){
-    if(charCount>pageText.length)
+    if(charCount>currentText.length)
     {
-      clearInterval();
+      return;
     }
     else
     {
-      element.innerHTML = pageText.substr(0,charCount++);
+      element.innerHTML = currentText.substr(0,charCount++);
     }
   }, delay);
 }
