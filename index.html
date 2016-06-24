@@ -28,7 +28,9 @@
 				</div>
 
 				<div id="phrase">
-					<h3>Student - Innovator - Developer</h3>
+					<h3 id="phraseOne" style="display: inline-block; margin-right: 3%;">Student</h3>
+					<h3 id="phraseTwo" style="display: inline-block; margin-right: 3%;">Innovator</h3>
+					<h3 id="phraseThree" style="display: inline-block;">Developer</h3>
 				</div>
 			</div>
 
@@ -89,37 +91,35 @@
 				</table>
 			</div>
 
-			<div id="projects" style="background-color:#00ace6; position: absolute; width:50%; right: 0%; height: 90%; top:0px;">
-				<table>
-					<tr>
-						<td>
-							<a href="https://github.com/TheRealDoug/Triangle-Algorithm-Research">Triangle Algorithm Visualization</a>
-						</td>
-						<td>
-							<a href="https://github.com/TheRealDoug/Dot-Attack">Android Attack</a>
-						</td>
-						<td>
-							<a href="https://github.com/TheRealDoug/2D-Platformer-Engine">2D Game Engine</a>
-						</td>
-						<td>
-							<a href="https://github.com/TheRealDoug/BaseVisualizer">Base Visualizer</a>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<a href="http://usacs.rutgers.edu">Rutgers Usacs Website</a>
-						</td>
-						<td>
-							<a href="http://www.Reccelerator.com">Reccelerator.com</a>
-						</td>
-					</tr>
-
+			<div id="projects" class="table-responsive" style="background-color:#00ace6; position: absolute; width:50%; right: 0%; height: 90%; top:0px;">
+				<table class="table">
+					<tbody>
+						<tr>
+							<td>
+								<a href="https://github.com/TheRealDoug/Triangle-Algorithm-Research">Triangle Algorithm Visualization</a>
+							</td>
+							<td>
+								<a href="https://github.com/TheRealDoug/Dot-Attack">Android Attack</a>
+							</td>
+							<td>
+								<a href="https://github.com/TheRealDoug/2D-Platformer-Engine">2D Game Engine</a>
+							</td>
+							<td>
+								<a href="https://github.com/TheRealDoug/BaseVisualizer">Base Visualizer</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="http://usacs.rutgers.edu">Rutgers Usacs Website</a>
+							</td>
+							<td>
+								<a href="http://www.Reccelerator.com">Reccelerator.com</a>
+							</td>
+						</tr>
+					</tbody
 				</table>
 			</div>
-
 		</div>
-
-
 
 	</body>
 
@@ -131,10 +131,14 @@
 		function onLoad()
 		{
 			$(document).ready(function(){
-				$('#phrase').hide().delay(2000).fadeIn(2000);
-				$('#name').hide().delay(1500).fadeIn(2000);
 				$('#skills').delay(500).animate({left:'-40%'},2000);
 				$('#projects').delay(500).animate({right:'-40%'},2000);
+
+				$('#name').hide().delay(1500).fadeIn(2000);
+
+				$('#phraseOne').hide().delay(2500).fadeIn(2000);
+				$('#phraseTwo').hide().delay(2500).fadeIn(3500);
+				$('#phraseThree').hide().delay(2500).fadeIn(4800);
 			});
 		}
 
