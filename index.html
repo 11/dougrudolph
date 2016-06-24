@@ -18,52 +18,78 @@
 
 	<body style="background-color:black; color:white; overflow:hidden; ">
 
-		<div id="main" style="text-align:center; padding-top: 20%;">
 
 
-			<div>
-				<h1>Douglas Rudolph</h1>
-				<h3>Student - Innovator - Developer</h3>
+		<div id="parent" style="padding-top:20%; z-index:1">
+
+			<div id="landing" style="text-align: center">
+				<div id="name">
+					<h1>Douglas Rudolph</h1>
+				</div>
+
+				<div id="phrase">
+					<h3>Student - Innovator - Developer</h3>
+				</div>
 			</div>
 
-
-			<div id="skills" style="background-color:red; position: absolute; left: 0%; width: 50%; height: 90%; top:0px;">
-				<table>
-					<tr><td>Languages</td>  <td>Expterise</td></tr>
-					<tr><td>Java</td></tr>
-					<tr><td>C#</td></tr>
-					<tr><td>C</td></tr>
-					<tr><td>C++</td></tr>
-					<tr><td>HTML5</td></tr>
-					<tr><td>CSS3</td></tr>
-					<tr><td>JavaScript</td></tr>
-					<tr><td>SQL/Oracle SQL</td></tr>
-					<tr><td>Python</td></tr>
+			<div id="skills" class="table-responsive"style="background-color:#00cc99; position: absolute; left: 0%; width: 50%; height: 90%; top:0px;">
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Languages</th>
+							<th>Expterise</th>
+						</tr>
+					</thead>
+						<tbody>
+							<tr><td>Java</td> <td>10/10</td></tr>
+							<tr><td>C#</td> <td>10/10</td></tr>
+							<tr><td>C</td> <td>10/10</td></tr>
+							<tr><td>C++</td> <td>10/10</td></tr>
+							<tr><td>HTML5</td> <td>10/10</td></tr>
+							<tr><td>CSS3</td> <td>10/10</td></tr>
+							<tr><td>JavaScript</td> <td>10/10</td></tr>
+							<tr><td>SQL/Oracle SQL</td> <td>10/10</td></tr>
+							<tr><td>Python</td> <td>10/10</td></tr>
+						</tbody>
 				</table>
 
-				<table>
-					<tr><td>Frameworks</td>  <td>Expterise</td></tr>
-					<tr><td>OpenGL</td></tr>
-					<tr><td>LibGDX</td></tr>
-					<tr><td>Android</td></tr>
-					<tr><td>LINQ</td></tr>
-					<tr><td>Flask</td></tr>
-					<tr><td>Apache</td></tr>
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Frameworks</th>
+							<th>Expterise</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr><td>OpenGL</td></tr>
+						<tr><td>LibGDX</td></tr>
+						<tr><td>Android</td></tr>
+						<tr><td>Bootstrap</td></tr>
+						<tr><td>LINQ</td></tr>
+						<tr><td>Flask</td></tr>
+						<tr><td>Apache</td></tr>
+					<tbody>
 				</table>
 
-				<table>
-					<tr><td>Concentrations</td>  <td>Expterise</td></tr>
-					<tr><td>Game Development</td></tr>
-					<tr><td>Mobile Game Development</td></tr>
-					<tr><td>Mobile App Development</td></tr>
-					<tr><td>Web Development</td></tr>
-					<tr><td>Database</td></tr>
-					<tr><td>Server</td></tr>
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Concentrations</th>
+							<th>Expterise</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr><td>Game Development</td></tr>
+						<tr><td>Mobile Game Development</td></tr>
+						<tr><td>Mobile App Development</td></tr>
+						<tr><td>Web Development</td></tr>
+						<tr><td>Database</td></tr>
+						<tr><td>Server</td></tr>
+					</tbody>
 				</table>
-
 			</div>
 
-			<div id="projects" style="background-color:orange; position: absolute; width:50%; right: 0%; height: 90%; top:0px;">
+			<div id="projects" style="background-color:#00ace6; position: absolute; width:50%; right: 0%; height: 90%; top:0px;">
 				<table>
 					<tr>
 						<td>
@@ -105,9 +131,10 @@
 		function onLoad()
 		{
 			$(document).ready(function(){
-
-				$('#skills').delay(1000).animate({left:'-1000px'},2000);
-				$('#projects').delay(1000).animate({right:'-1000px'},2000);
+				$('#phrase').hide().delay(2000).fadeIn(2000);
+				$('#name').hide().delay(1500).fadeIn(2000);
+				$('#skills').delay(500).animate({left:'-40%'},2000);
+				$('#projects').delay(500).animate({right:'-40%'},2000);
 			});
 		}
 
@@ -135,7 +162,7 @@
 					}
 					else if(skillsVis)
 					{
-						$("#skills").animate({left: '-1000px'});
+						$("#skills").animate({left: '-40%'});
 						skillsVis = false;
 					}
 					break;
@@ -150,7 +177,7 @@
 					}
 					else if(projectVis)
 					{
-						$("#projects").animate({right: '-1000px'});
+						$("#projects").animate({right: '-40%'});
 						projectVis=false;
 					}
 					break;
