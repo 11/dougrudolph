@@ -16,76 +16,84 @@
 		<title>Douglas Rudolph</title>
 	</head>
 
-	<body style="background-color:black; color:white; overflow:hidden;">
+	<body style="background-color:black; color:white; overflow:hidden; ">
 
-		<div id="main" style="text-align:center;">
-			<h1>Douglas Rudolph</h1>
-			<h3>Student - Innovator - Developer</h3>
+		<div id="main" style="text-align:center; padding-top: 20%;">
+
+
+			<div>
+				<h1>Douglas Rudolph</h1>
+				<h3>Student - Innovator - Developer</h3>
+			</div>
+
+
+			<div id="skills" style="background-color:red; position: absolute; left: 0%; width: 50%; height: 90%; top:0px;">
+				<table>
+					<tr><td>Languages</td>  <td>Expterise</td></tr>
+					<tr><td>Java</td></tr>
+					<tr><td>C#</td></tr>
+					<tr><td>C</td></tr>
+					<tr><td>C++</td></tr>
+					<tr><td>HTML5</td></tr>
+					<tr><td>CSS3</td></tr>
+					<tr><td>JavaScript</td></tr>
+					<tr><td>SQL/Oracle SQL</td></tr>
+					<tr><td>Python</td></tr>
+				</table>
+
+				<table>
+					<tr><td>Frameworks</td>  <td>Expterise</td></tr>
+					<tr><td>OpenGL</td></tr>
+					<tr><td>LibGDX</td></tr>
+					<tr><td>Android</td></tr>
+					<tr><td>LINQ</td></tr>
+					<tr><td>Flask</td></tr>
+					<tr><td>Apache</td></tr>
+				</table>
+
+				<table>
+					<tr><td>Concentrations</td>  <td>Expterise</td></tr>
+					<tr><td>Game Development</td></tr>
+					<tr><td>Mobile Game Development</td></tr>
+					<tr><td>Mobile App Development</td></tr>
+					<tr><td>Web Development</td></tr>
+					<tr><td>Database</td></tr>
+					<tr><td>Server</td></tr>
+				</table>
+
+			</div>
+
+			<div id="projects" style="background-color:orange; position: absolute; width:50%; right: 0%; height: 90%; top:0px;">
+				<table>
+					<tr>
+						<td>
+							<a href="https://github.com/TheRealDoug/Triangle-Algorithm-Research">Triangle Algorithm Visualization</a>
+						</td>
+						<td>
+							<a href="https://github.com/TheRealDoug/Dot-Attack">Android Attack</a>
+						</td>
+						<td>
+							<a href="https://github.com/TheRealDoug/2D-Platformer-Engine">2D Game Engine</a>
+						</td>
+						<td>
+							<a href="https://github.com/TheRealDoug/BaseVisualizer">Base Visualizer</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="http://usacs.rutgers.edu">Rutgers Usacs Website</a>
+						</td>
+						<td>
+							<a href="http://www.Reccelerator.com">Reccelerator.com</a>
+						</td>
+					</tr>
+
+				</table>
+			</div>
+
 		</div>
 
-		<div id="skills" style="background-color:red; position: relative; float:left;">
-			<table>
-				<tr><td>Languages</td>  <td>Expterise</td></tr>
-				<tr><td>Java</td></tr>
-				<tr><td>C#</td></tr>
-				<tr><td>C</td></tr>
-				<tr><td>C++</td></tr>
-				<tr><td>HTML5</td></tr>
-				<tr><td>CSS3</td></tr>
-				<tr><td>JavaScript</td></tr>
-				<tr><td>SQL/Oracle SQL</td></tr>
-				<tr><td>Python</td></tr>
-			</table>
 
-			<table>
-				<tr><td>Frameworks</td>  <td>Expterise</td></tr>
-				<tr><td>OpenGL</td></tr>
-				<tr><td>LibGDX</td></tr>
-				<tr><td>Android</td></tr>
-				<tr><td>LINQ</td></tr>
-				<tr><td>Flask</td></tr>
-				<tr><td>Apache</td></tr>
-			</table>
-
-			<table>
-				<tr><td>Concentrations</td>  <td>Expterise</td></tr>
-				<tr><td>Game Development</td></tr>
-				<tr><td>Mobile Game Development</td></tr>
-				<tr><td>Mobile App Development</td></tr>
-				<tr><td>Web Development</td></tr>
-				<tr><td>Database</td></tr>
-				<tr><td>Server</td></tr>
-			</table>
-
-		</div>
-
-		<div id="projects" style="background-color:orange; position: relative; float:left;">
-			<table>
-				<tr>
-					<td>
-						<a href="https://github.com/TheRealDoug/Triangle-Algorithm-Research">Triangle Algorithm Visualization</a>
-					</td>
-					<td>
-						<a href="https://github.com/TheRealDoug/Dot-Attack">Android Attack</a>
-					</td>
-					<td>
-						<a href="https://github.com/TheRealDoug/2D-Platformer-Engine">2D Game Engine</a>
-					</td>
-					<td>
-						<a href="https://github.com/TheRealDoug/BaseVisualizer">Base Visualizer</a>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<a href="http://usacs.rutgers.edu">Rutgers Usacs Website</a>
-					</td>
-					<td>
-						<a href="http://www.Reccelerator.com">Reccelerator.com</a>
-					</td>
-				</tr>
-
-			</table>
-		</div>
 
 	</body>
 
@@ -97,8 +105,9 @@
 		function onLoad()
 		{
 			$(document).ready(function(){
-				$("#skills").delay(1000).animate({left:'-1000px'});
-				$('#projects').delay(1000).animate({right:'-1000px'});
+
+				$('#skills').delay(1000).animate({left:'-1000px'},2000);
+				$('#projects').delay(1000).animate({right:'-1000px'},2000);
 			});
 		}
 
