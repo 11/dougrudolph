@@ -2,15 +2,95 @@
 <html lang="en">
 
 	<head>
-		<title>Self Typing Resume</title>
 		<meta charset="UTF-8"/>
-		<script src="js/PageTyper.js" type="text/javascript"></script>
-	<body>
-		<div id="greeting"></div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<title>Douglas Rudolph</title>
+	</head>
+
+	<body style="background-color:black; color:white;">
+
+		<div id="main" style="text-align:center;">
+			<h1>Douglas Rudolph</h1>
+			<h3>Student - Developer - Innovator</h3>
+		</div>
+
+		<div id="skills" style="background-color:red; position: relative">
+			<table>
+				<tr><td>Languages</td>  <td>Expterise</td></tr>
+				<tr><td>Java</td></tr>
+				<tr><td>C#</td></tr>
+				<tr><td>C</td></tr>
+				<tr><td>C++</td></tr>
+				<tr><td>HTML5</td></tr>
+				<tr><td>CSS3</td></tr>
+				<tr><td>JavaScript</td></tr>
+				<tr><td>SQL/Oracle SQL</td></tr>
+				<tr><td>Python</td></tr>
+			</table>
+
+			<table>
+				<tr><td>Frameworks</td>  <td>Expterise</td></tr>
+				<tr><td>OpenGL</td></tr>
+				<tr><td>LibGDX</td></tr>
+				<tr><td>Android</td></tr>
+				<tr><td>LINQ</td></tr>
+				<tr><td>Flask</td></tr>
+				<tr><td>Apache</td></tr>
+			</table>
+
+			<table>
+				<tr><td>Concentrations</td>  <td>Expterise</td></tr>
+				<tr><td>Game Development</td></tr>
+				<tr><td>Mobile Game Development</td></tr>
+				<tr><td>Mobile App Development</td></tr>
+				<tr><td>Web Development</td></tr>
+				<tr><td>Database</td></tr>
+				<tr><td>Server</td></tr>
+			</table>
+
+		</div>
+
+		<div id="projects" style="background-color:blue; position: relative">
+			<p>look at dem projects</p>
+		</div>
+
+		<div id="resume" style="background-color:purple; position: relative">
+			<p>the holy grail of resumes</p>
+		</div>
+
 	</body>
 
 	<script>
-		write("hi babe :)", 'greeting',100);
+
+		var KEY_LEFT = 37;
+		var KEY_UP = 38;
+		var KEY_RIGHT = 39;
+		var KEY_DOWN = 40;
+
+		$(document).keydown(function(e)
+		{
+			switch(e.which)
+			{
+				case KEY_LEFT:
+				{
+						$("#skills").animate({left: '250px'});
+					break;
+				}
+
+				case KEY_RIGHT:
+				{
+					$("#projects").animate({right: '250px'});
+					break;
+				}
+
+				case KEY_DOWN:
+				{
+					$("#resume").animate({up: '250px'});
+					break;
+				}
+			}
+		});
+
 	</script>
 
 </html>
