@@ -3,18 +3,27 @@
 
 	<head>
 		<meta charset="UTF-8"/>
+
+		<!-- JQuery Reference-->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+		<!-- Bootstrap Reference -->
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+		<!-- Tab Title -->
 		<title>Douglas Rudolph</title>
 	</head>
 
-	<body style="background-color:black; color:white;">
+	<body style="background-color:black; color:white; overflow:hidden;">
 
 		<div id="main" style="text-align:center;">
 			<h1>Douglas Rudolph</h1>
-			<h3>Student - Developer - Innovator</h3>
+			<h3>Student - Innovator - Developer</h3>
 		</div>
 
-		<div id="skills" style="background-color:red; position: relative">
+		<div id="skills" style="background-color:red; position: relative; float:left;">
 			<table>
 				<tr><td>Languages</td>  <td>Expterise</td></tr>
 				<tr><td>Java</td></tr>
@@ -50,22 +59,59 @@
 
 		</div>
 
-		<div id="projects" style="background-color:blue; position: relative">
-			<p>look at dem projects</p>
-		</div>
+		<div id="projects" style="background-color:orange; position: relative; float:left;">
+			<table>
+				<tr>
+					<td>
+						<a href="https://github.com/TheRealDoug/Triangle-Algorithm-Research">Triangle Algorithm Visualization</a>
+					</td>
+					<td>
+						<a href="https://github.com/TheRealDoug/Dot-Attack">Android Attack</a>
+					</td>
+					<td>
+						<a href="https://github.com/TheRealDoug/2D-Platformer-Engine">2D Game Engine</a>
+					</td>
+					<td>
+						<a href="https://github.com/TheRealDoug/BaseVisualizer">Base Visualizer</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="http://usacs.rutgers.edu">Rutgers Usacs Website</a>
+					</td>
+					<td>
+						<a href="http://www.Reccelerator.com">Reccelerator.com</a>
+					</td>
+				</tr>
 
-		<div id="resume" style="background-color:purple; position: relative">
-			<p>the holy grail of resumes</p>
+			</table>
 		</div>
 
 	</body>
 
 	<script>
 
+	 /**
+		* On load up
+		*/
+		function onLoad()
+		{
+			$(document).ready(function(){
+				$("#skills").delay(1000).animate({left:'-1000px'});
+				$('#projects').delay(1000).animate({right:'-1000px'});
+			});
+		}
+
+		onLoad();
+
 		var KEY_LEFT = 37;
 		var KEY_UP = 38;
 		var KEY_RIGHT = 39;
 		var KEY_DOWN = 40;
+
+		var skillsVis=false;
+		var projectVis=false;
+		var resumeVis=false;
 
 		$(document).keydown(function(e)
 		{
@@ -73,13 +119,31 @@
 			{
 				case KEY_LEFT:
 				{
-						$("#skills").animate({left: '250px'});
+					if(!skillsVis)
+					{
+						$("#skills").animate({left: '0px'});
+						skillsVis=true;
+					}
+					else if(skillsVis)
+					{
+						$("#skills").animate({left: '-1000px'});
+						skillsVis = false;
+					}
 					break;
 				}
 
 				case KEY_RIGHT:
 				{
-					$("#projects").animate({right: '250px'});
+					if(!projectVis)
+					{
+						$("#projects").animate({right: '0px'});
+						projectVis=true;
+					}
+					else if(projectVis)
+					{
+						$("#projects").animate({right: '-1000px'});
+						projectVis=false;
+					}
 					break;
 				}
 
