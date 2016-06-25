@@ -1,0 +1,10 @@
+#bio
+{
+  text-align: center;
+  top: 0;
+  width:100%;
+  z-index: 101;
+  height:10%;
+  position: fixed;
+  background-color: black;
+}

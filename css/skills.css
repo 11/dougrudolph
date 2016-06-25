@@ -2,7 +2,7 @@
 {
   position: absolute;
   left: 0%;
-  top:0%;
+  top:10%;
   width: 50%;
   height: 90%;
   border-radius: 25px;
@@ -34,4 +34,14 @@
   -o-filter: blur(0px);
   -ms-filter: blur(0px);
   filter: blur(0px);
+}
+
+img {
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+img:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
 }

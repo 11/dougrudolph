@@ -25,8 +25,6 @@
  :::::::::::::::88:.__..:88888:::::::::::'
   `'.:::::::::::88888888888.88:::::::::'
         `':::_:' '-' '' -'-' `':_::::'`
-
-
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -49,6 +47,7 @@
 		<link rel="stylesheet" href="css/skills.css">
 		<link rel="stylesheet" href="css/landing.css">
 		<link rel="stylesheet" href="css/projects.css">
+		<link rel="stylesheet" href="css/resume.css">
 
 		<!-- Tab Title -->
 		<title>Douglas Rudolph</title>
@@ -57,14 +56,22 @@
 	<body style="background-image:url(images/background2.jpg); color:white; overflow:hidden; ">
 
 		<div id="parent">
+
+			<div id="bio">
+				<div id="blurBio"></div>
+				<div id="contentBio">
+					<h1>Bio</h1>
+				</div>
+			</div>
+
 			<div id="landing">
 				<div id="name" class="name">
 					<h1>Douglas Rudolph</h1>
 				</div>
 				<div id="phrase">
-					<h3 id="phraseOne" style="display: inline-block; margin-right: 3%;">Student</h3>
-					<h3 id="phraseTwo" style="display: inline-block; margin-right: 3%;">Innovator</h3>
-					<h3 id="phraseThree" style="display: inline-block;">Developer</h3>
+					<h3 id="phraseOne" style="display: inline-block; margin-right: 3%;">Developer</h3>
+					<h3 id="phraseTwo" style="display: inline-block; margin-right: 3%;">Student</h3>
+					<h3 id="phraseThree" style="display: inline-block;">Designer</h3>
 				</div>
 
 				<div id="iconLinks" style="position: relative; bottom: 25%;">
@@ -94,10 +101,7 @@
 						Instagram
 					</button>
 				</div>
-
-
 			</div>
-
 
 			<div id="skills" class="table-responsive">
 				<div id="blurSkills"></div>
@@ -229,6 +233,7 @@
 					</table>
 				</div>
 			</div>
+
 			<div id="projects" class="table-responsive">
 				<div id="blurProjects"></div>
 				<div id="contentProjects">
@@ -236,29 +241,44 @@
 						<tbody>
 							<tr>
 								<td>
-									<a href="https://github.com/TheRealDoug/Dot-Attack">Android Attack</a>
+									<img src="images/LinkImageUSACS.png" width ="50%" height="30%" href="https://github.com/TheRealDoug/Triangle-Algorithm-Research"></img>
 								</td>
+
 								<td>
-									<a href="https://github.com/TheRealDoug/2D-Platformer-Engine">2D Game Engine</a>
-								</td>
-								<td>
-									<a href="https://github.com/TheRealDoug/BaseVisualizer">Base Visualizer</a>
+							 		<a href="https://github.com/TheRealDoug/Dot-Attack">2D Platformer Game Engine</a>
 								</td>
 							</tr>
+
 							<tr>
 								<td>
-									<a href="http://usacs.rutgers.edu">Rutgers Usacs Website</a>
+									<img src="images/LinkImageReccelerator.png" width ="50%" height="30%" href="https://github.com/TheRealDoug/Triangle-Algorithm-Research"></img>
 								</td>
+
 								<td>
-									<a href="http://www.Reccelerator.com">Reccelerator.com</a>
+									<a href="https://github.com/TheRealDoug/Dot-Attack">Android Attack</a>
 								</td>
+							</tr>
+
+							<tr>
 								<td>
-									<a href="https://github.com/TheRealDoug/Triangle-Algorithm-Research">Triangle Algorithm Visualization</a>
+									<img src="images/LinkImageTAR.png" width ="50%" height="30%" href="https://github.com/TheRealDoug/Triangle-Algorithm-Research"></img>
+								</td>
+
+								<td>
+									<a href="https://github.com/TheRealDoug/BaseVisualizer">Base Visualizer</a>
 								</td>
 							</tr>
 						</tbody>
 					</table>
 				</div>
+
+
+			<div id="resume">
+				<div id="blurResume"></div>
+				<div id="contentResume">
+					<h1>Resume <a><span class="glyphicon glyphicon-triangle-top" style="color:white;"></span><a/></h1>
+				<div>
+
 		</div>
 
 		</div>
@@ -272,8 +292,8 @@
 		function onLoad()
 		{
 			$(document).ready(function(){
-				$('#skills').delay(500).animate({left:'-40%'},2000);
-				$('#projects').delay(500).animate({right:'-40%'},2000);
+				$('#skills').delay(500).animate({left:'-43%'},2000);
+				$('#projects').delay(500).animate({right:'-43%'},2000);
 				$('#name').hide().delay(1500).fadeIn(2000);
 				$('#phraseOne').hide().delay(2500).fadeIn(2000);
 				$('#phraseTwo').hide().delay(2500).fadeIn(2400);
@@ -329,11 +349,22 @@
 
 				case KEY_DOWN:
 				{
-					$("#resume").animate({up: '250px'});
+					if(!resumeVis)
+					{
+							$("#resume").animate({bottom: '10%'});
+							resumeVis=true;
+					}
+					else if(resumeVis)
+					{
+						$("#resume").animate({bottom: '-70%'});
+						resumeVis=false
+					}
+
 					break;
 				}
 			}
 		});
+
 
 	</script>
 
