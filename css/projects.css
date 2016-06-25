@@ -5,6 +5,7 @@
   width:50%;
   top:0px;
   right: 0%;
+  border-radius: 25px;
 }
 
 #blurProjects
@@ -14,7 +15,7 @@
   position: absolute;
   background-image: url(../images/backgroundProjects.png);
   background-size:100%;
-  opacity: 0.75;
+  opacity: 0.90;
   -webkit-filter: blur(20px);
   -moz-filter: blur(20px);
   -o-filter: blur(20px);

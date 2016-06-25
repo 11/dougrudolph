@@ -1,3 +1,9 @@
 #landing{
-  text-align: center
+  text-align: center;
+  padding-top:15%;
+}
+
+#landing.#name
+{
+  font-size: 250%;
 }

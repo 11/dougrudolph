@@ -36,11 +36,14 @@
 
 		<!-- JQuery Reference-->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
 		<!-- Bootstrap Reference -->
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="bootstrap/bootstrap-social-gh-pages/bootstrap-social.css">
+		<link rel="stylesheet/less" href="bootstrap/bootstrap-social-gh-pages/bootstrap-social.less">
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
 
 		<!-- Personal Stylesheets -->
 		<link rel="stylesheet" href="css/skills.css">
@@ -51,21 +54,51 @@
 		<title>Douglas Rudolph</title>
 	</head>
 
-	<body style=" background-image:url(images/background2.jpg); color:white; overflow:hidden; ">
+	<body style="background-image:url(images/background2.jpg); color:white; overflow:hidden; ">
 
-		<div id="parent" style="padding-top:15%; z-index:1">
-
+		<div id="parent">
 			<div id="landing">
-				<div id="name">
+				<div id="name" class="name">
 					<h1>Douglas Rudolph</h1>
 				</div>
-
 				<div id="phrase">
 					<h3 id="phraseOne" style="display: inline-block; margin-right: 3%;">Student</h3>
 					<h3 id="phraseTwo" style="display: inline-block; margin-right: 3%;">Innovator</h3>
 					<h3 id="phraseThree" style="display: inline-block;">Developer</h3>
 				</div>
+
+				<div id="iconLinks" style="position: relative; bottom: 25%;">
+					<br/>
+					<br/>
+					<br/>
+					<br/>
+					<br/>
+					<br/>
+					<button class="btn btn-social btn-github"
+									onclick="location.href='https://www.github.com/TheRealDoug'"
+									style="margin-right: 3%;">
+						<span class="fa fa-github"></span>
+						Github
+					</button>
+
+					<button class="btn btn-social btn-linkedin"
+									onclick="location.href='https://www.linkedin.com/in/DougRudolphJr'"
+									style="margin-right: 3%;">
+						<span class="fa fa-linkedin"></span>
+						LinkedIn
+					</button>
+
+					<button class="btn btn-social btn-instagram"
+									onclick="location.href='https://www.instagram.com/The_Guod_Life'">
+						<span class="fa fa-instagram"></span>
+						Instagram
+					</button>
+				</div>
+
+
 			</div>
+
+
 			<div id="skills" class="table-responsive">
 				<div id="blurSkills"></div>
 				<div id="contentSkills">
@@ -241,12 +274,11 @@
 			$(document).ready(function(){
 				$('#skills').delay(500).animate({left:'-40%'},2000);
 				$('#projects').delay(500).animate({right:'-40%'},2000);
-
 				$('#name').hide().delay(1500).fadeIn(2000);
-
 				$('#phraseOne').hide().delay(2500).fadeIn(2000);
 				$('#phraseTwo').hide().delay(2500).fadeIn(2400);
 				$('#phraseThree').hide().delay(2500).fadeIn(2900);
+				$('#iconLinks').hide().delay(2500).fadeIn(3000);
 			});
 		}
 
