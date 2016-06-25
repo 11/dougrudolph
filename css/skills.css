@@ -1,11 +1,38 @@
 #skills
 {
-  color:black;
   position: absolute;
   left: 0%;
-  top:0px;
+  top:0%;
   width: 50%;
   height: 90%;
-  background-color: #fa6700;
-  opacity:0.6;
+  background-size:100%;
+
+
+}
+
+#blurSkills
+{
+  position: absolute;
+  background:url(../images/backgroundSkills.png);
+  left: 0%;
+  top:0%;
+  width: 100%;
+  height: 100%;
+  background-size:100%;
+  opacity: 0.9;
+  -webkit-filter: blur(13px);
+  -moz-filter: blur(13px);
+  -o-filter: blur(13px);
+  -ms-filter: blur(13px);
+  filter: blur(13px);
+}
+
+
+#contentSkills
+{
+  -webkit-filter: blur(0px);
+  -moz-filter: blur(0px);
+  -o-filter: blur(0px);
+  -ms-filter: blur(0px);
+  filter: blur(0px);
 }
