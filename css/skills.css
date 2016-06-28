@@ -6,7 +6,6 @@
   width: 50%;
   height: 100%;
   border-radius: 25px;
-
 }
 
 #blurSkills
@@ -26,7 +25,6 @@
   filter: blur(13px);
 }
 
-
 #contentSkills
 {
   -webkit-filter: blur(0px);
@@ -34,14 +32,14 @@
   -o-filter: blur(0px);
   -ms-filter: blur(0px);
   filter: blur(0px);
+  float: left;
 }
 
-img {
-    opacity: 0.5;
-    filter: alpha(opacity=50); /* For IE8 and earlier */
-}
-
-img:hover {
-    opacity: 1.0;
-    filter: alpha(opacity=100); /* For IE8 and earlier */
+#titleSkills
+{
+  position:absolute;
+  display:inline;
+  right:0;
+  top: 20%;
+  height: 100%;
 }

@@ -35,3 +35,11 @@
   -ms-filter: blur(0px);
   filter: blur(0px);
 }
+
+#titleBio
+{
+  position: absolute;
+  bottom:0;
+  text-align: center;
+  left:40%;
+}

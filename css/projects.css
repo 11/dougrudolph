@@ -30,4 +30,13 @@
   -o-filter: blur(0px);
   -ms-filter: blur(0px);
   filter: blur(0px);
+  display: inline-block;
+}
+
+#titleProjects
+{
+  position:absolute;
+  left:0;
+  top: 20%;
+  height: 100%;
 }
