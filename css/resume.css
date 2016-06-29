@@ -6,7 +6,7 @@
   left: 10%;
   right: 10%;
   width: 80%;
-  height: 50%;
+  height: 70%;
   text-align: center;
   border-radius: 25px;
 }
@@ -26,6 +26,15 @@
   filter: blur(8px);
 }
  #contentResume
+ {
+   -webkit-filter: blur(0px);
+   -moz-filter: blur(0px);
+   -o-filter: blur(0px);
+   -ms-filter: blur(0px);
+   filter: blur(0px);
+ }
+
+ #titleResume
  {
    -webkit-filter: blur(0px);
    -moz-filter: blur(0px);

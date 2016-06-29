@@ -8,7 +8,6 @@
   position: fixed;
   color:white;
   text-align: center;
-  z-index:100;
   border-radius: 25px;
 }
 
@@ -38,6 +37,11 @@
 
 #titleBio
 {
+  -webkit-filter: blur(0px);
+  -moz-filter: blur(0px);
+  -o-filter: blur(0px);
+  -ms-filter: blur(0px);
+  filter: blur(0px);
   position: absolute;
   bottom:0;
   text-align: center;

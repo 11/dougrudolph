@@ -51,7 +51,7 @@
 		<link rel="stylesheet" href="css/bio.css">
 
 		<!-- Tab Title -->
-		<title>Doug R</title>
+		<title>Doug R|Resume</title>
 	</head>
 
 	<body style="background-image:url(images/background2.jpg); overflow:hidden; color:white;">
@@ -99,34 +99,36 @@
 			</div>
 
 			<div id="bio">
+				<div id="titleBio">
+					<h1>Bio - Contact <span class="glyphicon glyphicon-triangle-top" style="color:white;"></h1>
+				</div>
 				<div id="blurBio"></div>
 				<div id="contentBio">
-					<div id="titleBio">
-						<h1>Bio - Contact <span class="glyphicon glyphicon-triangle-top" style="color:white;"></h1>
-					</div>
 					<h3>About Me</h3>
-					<p>I'm a computer science and math student at Rutgers Uniersity.
-						 In my free time, I enjoy making video games, competeing in game jams,
-					 	 and partaking in hackathons.</p>
-
+					<p>
+						I'm a computer science and math student at Rutgers Uniersity.
+						 In my free time, I enjoy making video games, mentoring students,
+						 and making slow motion sport videos.
+					 </p>
 				</div>
 			</div>
 
 			<div id="skills" class="table-responsive">
 				<div id="blurSkills"></div>
-				<div id="contentSkills">
-					<div id=titleSkills>
-						<h1>S</h1>
-						<h1>k</h1>
-						<h1>i</h1>
-						<h1>l</h1>
-						<h1>l</h1>
-						<h1>s</h1>
-						<h1>
-							<span class="glyphicon glyphicon-triangle-left" style="color:white;">
-						</h1>
-					</div>
 
+				<div id="titleSkills">
+					<h1>S</h1>
+					<h1>k</h1>
+					<h1>i</h1>
+					<h1>l</h1>
+					<h1>l</h1>
+					<h1>s</h1>
+					<h1>
+						<span class="glyphicon glyphicon-triangle-left" style="color:white;">
+					</h1>
+				</div>
+
+				<div id="contentSkills">
 					<table class="table">
 						<thead>
 							<tr>
@@ -324,38 +326,41 @@
 					</table>
 
 					<table class="table">
-						<thead>
-							<tr>
-								<th>Concentrations</th>
-								<th>Expterise</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr><td>Game Development</td></tr>
-							<tr><td>Mobile Game Development</td></tr>
-							<tr><td>Mobile App Development</td></tr>
-							<tr><td>Web Development</td></tr>
-							<tr><td>Database</td></tr>
-							<tr><td>Server</td></tr>
-						</tbody>
-					</table>
+					<thead>
+						<tr>
+							<th>Concentrations</th>
+							<th>Expterise</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr><td>Game Development</td></tr>
+						<tr><td>Mobile Game Development</td></tr>
+						<tr><td>Mobile App Development</td></tr>
+						<tr><td>Web Development</td></tr>
+						<tr><td>Database</td></tr>
+						<tr><td>Server</td></tr>
+					</tbody>
+				</table>
+
 				</div>
 			</div>
 
 			<div id="projects" class="table-responsive">
 				<div id="blurProjects"></div>
+
+				<div id="titleProjects">
+					<h1>P</h1>
+					<h1>r</h1>
+					<h1>o</h1>
+					<h1>j</h1>
+					<h1>e</h1>
+					<h1>c</h1>
+					<h1>t</h1>
+					<h1>s</h1>
+					<h1><span class="glyphicon glyphicon-triangle-right" style="color:white;"></span></h1>
+				</div>
+
 				<div id="contentProjects">
-					<div id="titleProjects">
-						<h1>P</h1>
-						<h1>r</h1>
-						<h1>o</h1>
-						<h1>j</h1>
-						<h1>e</h1>
-						<h1>c</h1>
-						<h1>t</h1>
-						<h1>s</h1>
-						<h1><span class="glyphicon glyphicon-triangle-right" style="color:white;"></span></h1>
-					</div>
 
 					<table class="table">
 						<tbody>
@@ -395,16 +400,56 @@
 
 			<div id="resume">
 				<div id="blurResume"></div>
-				<div id="contentResume">
+				<div id="contentResume"></div>
+
+				<div id="titleResume">
 					<h1>Resume <span class="glyphicon glyphicon-triangle-bottom" style="color:white;"></span></h1>
 				</div>
 			</div>
 
 		</div>
-
 	</body>
 
+
 	<script>
+
+	function loadResume()
+	{
+		$('#resume').delay(500).animate({bottom: '-60%'},500);
+		$('#titleResume').hide().delay(3500).fadeIn(300);
+		$('#contentResume').hide();
+	}
+
+	function loadBio()
+	{
+		$('#bio').delay(500).animate({top:'-40%'},500);
+		$('#titleBio').hide().delay(3500).fadeIn(1000);
+		$('#contentBio').hide();
+	}
+
+	function loadSkills()
+	{
+		$('#skills').delay(750).animate({left:'-43%'},1000);
+		$('#titleSkills').hide().delay(3500).fadeIn(300);
+		$('#contentSkills').hide();
+	}
+
+	function loadProjects()
+	{
+		$('#projects').delay(750).animate({right:'-43%'},1000);
+		$('#titleProjects').hide().delay(3500).fadeIn(700);
+		$('#contentProjects').hide();
+	}
+
+	function loadLanding()
+	{
+		$('#name').hide().delay(1500).fadeIn(2000);
+		$('#phraseOne').hide().delay(2500).fadeIn(2000);
+		$('#phraseTwo').hide().delay(2500).fadeIn(2400);
+		$('#phraseThree').hide().delay(2500).fadeIn(2900);
+		$('#iconLinks').hide().delay(2500).fadeIn(3000);
+	}
+
 
 	 /**
 		* On load up
@@ -412,15 +457,12 @@
 		function onLoad()
 		{
 			$(document).ready(function(){
-				$('#resume').delay(500).animate({bottom: '-40%'},500);
-				$('#bio').delay(500).animate({top:'-40%'},500);
-				$('#skills').delay(750).animate({left:'-43%'},1000);
-				$('#projects').delay(750).animate({right:'-43%'},1000);
-				$('#name').hide().delay(1500).fadeIn(2000);
-				$('#phraseOne').hide().delay(2500).fadeIn(2000);
-				$('#phraseTwo').hide().delay(2500).fadeIn(2400);
-				$('#phraseThree').hide().delay(2500).fadeIn(2900);
-				$('#iconLinks').hide().delay(2500).fadeIn(3000);
+				loadResume();
+				loadBio();
+				loadSkills();
+				loadProjects();
+				loadLanding();
+
 			});
 		}
 
@@ -452,12 +494,13 @@
 					{
 						$("#skills").animate({left: '0px'});
 						$("#skills").css("z-index","1000");
+						$("#contentSkills").fadeIn(500);
 						skillsVis=true;
 					}
 					else if(skillsVis)
 					{
 						$("#skills").animate({left: '-40%'});
-
+						$("contentSkills").fadeOut(500).hide();
 						skillsVis = false;
 					}
 					break;
@@ -469,11 +512,13 @@
 					{
 						$("#projects").animate({right: '0px'});
 						$("#projects").css("z-index","1000");
+						$("#contentProjects").fadeIn(500);
 						projectVis=true;
 					}
 					else if(projectVis)
 					{
 						$("#projects").animate({right: '-40%'});
+						$("#contentProjects").fadeOut(500);
 						projectVis=false;
 					}
 					break;
@@ -483,12 +528,14 @@
 				{
 					if(!resumeVis)
 					{
-						$("#resume").animate({bottom: '10%'});
+						$("#resume").animate({bottom: '-5%'});
+						$("contentResume").fadeIn(500);
 						resumeVis=true;
 					}
 					else if(resumeVis)
 					{
-						$("#resume").animate({bottom: '-40%'});
+						$("#resume").animate({bottom: '-60%'});
+						$("contentResume").fadeOut(500);
 						resumeVis=false
 					}
 					break;
@@ -499,11 +546,13 @@
 					if(!bioVis)
 					{
 						$("#bio").animate({top: '10%'});
+						$("#contentBio").fadeIn(500);
 						bioVis=true;
 					}
 					else if(bioVis)
 					{
 						$("#bio").animate({top: '-40%'});
+						$("#contentBio").fadeOut(500).hide();
 						bioVis=false
 					}
 					break;
