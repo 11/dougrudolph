@@ -422,7 +422,7 @@
 
 	function loadBio()
 	{
-		$('#bio').delay(500).animate({top:'-40%'},500);
+		$('#bio').delay(500).animate({top:'-60%'},500);
 		$('#titleBio').hide().delay(3500).fadeIn(1000);
 		$('#contentBio').hide();
 	}
@@ -545,13 +545,13 @@
 				{
 					if(!bioVis)
 					{
-						$("#bio").animate({top: '10%'});
+						$("#bio").animate({top: '0%'});
 						$("#contentBio").fadeIn(500);
 						bioVis=true;
 					}
 					else if(bioVis)
 					{
-						$("#bio").animate({top: '-40%'});
+						$("#bio").animate({top: '-60%'});
 						$("#contentBio").fadeOut(500).hide();
 						bioVis=false
 					}
