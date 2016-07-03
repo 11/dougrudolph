@@ -47,7 +47,7 @@
 		<link rel="stylesheet" href="css/skills.css">
 		<link rel="stylesheet" href="css/landing.css">
 		<link rel="stylesheet" href="css/projects.css">
-		<link rel="stylesheet" href="css/resume.css">
+		<link rel="stylesheet" href="css/experience.css">
 		<link rel="stylesheet" href="css/bio.css">
 
 		<!-- Tab Title -->
@@ -398,13 +398,91 @@
 				</div>
 			</div>
 
-			<div id="resume">
-				<div id="blurResume"></div>
-				<div id="contentResume"></div>
+			<div id="experience">
+				<div id="blurExperience"></div>
+				<div id="contentExperience"></div>
 
-				<div id="titleResume">
-					<h1>Resume <span class="glyphicon glyphicon-triangle-bottom" style="color:white;"></span></h1>
-				</div>
+					<div id="titleExperience">
+						<h1>Experience<span class="glyphicon glyphicon-triangle-bottom" style="color:white;"></span></h1>
+					</div>
+
+					<table class="table">
+						<thead>
+							<tr>
+								<th>Professional</th>
+								<th>Leadership</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<h3>Computer Science Researcher</h3>
+									<p>
+										> Responsible for developing an multi-platform app for Android, iOS, and HTML
+										that generates images with my research advisor’s linear-programming algorithm.
+										<br/>
+										> Give live public demos that showcase the software
+										and algorithm to professors, and research universities.
+										<br/>
+										> Created a website that gives users the option to the download the image software
+										and share their generated images with the research team via online.
+									</p>
+								</td>
+
+								<td>
+									<h3>Undergraduate Student Aliance of Computer Scientists</h3>
+									<p>
+										> Responsible for the rutgers U.S.A.C.S. website where I use
+										HTML5/CSS3/JS to post relevant information about projects and
+										events that pertain to students, educators, and organizers.
+										</br>
+										> Working as a computer science and math tutor for 25+ students
+										in Computer Science 111/112 and Calculus 151/152.
+										</br>
+										> Currently a computer science mentor that develops programming
+										projects with 5 computer science students who are pursuing an
+										accelerated, one-on-one, out-of-class learning experience
+									</p>
+								</td>
+							</tr>
+
+							<tr>
+								<td>
+									<h3>Reccelerator</h3>
+									<p>
+										> Developed an online web payment portal with C# and the
+										Stripe-payment API. This enabled users to post items to then
+										 be sold on an online store.
+										<br/>
+										> Tracked users’ payments and subscriptions with Microsoft
+										SQL and the LINQ C# database library to run analytics and
+										build a dynamic data model.
+										<br/>
+										> Created and maintained dynamic front-end elements to
+										web-pages with ASP.net and HTML5/CSS3/JS.
+									</p>
+								</td>
+								<td>
+									<h3>Shippnesburg University Programming Team Captain</h3>
+									<p>
+										> Competed in yearly collegiate programming tournaments with
+										computer science students and won a total of 3 programming
+										tournaments throughout Pennsylvania, Maryland, and New York.
+										<br/>
+										> Created weekly problem-sets and developed solutions that
+										tested an upcoming student’s eligibility to compete in
+										competitions.
+										<br/>
+										> Co-Lead a team of 15 computer science students twice a week
+										 to teach, coach, and build upon their personal programming
+										  knowledge.
+									</p>
+
+								</td>
+							</tr>
+						</tbody>
+
+					</table>
 			</div>
 
 		</div>
@@ -413,11 +491,11 @@
 
 	<script>
 
-	function loadResume()
+	function loadExperience()
 	{
-		$('#resume').delay(500).animate({bottom: '-60%'},500);
-		$('#titleResume').hide().delay(3500).fadeIn(300);
-		$('#contentResume').hide();
+		$('#experience').delay(500).animate({bottom: '-60%'},500);
+		$('#titleExperience').hide().delay(3500).fadeIn(300);
+		$('#contentExperience').hide();
 	}
 
 	function loadBio()
@@ -457,7 +535,7 @@
 		function onLoad()
 		{
 			$(document).ready(function(){
-				loadResume();
+				loadExperience();
 				loadBio();
 				loadSkills();
 				loadProjects();
@@ -478,7 +556,7 @@
 		//booleans that manange if a button has been pressed
 		var skillsVis=false;
 		var projectVis=false;
-		var resumeVis=false;
+		var experienceVis=false;
 		var bioVis=false;
 
 		/**
@@ -488,7 +566,7 @@
 		{
 			switch(e.which)
 			{
-				case KEY_LEFT:
+				case KEY_RIGHT:
 				{
 					if(!skillsVis)
 					{
@@ -500,13 +578,13 @@
 					else if(skillsVis)
 					{
 						$("#skills").animate({left: '-40%'});
-						$("contentSkills").fadeOut(500).hide();
+						$("#contentSkills").fadeOut(500).hide();
 						skillsVis = false;
 					}
 					break;
 				}
 
-				case KEY_RIGHT:
+				case KEY_LEFT:
 				{
 					if(!projectVis)
 					{
@@ -524,24 +602,24 @@
 					break;
 				}
 
-				case KEY_DOWN:
+				case KEY_UP:
 				{
-					if(!resumeVis)
+					if(!experienceVis)
 					{
-						$("#resume").animate({bottom: '-5%'});
-						$("contentResume").fadeIn(500);
-						resumeVis=true;
+						$("#experience").animate({bottom: '-5%'});
+						$("#contentExperience").fadeIn(500);
+						experienceVis=true;
 					}
-					else if(resumeVis)
+					else if(experienceVis)
 					{
-						$("#resume").animate({bottom: '-60%'});
-						$("contentResume").fadeOut(500);
-						resumeVis=false
+						$("#experience").animate({bottom: '-60%'});
+						$("#contentExperience").fadeOut(500);
+						experienceVis=false
 					}
 					break;
 				}
 
-				case KEY_UP:
+				case KEY_DOWN:
 				{
 					if(!bioVis)
 					{
