@@ -1,15 +1,15 @@
 #bio
 {
-	z-index:1;		
-  	width:80%;
-  	height:70%;
-  	left:10%;
-  	right: 10%;
-  	top:0;
-  	position: fixed;
-  	color:white;
-  	text-align: center;
-  	border-radius: 25px;
+	z-index:2;
+	width:80%;
+	height:70%;
+	left:10%;
+	right: 10%;
+	top:0;
+	position: fixed;
+	color:white;
+	text-align: center;
+	border-radius: 25px;
 }
 
 #blurBio
@@ -30,11 +30,11 @@
 #contentBio
 {
 	opacity:1;
-  	-webkit-filter: blur(0px);
-  	-moz-filter: blur(0px);
-  	-o-filter: blur(0px);
-  	-ms-filter: blur(0px);
-  	filter: blur(0px);
+	-webkit-filter: blur(0px);
+	-moz-filter: blur(0px);
+	-o-filter: blur(0px);
+	-ms-filter: blur(0px);
+	filter: blur(0px);
 }
 
 #titleBio

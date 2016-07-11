@@ -1,8 +1,7 @@
 #experience
 {
-  z-index:4;
+  z-index:1;
   position: fixed;
-  z-index: 100;
   bottom: 0;
   left: 10%;
   right: 10%;
@@ -36,7 +35,7 @@
    opacity:1;
  }
 
-#titleExperience 
+#titleExperience
 {
 	-webkit-filter: blur(0px);
 	-moz-filter: blur(0px);
@@ -45,5 +44,3 @@
 	filter:blur(0px);
 	opacity:1;
 }
-
-
