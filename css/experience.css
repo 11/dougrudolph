@@ -1,5 +1,6 @@
 #experience
 {
+  z-index:4;
   position: fixed;
   z-index: 100;
   bottom: 0;
@@ -32,13 +33,17 @@
    -o-filter: blur(0px);
    -ms-filter: blur(0px);
    filter: blur(0px);
+   opacity:1;
  }
 
- #titleExperience
- {
-   -webkit-filter: blur(0px);
-   -moz-filter: blur(0px);
-   -o-filter: blur(0px);
-   -ms-filter: blur(0px);
-   filter: blur(0px);
- }
+#titleExperience 
+{
+	-webkit-filter: blur(0px);
+	-moz-filter: blur(0px);
+	-o-filter:blur(0px);
+	-ms-filter:blur(0px);
+	filter:blur(0px);
+	opacity:1;
+}
+
+

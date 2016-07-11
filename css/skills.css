@@ -1,11 +1,12 @@
 #skills
 {
-  position: absolute;
-  left: 0%;
-  top:0;
-  width: 50%;
-  height: 100%;
-  border-radius: 25px;
+ 	z-index:2;
+  	position: absolute;
+  	left: 0%;
+  	top:0;
+  	width: 50%;
+  	height: 100%;
+  	border-radius: 25px;
 }
 
 #blurSkills
