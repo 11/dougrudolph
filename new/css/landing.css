@@ -1,0 +1,33 @@
+body{
+	z-index: -10;
+	background: linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),url("../img/landing_fractal.jpg") fixed;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-position: 50% 0%;
+}
+.landing-container{
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	display: inline-block;
+}
+
+.landing-contianer h1,h2,h3,h4,h5,h6{
+	z-index: 1;
+	color: white;
+	text-align: center;
+	margin-bottom: 15%;
+}
+
+.overlay{
+	z-index: 1;
+	width: 100%;
+	color: black;
+	text-align: center;
+	position: relative;
+	display: inline-block;
+	background-color: #FFFAFA;
+}
