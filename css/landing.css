@@ -1,10 +1,92 @@
-#landing{
-  text-align: center;
-  padding-top:15%;
-  
+html{
+	height: 100%;
 }
 
-#landing.#name
-{
-  font-size: 250%;
+body{
+	z-index: -10;
+	height: 100%;
+	background: linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),url("../img/back_7.jpg") fixed;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-position: 50% 35%;
+	background-size: 100% 100%;
 }
+
+.header{
+	color: white;
+	text-align: center;
+}
+
+.header h1{
+	margin-bottom: 15%;	
+}
+
+.header h4{
+	margin-top: 20%;
+	margin-bottom: 3%;	
+}
+
+.landing-footer{
+	text-align: center;
+	color: white;
+	font-size: 35;
+	width: 100%
+}
+
+.landing-footer:hover{
+	background: linear-gradient(rgba(255,255,255,.30),rgba(255,255,255,.30)));
+}
+
+
+.text-region{
+	padding-left: 8%;
+	padding-right: 8%;
+	width: 100%;
+	height: 60%;
+	margin-top: 30%;
+	background-color: white;
+	color: black;
+}
+
+nav{
+	z-index: 20;
+	top: 0px;
+	height: 7%;
+	width: 100%;
+	position: absolute;
+	display: inline-block;
+	background-color: white;
+}
+
+nav a{
+	color: black;
+}
+
+nav ul{
+	
+	list-style-type: none;
+}
+
+nav li{
+	float: left;
+	margin-right: 4%;
+	height: 7%;
+	border-style: solid;
+	border-color: white;
+}
+
+nav li: hover{
+	background-color: white;
+}
+
+
+.landing-container{
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+}
+
+
