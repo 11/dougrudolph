@@ -58,28 +58,6 @@ nav{
 	background-color: white;
 }
 
-nav a{
-	color: black;
-}
-
-nav ul{
-	
-	list-style-type: none;
-}
-
-nav li{
-	float: left;
-	margin-right: 4%;
-	height: 7%;
-	border-style: solid;
-	border-color: white;
-}
-
-nav li: hover{
-	background-color: white;
-}
-
-
 .landing-container{
 	z-index: 1;
 	top: 0;
