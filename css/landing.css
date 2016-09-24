@@ -12,6 +12,15 @@ body{
 	background-size: 100% 100%;
 }
 
+.text-region-header{
+
+	text-align:center;
+	color:white;
+	padding-top: 15%;
+
+}
+
+
 .header{
 	color: white;
 	text-align: center;
