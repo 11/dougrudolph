@@ -5,7 +5,7 @@ html{
 body{
 	z-index: -10;
 	/*height: 100%;*/
-	background: linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),url("../img/back_7.jpg") fixed;
+	background: linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),url("../img/back_10.jpg") fixed;
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-position: 50% 35%;
@@ -37,20 +37,14 @@ body{
 
 .landing-footer:hover{
 	z-index:2;
-	background-color:black;
+	background-color: black;
 }
-
-/*
-.landing-footer:hover{
-	background: linear-gradient(rgba(255,255,255,.30),rgba(255,255,255,.30)));
-}
-*/
 
 .text-region{
 	padding-left: 8%;
 	padding-right: 8%;
 	width: 100%;
-	/*margin-top: 20%;*/
+	margin-top: 20%;
 	background-color: white;
 	color: black;
 }
