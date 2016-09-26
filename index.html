@@ -10,7 +10,40 @@
 		<link rel="stylesheet" href="css/navbar.css"/>
 		<title>Doug Rudolph</title>
 	</head>
+
+	<script language=JavaScript>
+		var message="Function Disabled!"; 
+		function clickIE4()
+		{ 
+			if (event.button==2)
+			{ 
+					alert(message); 
+					return false; 
+			}	 
+		}	 
+		function clickNS4(e)
+		{ 
+			if (document.layers||document.getElementById&&!document.all)
+			{ 
+				if (e.which==2||e.which==3)
+				{ 
+					alert(message); 
+					return false; 
+				}	
+		 	} 
+		}	 
 	
+		if (document.layers)
+		{ 
+			document.captureEvents(Event.MOUSEDOWN); document.onmousedown=clickNS4; 
+		} 
+		else if (document.all&&!document.getElementById)
+		{ 
+			document.onmousedown=clickIE4; 
+		} 
+		document.oncontextmenu=new Function("alert(message);return false") 
+	</script>
+
 	<body>
 
 		<div class="landing-container">
@@ -47,9 +80,9 @@ I work underneath Ph.D Dr. Bahman Kalantari as a developer on his polynomiogrpah
 			<h3> Code Red Tutor</h3>
 			<p>Code Red is a tutoring service where incoming CS students can meet once a week with a qualified upperclassman that offer one-on-one tutoring in Introduction to CS through Java - 111 as well as Design & Analysis of Algorithms - 112. </p>
 		</div>
-
-		<h1 class="text-region-header"> &lt; I love coding cool shit /&gt;</h1>
-
+		
+		<h1 class="text-region-header"> &lt; I love coding cool shit /&gt;</h1>	
+		
 		<div class="text-region light-region" id="projects">
 			<h1>Projects</h1>
 
@@ -60,7 +93,7 @@ I work underneath Ph.D Dr. Bahman Kalantari as a developer on his polynomiogrpah
 			<p>Google Feud is an web-app game that borrows the Family Feud game show theme and web scraping technology that pulls information from  Google's auto-complete data. The game play involves the user selecting a topic of their choce, where then the game generates a funny half-completed google query. With this information, the application scrapes google for the top 8 search result for the user to guess. If guessed correctly, the player gets to move on to until their struck runs out. </p>
 
 			<h3>usacs.rutgers.edu</h3>
-			<p></p>
+			<p>As web master, I designed and created the website for the Undergraduate student alliance of Computer Scientists. </p>
 
 			<h3>Base-is</h3>
 			<p>Base-is is a music and graphics application that takes in a audio file as input and generates visuals along with the base notes of song that is playing. The application uses the Minim Music API to where it runs a fast fourier transform on the song data to seek out what frames of music store a lower frequency when compared to other frames. When the Minim API detects a base note, I render light meshes to by utilizing LibGDX's Box2DLights API to the screen to go along with the music. </p>
@@ -77,16 +110,15 @@ I work underneath Ph.D Dr. Bahman Kalantari as a developer on his polynomiogrpah
 			<h4>If you have a question, job, or just want to say hi, email me at: </h4>
 			<h3>drudolph914@gmail.com</h3>
 		</div>
-
 	</body>
 	
 	<script>
-		$(document).ready(function(){       
+		$(document).ready(function(){ 
     		var scroll_pos = 0;
     		$(document).scroll(function() { 
-        		scroll_pos = $(this).scrollTop();
+				scroll_pos = $(this).scrollTop();
 				
-
+				//position of element about
 				var about_pos = $("#about").position();
 
 				//position of element work
@@ -111,6 +143,6 @@ I work underneath Ph.D Dr. Bahman Kalantari as a developer on his polynomiogrpah
 		});
 
 	</script>
-
+	
 
 </html>
