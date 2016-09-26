@@ -2,15 +2,28 @@ html{
 	/*height: 100%;*/
 }
 
-body{
+.background-image-filter{
 	z-index: -10;
 	/*height: 100%;*/
-	background: linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),url("../img/back_10.jpg") fixed;
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-position: 50% 35%;
 	background-size: 100% 100%;
 }
+
+.background-image-1{
+	background: linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),url("../img/back_10.jpg") fixed;
+}
+
+.background-image-2{
+	background: linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),url("../img/back_8.jpg") fixed;
+}
+
+
+.background-image-3{
+	background: linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),url("../img/hacker_term.jpg") fixed;
+}
+
 
 .header{
 	color: white;

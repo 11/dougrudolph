@@ -43,8 +43,43 @@
 		} 
 		document.oncontextmenu=new Function("alert(message);return false") 
 	</script>
+	
+	<script>
+		$(document).ready(function(){ 
+    		var scroll_pos = 0;
+    		$(document).scroll(function() { 
+				scroll_pos = $(this).scrollTop();
+				
+				//position of element about
+				var about_pos = $("#about").position();
+				
+				//position of element work
+				var work_pos = $("#work").position();
 
-	<body>
+				//position of element projects       	
+				var project_pos = $("#projects").position();
+
+				if(scroll_pos >= about_pos.top && scroll<= work_pos.top){
+            		//$("body").removeClass().addClass('ninty');
+					//body.remove css background, add new css background
+					console.log("1");
+        		} 
+				else if(scroll_pos>= work_pos.top && scroll_pos <= project_pos.top){
+            		//$("body").removeClass('ninty').addClass('fifty');
+        			console.log("2");
+					$("body").removeClass("background-image-1").addClass("background-image-3");
+				}
+				else if(scroll_pos >= project_pos.top){
+					console.log("3");
+					$("body").removeClass("background-image-3").addClass("background-image-2");
+				}
+    		});
+		});
+
+	</script>
+	
+
+	<body class="background-image background-image-1">
 
 		<div class="landing-container">
 			<div class="header">
@@ -112,37 +147,6 @@ I work underneath Ph.D Dr. Bahman Kalantari as a developer on his polynomiogrpah
 		</div>
 	</body>
 	
-	<script>
-		$(document).ready(function(){ 
-    		var scroll_pos = 0;
-    		$(document).scroll(function() { 
-				scroll_pos = $(this).scrollTop();
-				
-				//position of element about
-				var about_pos = $("#about").position();
-
-				//position of element work
-				var work_pos = $("#work").position();
-
-				//position of element projects       	
-				var project_pos = $("#projects").position();
-
-				if(scroll_pos >= about_pos && scroll<= work_pos){
-            		//$("body").removeClass().addClass('ninty');
-					//body.remove css background, add new css background
-					console.log("1");
-        		} 
-				else if(scroll_pos>= work_pos && scroll_pos <= project_pos){
-            		//$("body").removeClass('ninty').addClass('fifty');
-        			console.log("2");	
-				}
-				else if(scroll_pos >= project_pos){
-					console.log("3");
-				}
-    		});
-		});
-
-	</script>
 	
 
 </html>
