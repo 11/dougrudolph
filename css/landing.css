@@ -12,11 +12,11 @@ html{
 }
 
 .background-image-1{
-	background: linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),url("../img/back_10.jpg") fixed;
+	background: linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),url("../img/back_9.jpg") fixed;
 }
 
 .background-image-2{
-	background: linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),url("../img/back_8.jpg") fixed;
+	background: linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),url("../img/back_2.jpg") fixed;
 }
 
 
@@ -24,6 +24,9 @@ html{
 	background: linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),url("../img/hacker_term.jpg") fixed;
 }
 
+.background-image-4{
+	background: linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),url("../img/back_6.jpg") fixed;
+}
 
 .header{
 	color: white;
