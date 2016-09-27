@@ -19,7 +19,6 @@ html{
 	background: linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),url("../img/back_2.jpg") fixed;
 }
 
-
 .background-image-3{
 	background: linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),url("../img/hacker_term.jpg") fixed;
 }
@@ -60,11 +59,6 @@ html{
 	height:10%
 }
 
-.landing-footer:hover{
-	z-index:2;
-	background-color: black;
-}
-
 .text-region-header{
 	text-align:center;
 	color:white;
@@ -72,11 +66,32 @@ html{
 }
 
 .text-region{
-	padding-left: 8%;
-	padding-right: 8%;
+	padding-left: 10%;
+	padding-right: 10%;
 	width: 100%;
 	margin-top: 10%;
 }
+
+.text-region h1{
+	text-align:center;
+}
+
+.text-region h3{
+	display:inline-block;
+	margin-left: 2%
+}
+
+.text-region p{
+	margin-top: 2%;
+	margin-bottom 2%
+}
+
+.text-region.work-logo{
+	margin-left: 5%;
+	display: inline-block;
+	
+}
+
 
 .light-region{
 	background-color: #f2f2f2;
