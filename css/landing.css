@@ -34,6 +34,10 @@ body{
 
 .header h1{
 	margin-bottom: 15%;	
+	border-style: solid;
+	border-color: #FFFFFF;
+	border-width: 1px;
+	border-radius: 30px;
 }
 
 .header h4{
