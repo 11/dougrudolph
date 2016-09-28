@@ -47,6 +47,8 @@
 	<script>
 		$(document).ready(function(){ 
     		var scroll_pos = 0;
+			var buffer_distance=100;
+
     		$(document).scroll(function() { 
 				scroll_pos = $(this).scrollTop();
 				
@@ -60,23 +62,22 @@
 				var project_pos = $("#projects").position();
 				
 
-				console.log("**********************************")
-				console.log("Scroll Pos: "+ scroll_pos);
-				console.log("#about: "+about_pos.top);
-				console.log("#work: "+ work_pos.top);
-				console.log("#project_pos: "+project_pos.top);
+				//console.log("**********************************")
+				//console.log("Scroll Pos: "+ scroll_pos);
+				//console.log("#about: "+about_pos.top);
+				//console.log("#work: "+ work_pos.top);
+				//console.log("#project_pos: "+project_pos.top);
 
-
-				if(scroll_pos < about_pos.top){
+				if(scroll_pos < about_pos.top+buffer_distance){
 					$("body").removeClass($("body").attr("class")).addClass("background-image-1");
 				}
-				else if(scroll_pos >= about_pos.top && scroll_pos<= work_pos.top){
+				else if(scroll_pos >= about_pos.top  && scroll_pos<= work_pos.top+buffer_distance){
         			$("body").removeClass($("body").attr("class")).addClass("background-image-2");
 				} 
-				else if(scroll_pos>= work_pos.top && scroll_pos <= project_pos.top){
+				else if(scroll_pos>= work_pos.top && scroll_pos <= project_pos.top+buffer_distance){
 					$("body").removeClass($("body").attr("class")).addClass("background-image-3");
 				}
-				else if(scroll_pos >= project_pos.top){
+				else if(scroll_pos >= project_pos.top-buffer_distance){
 					$("body").removeClass($("body").attr("class")).addClass("background-image-4");
 				}
     		});
@@ -98,9 +99,17 @@
 	
 		<div class="text-region top-region light-region" id="about">
 			<h1>About</h1>
-			<p>I'm a computer science major with a concentration in computer graphics at Rutgers University - New Brunswick. I am strong believer in self improvement and tend to find myself always learning for the sake of learning. In the free time I make for myself, I try to fill it by building a foundation on the wide range of interests that I have; these interests being: creating video games, studying philosophy, designing websites, rubiks cubing, coding in hackathons, teaching, playing firsbee, and filming slow motion videos.  
-
-			Outside of my hobbies, I enjoy working on projects involving graphics, mathematics, databases, servers, Linux systems, and web applications. Checkout out more of my work <a herf="#work">below </a> or my projects on <a href="https://github.com/11">github</a>  
+				<p>
+					I'm a computer science major with a concentration in computer graphics<br/> at Rutgers University - New Brunswick. 
+				</p>
+				<br/>	
+				<p> 
+					I've been working as a graphics researcher with Ph.D Dr. Bahman Kalanatri<br/> on visualization algorihtms. 
+				</p>
+				<br/>
+				<p>
+					I maintain a collection of coding resources and personal tutorials that </br>I consider useful for beginner and intermediate programmers <br/>as well as write about philosophy. 	
+				</p>
 		</div>
 
 		<h1 class="text-region-header">I've worked at a few places</h1>

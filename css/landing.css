@@ -1,5 +1,5 @@
-html{
-	/*height: 100%;*/
+body{
+	font-size: 20px;
 }
 
 .background-image-filter{
@@ -60,17 +60,19 @@ html{
 }
 
 .text-region-header{
-	text-align:center;
-	color:white;
+	text-align: center;
+	color: white;
 	padding-top: 15%;
 }
 
 .text-region{
 	padding-left: 10%;
-	padding-right: 10%;
+	padding-right:10%;
 	width: 100%;
 	margin-top: 10%;
+	text-align: center;
 }
+
 
 .text-region h1{
 	text-align:center;
@@ -94,7 +96,7 @@ html{
 
 
 .light-region{
-	background-color: #f2f2f2;
+	background-color: #FFFFFF;
 	color:#333333;
 }
 
