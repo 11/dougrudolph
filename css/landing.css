@@ -7,16 +7,16 @@ html{
 	/*height: 100%;*/
 	background-position: center center;
 	background-repeat: no-repeat;
-	background-position: 50% 35%;
 	background-size: 100% 100%;
 }
 
 .background-image-1{
-	background: linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),url("../img/back_9.jpg") fixed;
+	background: linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),url("../img/Rutgers_University.jpg") fixed;
+	background-position: center 40%;
 }
 
 .background-image-2{
-	background: linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),url("../img/back_2.jpg") fixed;
+	background: linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),url("../img/new_york_park.jpg") fixed;
 }
 
 .background-image-3{
