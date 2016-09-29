@@ -79,7 +79,10 @@ body{
 
 .text-region img{
 	width: 20%;
-	border-radius: 100%;
+	border-radius: 50%;
+	border-style: solid;
+	border-color: #858585;
+	border-width:5px;
 	text-align: center;
 }
 
