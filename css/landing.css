@@ -4,7 +4,6 @@ body{
 
 .background-image-filter{
 	z-index: -10;
-	/*height: 100%;*/
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
@@ -32,12 +31,9 @@ body{
 	text-align: center;
 }
 
-.header h1{
-	margin-bottom: 15%;	
-	border-style: solid;
-	border-color: #FFFFFF;
-	border-width: 1px;
-	border-radius: 30px;
+.header h1 {
+	margin-bottom: 5%;	
+	font-size: 50px;
 }
 
 .header h4{
@@ -69,6 +65,12 @@ body{
 	padding-top: 15%;
 }
 
+.text-region-header-top{
+	text-align: center;
+	color: white;
+	padding-top:0%;
+}
+
 .text-region{
 	padding-left: 10%;
 	padding-right:10%;
@@ -84,11 +86,13 @@ body{
 	border-color: #858585;
 	border-width:5px;
 	text-align: center;
+	margin-top: 2%;
 }
 
-.text-region h1,h3{
-	text-align:center;
+.text-region h1{
+	margin-bottom: 3%;
 }
+
 
 .text-region p{
 	margin-top: 2%;
