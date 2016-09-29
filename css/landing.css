@@ -77,14 +77,14 @@ body{
 	text-align: center;
 }
 
-
-.text-region h1{
-	text-align:center;
+.text-region img{
+	width: 20%;
+	border-radius: 100%;
+	text-align: center;
 }
 
-.text-region h3{
-	display:inline-block;
-	margin-left: 2%
+.text-region h1,h3{
+	text-align:center;
 }
 
 .text-region p{
@@ -94,7 +94,6 @@ body{
 
 .text-region.work-logo{
 	margin-left: 5%;
-	display: inline-block;
 	border-radius: 25px;	
 }
 
