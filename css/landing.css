@@ -85,6 +85,15 @@ body{
 	margin-top: 2%;
 }
 
+.text-region img:hover{
+	
+	-webkit-transform: scale(1.07);
+    -ms-transform: scale(1.07);
+    transform: scale(1.07);
+	 transition:all 0.3s ease;
+
+}
+
 .text-region h1{
 	margin-bottom: 3%;
 }
