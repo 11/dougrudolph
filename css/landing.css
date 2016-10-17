@@ -10,7 +10,7 @@ body{
 }
 
 .background-image-1{
-	background: linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),url("../img/Rutgers_University.jpg") fixed;
+	background: linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),url("../img/autmn.jpg") fixed;
 	background-position: center 40%;
 }
 
