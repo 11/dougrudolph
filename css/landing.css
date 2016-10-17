@@ -15,7 +15,7 @@ body{
 }
 
 .background-image-2{
-	background: linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),url("../img/new_york_park.jpg") fixed;
+	background: linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),url("../img/new_york_park_blur.jpg") fixed;
 }
 
 .background-image-3{
@@ -60,15 +60,11 @@ body{
 }
 
 .text-region-header{
+	font-family: Helvetica;
 	text-align: center;
 	color: white;
 	padding-top: 15%;
-}
-
-.text-region-header-top{
-	text-align: center;
-	color: white;
-	padding-top:0%;
+	padding-bottom: 5%;
 }
 
 .text-region{
