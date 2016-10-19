@@ -60,11 +60,14 @@ body{
 }
 
 .text-region-header{
-	font-family: Helvetica;
+	font-family: "PT Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 300%;
+	font-weight: bold;
 	text-align: center;
 	color: white;
 	padding-top: 15%;
 	padding-bottom: 5%;
+	text-shadow: 6px 6px #1a1a1a;
 }
 
 .text-region{
