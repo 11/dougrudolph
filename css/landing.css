@@ -10,8 +10,9 @@ body{
 }
 
 .background-image-1{
-	background: linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),url("../img/autmn.jpg") fixed;
-	background-position: center 40%;
+	background: linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),url("../img/san_fran.jpg") fixed;
+	background-position: center center;
+	background-size: 100% 100%;
 }
 
 .background-image-2{
@@ -78,7 +79,7 @@ body{
 	text-align: center;
 }
 
-.text-region img{
+.text-region .logo-img{
 	width: 20%;
 	border-radius: 50%;
 	border-style: solid;
@@ -92,12 +93,31 @@ body{
 	-webkit-transform: scale(1.07);
     -ms-transform: scale(1.07);
     transform: scale(1.07);
-	 transition:all 0.3s ease;
+	transition:all 0.3s ease;
 }
 
-.text-region #headshot{
+#headshot{
 	border-radius: 10%;
-		
+	width: 20%;
+	border-style: solid;
+	border-color: black;
+	border-width: 2px;
+}
+
+.img-link-container{
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+.img-links{
+	margin-right: 1%;
+	width: 5%;
+	height: 9%;
+	opacity: 0.5;
+}
+
+.img-links:hover{
+	opacity: 1.0;
 }
 
 .text-region h1{
@@ -109,12 +129,6 @@ body{
 	margin-top: 2%;
 	margin-bottom 2%
 }
-
-.text-region.work-logo{
-	margin-left: 5%;
-	border-radius: 25px;	
-}
-
 
 .light-region{
 	background-color: #FFFFFF;
