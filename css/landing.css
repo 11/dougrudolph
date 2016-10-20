@@ -84,6 +84,15 @@ hr{
 	text-align: center;
 }
 
+.text-region h1{
+	margin-bottom: 3%;
+}
+
+.text-region p{
+	margin-top: 2%;
+	margin-bottom 2%;
+}
+
 .text-region .logo-img{
 	width: 20%;
 	border-radius: 50%;
@@ -102,6 +111,14 @@ hr{
 	transition:all 0.3s ease;
 }
 
+/* 
+ * - Must come after text-region; this ensures that top-region can be applied
+ * 	 along side text-region
+ */
+.top-region{
+	margin-top:0%;
+}
+
 .paragraph-container{
 	width: 25%;
 	height: 25%;
@@ -113,6 +130,7 @@ hr{
 .tag-container
 {
 	height: 40%;
+	width: 50%;
 	text-align:left;
 	display:inline-block; 
 	vertical-align: middle;
@@ -146,27 +164,8 @@ hr{
 	opacity: 1.0;
 }
 
-.text-region h1{
-	margin-bottom: 3%;
-}
-
-.text-region p{
-	margin-top: 2%;
-	margin-bottom 2%
-}
 
 .dark-region{
 	background-color:#333333;
 		color:#f2f2f2;
 }
-
-/* 
- * - Must come after text-region; this ensures that top-region can be applied
- * 	 along side text-region
- */
-.top-region{
-	margin-top:0%;
-}
-
-
-
