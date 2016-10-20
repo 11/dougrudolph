@@ -92,6 +92,7 @@ hr{
 	border-width:5px;
 	text-align: center;
 	margin-top: 2%;
+	margin-right: 2%; 
 }
 
 .text-region img:hover{	
@@ -109,12 +110,20 @@ hr{
 	vertical-align: top;
 }
 
+.tag-container
+{
+	height: 40%;
+	text-align:left;
+	display:inline-block; 
+	vertical-align: middle;
+}
+
 #headshot{
 	display: inline-block;
 	width: 20%;
 	border-radius: 10%;
 	border-style: solid;
-	border-color: black;
+	border-color: #7A7A7A;
 	border-width: 2px;
 	margin-left: 3%;
 	margin-right: 3%;
@@ -148,7 +157,7 @@ hr{
 
 .dark-region{
 	background-color:#333333;
-	color:#f2f2f2;
+		color:#f2f2f2;
 }
 
 /* 
