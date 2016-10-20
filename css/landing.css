@@ -10,7 +10,7 @@ body{
 }
 
 .background-image-1{
-	background: linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),url("../img/san_fran.jpg") fixed;
+	background: linear-gradient(rgba(0,0,0,.30),rgba(0,0,0,.30)),url("../img/china.jpg") fixed;
 	background-position: center center;
 	background-size: 100% 100%;
 }
@@ -35,6 +35,7 @@ body{
 .header h1 {
 	margin-bottom: 5%;	
 	font-size: 50px;
+	font-weight: bold;
 }
 
 .header h4{
@@ -112,7 +113,7 @@ body{
 .img-links{
 	margin-right: 1%;
 	width: 5%;
-	height: 9%;
+	height: 5%;
 	opacity: 0.5;
 }
 
