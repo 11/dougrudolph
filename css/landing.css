@@ -97,21 +97,30 @@ body{
 	transition:all 0.3s ease;
 }
 
+
+
 .paragraph-container{
 	width: 25%;
-	height: 20%;
+	height: 25%;
 	text-align: left;
 	display: inline-block;
 	vertical-align: top;
 }
 
+hr{
+	border: 1px solid  #3f3f3f;
+}
+
 #headshot{
 	display: inline-block;
-	border-radius: 10%;
 	width: 20%;
+	border-radius: 10%;
 	border-style: solid;
 	border-color: black;
 	border-width: 2px;
+	margin-left: 3%;
+	margin-right: 3%;
+	margin-bottom: 3%;
 }
 
 .img-link-container{
@@ -123,7 +132,7 @@ body{
 	margin-right: 1%;
 	width: 5%;
 	height: 5%;
-	opacity: 0.5;
+	opacity: 0.7;
 }
 
 .img-links:hover{
@@ -137,11 +146,6 @@ body{
 .text-region p{
 	margin-top: 2%;
 	margin-bottom 2%
-}
-
-.light-region{
-	background-color: #dbdbdb;
-	color:#333333;
 }
 
 .dark-region{
