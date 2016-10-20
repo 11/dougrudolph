@@ -97,7 +97,16 @@ body{
 	transition:all 0.3s ease;
 }
 
+.paragraph-container{
+	width: 25%;
+	height: 20%;
+	text-align: left;
+	display: inline-block;
+	vertical-align: top;
+}
+
 #headshot{
+	display: inline-block;
 	border-radius: 10%;
 	width: 20%;
 	border-style: solid;
@@ -125,14 +134,13 @@ body{
 	margin-bottom: 3%;
 }
 
-
 .text-region p{
 	margin-top: 2%;
 	margin-bottom 2%
 }
 
 .light-region{
-	background-color: #FFFFFF;
+	background-color: #dbdbdb;
 	color:#333333;
 }
 
