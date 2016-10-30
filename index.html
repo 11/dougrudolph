@@ -11,22 +11,22 @@
 	</head>
 
 	<script>
-		$(document).ready(function(){ 
+		$(document).ready(function(){
     		var scroll_pos = 0;
 			var buffer_distance=100;
 
-    		$(document).scroll(function() { 
+    		$(document).scroll(function() {
 				scroll_pos = $(this).scrollTop();
-				
+
 				//position of element about
 				var about_pos = $("#about").position();
-				
+
 				//position of element work
 				var work_pos = $("#work").position();
 
-				//position of element projects       	
+				//position of element projects
 				var project_pos = $("#projects").position();
-				
+
 
 				//console.log("**********************************")
 				//console.log("Scroll Pos: "+ scroll_pos);
@@ -39,7 +39,7 @@
 				}
 				else if(scroll_pos >= about_pos.top  && scroll_pos<= work_pos.top+buffer_distance){
         			$("body").removeClass($("body").attr("class")).addClass("background-image-2");
-				} 
+				}
 				else if(scroll_pos>= work_pos.top && scroll_pos <= project_pos.top+buffer_distance){
 					$("body").removeClass($("body").attr("class")).addClass("background-image-3");
 				}
@@ -50,7 +50,7 @@
 		});
 
 	</script>
-	
+
 
 	<body class="background-image background-image-1">
 
@@ -59,40 +59,40 @@
 				<h4>Hi, I'm</h4>
 				<h1>Doug Rudolph</h1>
 				<h3>Feel free to browse around</h3>
-			</div>	
+			</div>
 		</div>
-			
+
 		<div class="text-region top-region dark-region" id="about">
 			<br/>
-		
-			<h1><b><u>About Me</u></b></h1>
-				<p>I'm a computer science major with a concentration in computer graphics<br/> at Rutgers University - New Brunswick. 
-				</p>
-			
+
+			<h1><b>About Me</b></h1>
+				<p>I'm a computer science major with a concentration in
+				computer graphics at Rutgers University.</p>
+
 				<hr>
 
-				<div class="paragraph-container">	
-					<h3><b><u>Hobbies:</u></b></h3>
-					<p>In my free time I enjoy going to hackathons and partaking in game jams. Outside of my CS related hobbies, I like playing ultimate frisbee and competing in Tetris.</p>
-				</div>	
-				
-				<img id="headshot" src="img/headshot.jpg"/>
-				
 				<div class="paragraph-container">
-					<h3><b><u>Bio:</u></b></h3>
+					<h3><b>Hobbies:</b></h3>
+					<p>In my free time I enjoy going to hackathons and participating in game jams. Outside of my CS related hobbies, I like playing ultimate frisbee and competing in Tetris.</p>
+				</div>
+
+				<img id="headshot" src="img/headshot.jpg"/>
+
+				<div class="paragraph-container">
+					<h3><b>Bio:</b></h3>
 					<p><b>Name:</b><br/> Doug Rudolph</p>
 					<p><b>Age:</b> <br/>21</p>
 					<p><b>Location:</b> <br/>Sparta, NJ</p>
 				</div>
-				
+
 				<hr>
-				
+
 				<h3>Check out my resume and my profile on other platforms</h3>
 				<!--row of img links -->
 				<div class="img-link-container">
 					<a href="./Doug_Rudolph_Resume.pdf " target="_tab"><img class="img-links" src="img/resume.png"/></a>
 					<a href="https://www.linkedin.com/in/dougjrudolph" target="_tab"><img class="img-links" src="img/linkedin.png"/></a>
-					<a href="https://github.com/11" target="_tab"><img class="img-links" src="img/github.png"/></a>	
+					<a href="https://github.com/11" target="_tab"><img class="img-links" src="img/github.png"/></a>
 					<a href="mailto:drudolph914@gmail.com?Subject=Hello" target="_top"><img class="img-links" src="img/email.png"/></a>
 					<a href="https://medium.com/@DougRudolph" target="_tab"><img class="img-links" src="img/medium.png"/></a>
 				</div>
@@ -101,118 +101,141 @@
 		<h1 class="text-region-header">I've worked at a few places</h1>
 
 		<div class="text-region dark-region" id="work">
-			<br/>		
-			<h1><b><u>Work Experience</u></b></h1>
-			
-			<a href="https://reccelerator.com/" target="_blank"><img class="logo-img" src="img/Reccelerator.png"></img></a>
+			<br/>
+			<h1><b>Work Experience</u></b></h1>
 
 			<div class="tag-container">
-				<h3>Cofound | Software Engineer</h3>
-				<h3>Reccelerator® inc.</h3>
-				<h3>July 2015 - Now</h3>
+				<a href="https://reccelerator.com/" target="_blank"><img class="logo-img" src="img/Reccelerator.png"></img></a>
+				<h3><b>Cofounder</b> & <br><b>Software Engineer</b></h3>
 			</div>
-			<p>Reccelerator® is a new, cloud-based management system designed to support recreational and associated facilities' everyday needs. Designed to include means of member organization, internal data collection, and sport communication tools. Reccelerator® offers the inclusion of a privately managed organization. Engineered for the cloud with flexible data access and administrative controls while targeting any form factor and any organization's computing platform.</p>
-
-			<hr>
-
-			<a href="https://github.com/11/Triangle-Algorithm-Visualizer" target="_blank"><img class="logo-img" src="img/TAR.png"></img></a>
-			<div class="tag-container">			
-				<h3>Computer Graphics Researcher</h3>
-				<h3>Rutgers University</h3>
-				<h3>May 2016 - Now</h3>
-			</div>
-			<p>
-I work underneath Ph.D Dr. Bahman Kalantari as a developer on his polynomiogrpahy computer graphics research. As a researcher, it is my job to develop multiplatform applications that visualize several polynomiographic algorithms for Android, iOS, and HTML. While developing these applications, I am specifically responsible for creating interactive screens for each polynomiographic algorithm, responsive user interfaces, and a website that allows users to share their visualized creations
+			<p>Reccelerator® is a cloud-based management system designed to
+			support recreational and associated facilities' everyday needs.
+			Designed to include means of member organization, internal data
+			collection, and sport communication tools. Reccelerator® offers the
+			inclusion of a privately managed organization, engineered for the
+			cloud with flexible data access and administrative controls while
+			targeting any form factor and any organization's computing platform.
+			<br><br> <b><i>Reccelerator® inc. | July 2015 - Now </i></b>
 			</p>
-			
 			<hr>
 
-			<img class="logo-img" src="img/Rutgers_Logo.png" ></img>
-			<div class="tag-container">	
-				<h3>Recitation Leader | CS Department Tutor</h3>
-				<h3>Rutgers University</h3>
-				<h3>September 2016 - Now</h3>
+			<div class="tag-container">
+				<a href="https://github.com/11/Triangle-Algorithm-Visualizer" target="_blank"><img class="logo-img" src="img/TAR.png"></img></a>
+				<h3><b>Research Assistant</b></h3>
 			</div>
-			<p>As a recitation instructor, it is my job to answer questions and solidify concepts that are taught during weekly CS 111 lectures. Outside of the classroom, I also hold weekly office hours where students may come to me privately and seek out one-on-one help with homework, assignments, and general questions.Code Red is a tutoring service where incoming CS students can meet once a week with a qualified upperclassman that offer one-on-one tutoring in Introduction to CS through Java - 111 as well as Design & Analysis of Algorithms - 112. </p>
+			<p>I work under Dr. Bahman Kalantari as a developer on
+			his polynomiogrpahy computer graphics research. As a researcher,
+			it is my job to develop multiplatform applications that visualize
+			several polynomiographic algorithms for Android, iOS, and HTML.
+			While developing these applications, I am specifically responsible
+			for creating interactive screens for each polynomiographic
+			algorithm, responsive user interfaces, and a website that allows
+			users to share their visualized creations <br><br><b><i>Rutgers University |
+			May 2016 - Now</i></b>
+			</p>
+
+			<hr>
+
+			<div class="tag-container">
+				<img class="logo-img" src="img/Rutgers_Logo.png" ></img>
+				<h3><b>Recitation Leader</b> & <br><b>CS Department Tutor</b></h3>
+
+			</div>
+			<p>As a recitation instructor, it is my job to answer questions and
+			solidify concepts that are taught during weekly CS 111
+			lectures. Outside of the classroom, I also hold weekly office
+			hours where students may come to me privately and seek out
+			one-on-one help with homework, assignments, and general
+			questions.Code Red is a tutoring service for incoming CS students
+			to meet once a week with a qualified upperclassman for
+			one-on-one tutoring in <b><i>Introduction to CS</i></b>
+			as well as <b><i>Data Structures</i></b>. <br><br><b><i>
+			Rutgers University | May 2016 - Now</i></b>
+			</p>
 		<br/>
 		</div>
-		
-		<h1 class="text-region-header">I <span class="glyphicon glyphicon-heart"></span> hacking projects</h1>	
-		
+
+		<h1 class="text-region-header">I <span class="glyphicon glyphicon-heart"></span> hacking cool stuff</h1>
+
 		<div class="text-region dark-region" id="projects">
 			<br/>
-			<h1><b><u>&lt;Projects/&gt;</u></b></h1>
+			<h1><b>&lt;Projects/&gt;</u></b></h1>
 
-			<a href="http://devpost.com/software/dynamo-r0cu6e" target="_blank"><img class="logo-img"src="img/hackny_logo.png"></img></a>
 			<div class="tag-container">
-				<h3>Dynamo</h3>
-				<h3>HackNY - Fall, 2016</h3>
-				<h3>Self-reliant Hack</h3>
+				<a href="http://devpost.com/software/dynamo-r0cu6e" target="_blank"><img class="logo-img"src="img/hackny_logo.png"></img></a>
+				<h3><b>Dynamo</b></h3>
 			</div>
-			<p>Dynamo was a winning project created in 36 hours at HackNY Fall, 2016 winning most self reliant hack. Dynamo is chrome extension that is designed to be your personal agenda. Dynamo sets itself apart from other to-do list apps because of its ability to repriotize tasks based on progress and due date. The technology behind Dynamo was HTML/CSS/JS and caters to both mobile and desktop platforms.</p>
+			<p>Dynamo is chrome extension that was designed to dynamic personal
+			agenda. Dynamo sets itself apart from other to-do list with its ability
+			to repriotize incompelete tasked based on progress and due date.<br>
+			<br><b>HackNY - Fall, 2016. Won <i>Most Self-reliant Hack</i></b></p>
 
 			<hr>
 
-			<a href="https://github.com/11/EduScape" target="_blank"><img class="logo-img" src="img/hack_psu_logo.png"></img></a>	
 			<div class="tag-container">
-				<h3>EduScape</h3>
-				<h3>HackPSU - Spring, 2015</h3>
-				<h3>Microsoft Honorable Mention</h3>
+				<a href="https://github.com/11/EduScape" target="_blank"><img class="logo-img" src="img/hack_psu_logo.png"></img></a>
+				<h3><b>EduScape</b></h3>
 			</div>
-			<p>EduScape was an awarded web application created in 24 hours at HackPSU Spring, 2015 winning a Microsoft honorable mention runner up prize. EduScape provides a competitive, gamified addition to traditional grading. With a goal to tie into products that implement LTI, it was intended that classrooms and university's may use the tool to improve a student's drive to do well. EduScape goes beyond just providing a point system for grades. It also reveals anonymous student rankings in classes, and allows students to challenge one another to see who can get the better grade with the added risk of wagering your points. Implementation was built using Microsoft Azure (running Ubuntu 14.04 LTS), PostgreSQL, Nginx, Java Play Framework 2.3.1less</p>
-			
+			<p>EduScape provides a competitive, gamified addition to
+			the traditional grading system. EduScape is designed to motivate
+			students by allowing them to anonymously challenge one another
+			over credits to see who can get the highest score in the class.
+			<br><br><b>HackPSU - Spring, 2015. Won <i>Microsoft
+			Honorable Mention</i></b></p>
+
 			<hr>
 
-			<a href="https://github.com/11/ics2json" target="_blank"><img class="logo-img" src="img/i2j.png"></img></a>
 			<div class="tag-container">
-				<h3>ics 2 json</h3>
-				<h3>Rutgers University</h3>
-				<h3>Created Summer of 2016</h3>
+				<a href="https://github.com/11/ics2json" target="_blank"><img class="logo-img" src="img/i2j.png"></img></a>
+				<h3><b>ics2json</b></h3>
 			</div>
-			<p>Ics2json is a command line application that allows for people to convert their calendar files to a ready to use json file. The ultimate purpose  of ics2json was to allow for Rutgers University club website cretors to take their Google Calendars and format it to how they please for their website. The app is currently being used among several other computer science clubs at Rutgers. </p>
-			
+			<p>ics2json is a terminal application for the conversion of
+			.iCal files to a ready to use .json. The creation of ics2json was
+			motivated by a need for the usacs.rutgers.edu events page to update
+			dynamically.<br><br><b> <i>Rutgers USACS - Summer, 2016.</i></b></p>
 			<hr>
 
-			<a href="http://usacs.rutgers.edu" target="_blank"><img class="logo-img" src="img/usacs_logo.jpg"></img></a>
 			<div class="tag-container">
-				<h3>usacs.rutgers.edu</h3>
-				<h3>Rutgers USACS </h3>
-				<h3>Created Summer of 2016</h3>
+				<a href="http://usacs.rutgers.edu" target="_blank"><img class="logo-img" src="img/usacs_logo.jpg"></img></a>
+				<h3><b>USACS</b></h3>
 			</div>
-			<p>The Rutgers USACS website is a domain where people can come to learn about the Rutgers CS community and seek out how to get involved with the larger projects that USACS offer. USACS, formally known as the Undergraduate Student Alliance of Computer Scientists, is a Computer Science interest group at Rutgers University. USACS primarily exists as a club that strings together a series of events for the Rutgers CS community; such as HackRU as well as the Rutgers CS Mentor program. </p>
-			
+			<p>The Rutgers USACS website is a domain where people can come to
+			learn about how to get involved within the Rutgers CS community.
+			<br><br><b><i>Rutgers USACS - Summer, 2016.</i></b></p>
+
 			<hr>
 
-			<a href="https://github.com/11/Base-sis" target="_blank"><img class="logo-img" src="img/mlh_prime_logo.png"></img></a>
 			<div class="tag-container">
-				<h3>Base-sis</h3>
-				<h3>MLH Prime - Summer, 2016</h3>
-				<h3>Runner up Bose Hack</h3>
+				<a href="https://github.com/11/Base-sis" target="_blank"><img class="logo-img" src="img/mlh_prime_logo.png"></img></a>
+				<h3><b>Base-sis</b></h3>
 			</div>
-			<p>Base-sis is a music and graphics application that takes in a audio file as input and generates visuals along with the base notes to the song that is playing. Base-sis uses the Minim Music API to where it runs a fast fourier transform on the song data to seek out what frames of music store a lower frequency when compared to other frames. When the Minim API detects a base note, light meshes are rendered by utilizing LibGDX's Box2DLights API. </p>
-			
+			<p>Base-sis is a music application that interprets data from an
+			audio file and visulizes the base notes in unison with the music.
+			Base-sis utilizes the Box2D-Lights light-mesh library to slowy
+			generate more complex visuals as the song continues playing.
+			<br><br><b>MLH Prime - Summer, 2016. <i>Runner up Bose Hack</i></b></h3>
+			</p>
+
 			<hr>
 
-			<a href="https://github.com/11/GGEngine" target="_blank"><img class="logo-img" src="img/gg_engine_logo.png"></img></a>
 			<div class="tag-container">
-				<h3>GG-Engine</h3>
-				<h3>Personal Project</h3>
-				<h3>Create Fall of 2014</h3>
+				<a href="https://github.com/11/GGEngine" target="_blank"><img class="logo-img" src="img/gg_engine_logo.png"></img></a>
+				<h3><b>GG-Engine</b></h3>
 			</div>
-			<p>GG-Engine is a complete Java 2D Platformer game engine written using LibGDX and the Box2D physics frameworks. GG-Engine was designed with developers and content creators in mind. The engine itself is completely open source and was structured to allow developers to adopt and build right on top of the code base at a high level. As for designers, the engine comes with support for GUI tools such as Tiled Map Editor, and Box2D to allow for non-programmers to design levels and physics related puzzles.</p>
+			<p>GG-Engine is a complete Java 2D Platformer game engine written
+			using LibGDX and the Box2D physics frameworks. GG-Engine was
+			designed with developers and content creators in mind. The
+			engine itself is completely open source and was structured to
+			allow developers to adopt and build right on top of the code
+			base at a high level.<br><br><b><i>Personal Project - Fall, 2014</i></b></p>
 
-		<br/>
+		<br>
 		</div>
-
-
-
-
-
 
 		<h1 class="text-region-header">Let's get in touch</h1>
 
 		<div class="text-region dark-region" id="contact">
-			<h1>Contact Information</h1>
+			<h1><b>Contact Information</b></h1>
 			<h4>If you have a question, job, or just want to say hi, email me at: </h4>
 			<h3><span class="glyphicon glyphicon-envelope"></span> drudolph914@gmail.com</h3>
 		</div>
