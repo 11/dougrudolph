@@ -130,6 +130,7 @@ hr{
 	vertical-align: top;
 }
 
+
 .tag-container{
 	height: 40%;
 	width: 30%;
@@ -153,6 +154,10 @@ hr{
 .img-link-container{
 	padding-top: 5%;
 	padding-bottom: 5%;
+}
+.img-link-container p{
+	padding-right: 1%;
+	display: inline-block;
 }
 
 .img-links{
