@@ -14,7 +14,7 @@ hr{
 }
 
 .background-image-1{
-	background: linear-gradient(rgba(0,0,0,.40),rgba(0,0,0,.40)),url("../img/china.jpg") fixed;
+	background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)),url("../img/china.jpg") fixed;
 	background-position: center center;
 	background-size: 100% 100%;
 }
@@ -109,7 +109,7 @@ hr{
 	text-align: center;
 }
 
-.text-region img:hover{
+.img-link-container,.img-link-contiainer-opaque img:hover{
 	-webkit-transform: scale(1.07);
     -ms-transform: scale(1.07);
     transform: scale(1.07);
