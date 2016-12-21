@@ -157,7 +157,14 @@ hr{
 	padding-top: 5%;
 	padding-bottom: 5%;
 }
-.img-link-container p{
+
+.img-link-container-opaque{
+	padding-top: 5%;
+	padding-bottom: 5%;
+	opacity: 0.5;
+}
+
+.img-link-container,.img-link-contiainer-opaque p{
 	padding-right: 1%;
 	display: inline-block;
 }
