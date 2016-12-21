@@ -161,9 +161,10 @@ hr{
 .img-link-container-opaque{
 	padding-top: 5%;
 	padding-bottom: 5%;
-	opacity: 0.4;
+	opacity: 0.6;
 	position: fixed;
-	left: 50%;
+	left: 35%;
+	transform: translate(-50%, -50%);
 }
 
 .img-link-container,.img-link-contiainer-opaque p{
