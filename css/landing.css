@@ -14,7 +14,7 @@ hr{
 }
 
 .background-image-1{
-	background: linear-gradient(rgba(0,0,0,.30),rgba(0,0,0,.30)),url("../img/china.jpg") fixed;
+	background: linear-gradient(rgba(0,0,0,.40),rgba(0,0,0,.40)),url("../img/china.jpg") fixed;
 	background-position: center center;
 	background-size: 100% 100%;
 }
