@@ -162,6 +162,7 @@ hr{
 	padding-top: 5%;
 	padding-bottom: 5%;
 	opacity: 0.5;
+	position: fixed;
 }
 
 .img-link-container,.img-link-contiainer-opaque p{
