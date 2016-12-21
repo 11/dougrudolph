@@ -117,6 +117,13 @@ hr{
 	margin-top:0%;
 }
 
+.text-region img:hover{
+	-webkit-transform: scale(1.07);
+    	-ms-transform: scale(1.07);
+    	transform: scale(1.07);
+	transition:all 0.3s ease;
+}
+
 .paragraph-container{
 	width: 35%;
 	height: 30%;
@@ -183,6 +190,4 @@ hr{
 	color:#f2f2f2;
 }
 
-.img-link-container,.img-link-contiainer-opaque,.text-region img:hover{
-	
-}
+
