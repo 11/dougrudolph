@@ -109,7 +109,7 @@ hr{
 	text-align: center;
 }
 
-.img-link-container,.img-link-contiainer-opaque img:hover{
+.img-link-container,.img-link-contiainer-opaque,.text-region img:hover{
 	-webkit-transform: scale(1.07);
     -ms-transform: scale(1.07);
     transform: scale(1.07);
