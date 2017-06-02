@@ -1,268 +1,54 @@
-<!DOCTYPE html>
+<!-- Author: Douglas Rudolph --> 
+<!-- File:   index.html -->
+<!-- Date:   June 2nd, 2017 -->
+<!-- About:  Personal website homepage -->
+
 <html>
-	<head>
-		<meta charset="UTF-8"/>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		<link rel="icon" href="./img/web_logo.png">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
-		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<link rel="stylesheet" href="css/landing.css"/>
-		<title>Doug Rudolph</title>
-	</head>
-
-	<script>
-		$(document).ready(function(){
-    		var scroll_pos = 0;
-			var buffer_distance=100;
-
-    		$(document).scroll(function() {
-				scroll_pos = $(this).scrollTop();
-
-				//position of element about
-				var about_pos = $("#about").position();
-
-				//position of element work
-				var work_pos = $("#work").position();
-
-				//position of element projects
-				var project_pos = $("#projects").position();
-
-
-				//console.log("**********************************")
-				//console.log("Scroll Pos: "+ scroll_pos);
-				//console.log("#about: "+about_pos.top);
-				//console.log("#work: "+ work_pos.top);
-				//console.log("#project_pos: "+project_pos.top);
-
-				if(scroll_pos < about_pos.top+buffer_distance){
-					$("body").removeClass($("body").attr("class")).addClass("background-image-1");
-				}
-				else if(scroll_pos >= about_pos.top  && scroll_pos<= work_pos.top+buffer_distance){
-        			$("body").removeClass($("body").attr("class")).addClass("background-image-2");
-				}
-				else if(scroll_pos>= work_pos.top && scroll_pos <= project_pos.top+buffer_distance){
-					$("body").removeClass($("body").attr("class")).addClass("background-image-3");
-				}
-				else if(scroll_pos >= project_pos.top-buffer_distance){
-					$("body").removeClass($("body").attr("class")).addClass("background-image-4");
-				}
-    			});
-		});
-
-	</script>
-
-	<body class="background-image background-image-1">
-
-		<div class="landing-container">
-			<div class="header">
-				<h4>Hi, I'm</h4>
-				<h1>Doug Rudolph</h1>
-				<h3>Feel free to browse around</h3>
-			</div>
-			<div class="img-link-container-opaque">
-				<a href="./Doug_Rudolph_Resume.pdf " target="_tab"><img class="img-links" src="img/resume.png"/></a>
-				<a href="https://www.linkedin.com/in/dougjrudolph" target="_tab"><img class="img-links" src="img/linkedin.png"/></a>
-				<a href="https://github.com/11" target="_tab"><img class="img-links" src="img/github.png"/></a>
-				<a href="mailto:drudolph914@gmail.com?Subject=Hello" target="_top"><img class="img-links" src="img/email.png"/></a>
-				<a href="https://medium.com/@DougRudolph" target="_tab"><img class="img-links" src="img/medium.png"/></a>
-			</div>
+    <head>
+        <title> Doug Rudolph </title>
+        <link rel="stylesheet" type="text/css" href="./home-style.css" media="screen" charset="utf-8"/>
+    </head>
+    
+    <body>
+        <!-- Title -->
+		<div class="title">
+        	<h3> Doug Rudolph </h3>
 		</div>
+        
+        <!-- Navbar -->
+        <nav>
+            <ul>
+                <li><i><a href="#blog" target="_tab">     blog       </a></i></li>
+                <li><i><a href="#projects" target="_tab"> projects   </a></i></li>
+                <li><i><a href="#links" target="_tab">    links      </a></i></li>
+                <li><i><a href="#about" target="_tab">    about      </a></i></li>
+                <li><i><a href="#feed" target="_tab">     feed       </a></i></li>
+            </ul>
+        </nav>
+        <hr/>
 
-		<div class="text-region top-region dark-region" id="about">
-			<br/>
+        <!-- Bio -->
+        <div style="text-align: center;">
+            <p>Hello, I'm <a href="https://twitter.com/doug_rudolph" target="_tab">@doug_rudolph</a>
+                <br/><br/>
+            
+                I'm a programmer, speaker, video game enthusiast, hackathon hacker, and blogger. 
+                <br/><br/>
 
-			<h1><b>About Me</b></h1>
-				<p>I'm a computer science major with a concentration in
-				computer graphics at Rutgers University - New Brunswick.</p>
-
-				<hr>
-
-				<div class="paragraph-container">
-					<h3 ><b>Hobbies:</b></h3>
-					<p>In my free time I enjoy going to hackathons and participating
-					in game jams. Outside of my CS related hobbies, I like
-					playing ultimate frisbee and competing in Tetris.</p>
-				</div>
-
-				<img id="headshot" src="img/headshot.jpg"/>
-
-				<div class="paragraph-container">
-					<h3><b>Bio:</b></h3>
-					<p><b>Name:</b></h3><br/> Doug Rudolph</p>
-					<p><b>Age:</b></h3><br/><p>21</p>
-					<p><b>Location:</b></h3><br/>Sparta, NJ</p>
-				</div>
-
-				<hr>
-
-				<h3>Check out my resume and profile on other platforms</h3>
-				<!--row of img links -->
-				<div class="img-link-container">
-					<a href="./Doug_Rudolph_Resume.pdf " target="_tab"><img class="img-links" src="img/resume.png"/></a>
-					<a href="https://www.linkedin.com/in/dougjrudolph" target="_tab"><img class="img-links" src="img/linkedin.png"/></a>
-					<a href="https://github.com/11" target="_tab"><img class="img-links" src="img/github.png"/></a>
-					<a href="mailto:drudolph914@gmail.com?Subject=Hello" target="_top"><img class="img-links" src="img/email.png"/></a>
-					<a href="https://medium.com/@DougRudolph" target="_tab"><img class="img-links" src="img/medium.png"/></a>
-				</div>
-		</div>
-
-		<h1 class="text-region-header">I've worked at a few places</h1>
-
-		<div class="text-region dark-region" id="work">
-			<br/>
-			<h1><b>Work Experience</u></b></h1>
-
-			<div class="tag-container">
-				<a href="https://reccelerator.com/" target="_blank"><img class="logo-img" src="img/Reccelerator.png"></img></a>
-				<h3><b>Co-founder</b> & <br><b>Software Engineer</b></h3>
-			</div>
-			<p>Reccelerator® is a cloud-based management system designed to
-			support recreational and associated facilities' everyday needs.
-			Designed to include means of member organization, internal data
-			collection, and sport communication tools. Reccelerator® offers the
-			inclusion of a privately managed organization, engineered for the
-			cloud with flexible data access and administrative controls while
-			targeting any form factor and any organization's computing platform.
-			<br><br> <b><i>Reccelerator® inc. </i>|<i> July 2015 - Now </i></b>
-			</p>
-			<hr>
-
-			<div class="tag-container">
-				<a href="https://github.com/11/Triangle-Algorithm-Visualizer" target="_blank"><img class="logo-img" src="img/TAR.png"></img></a>
-				<h3><b>Research Assistant</b></h3>
-			</div>
-			<p>I work under Dr. Bahman Kalantari as a developer on
-			his polynomiogrpahy computer graphics research. As a researcher,
-			it is my job to develop multiplatform applications that visualize
-			several polynomiographic algorithms for <b>Android</b>, <b>iOS</b>, and <b>HTML</b>.
-			While developing these applications, I am specifically responsible
-			for creating interactive screens for each polynomiographic
-			algorithm, responsive user interfaces, and a website that allows
-			users to share their visualized creations.
-			<br><br><b><i>Rutgers University</i> |<i> May 2016 - Now</i></b>
-			</p>
-
-			<hr>
-
-			<div class="tag-container">
-				<img class="logo-img" src="img/Rutgers_Logo.png" ></img>
-				<h3><b>Recitation Leader</b> & <br><b>CS Department Tutor</b></h3>
-
-			</div>
-			<p>As a recitation instructor, it is my job to answer questions and
-			solidify concepts that are taught during weekly CS 111
-			lectures. Outside of the classroom, I also hold weekly office
-			hours where students may come to me seek out
-			one-on-one help with homework, assignments, and general
-			questions. Code Red is a <b>tutoring</b> service for incoming CS students
-			to meet once a week with a qualified upperclassman for
-			one-on-one tutoring in <b><i>Introduction to CS</i></b>
-			as well as <b><i>Data Structures</i></b>. <br><br><b><i>
-			Rutgers University</i> |<i> Sep 2016 - Now</i></b>
-			</p>
-		<br/>
-		<br>
-		</div>
-
-		<h1 class="text-region-header">I <span class="glyphicon glyphicon-heart"></span> hacking cool stuff</h1>
-
-		<div class="text-region dark-region" id="projects">
-			<br/>
-			<h1><b>&lt;Projects/&gt;</u></b></h1>
-
-			<div class="tag-container">
-				<a href="http://devpost.com/software/dynamo-r0cu6e" target="_blank"><img class="logo-img"src="img/hackny_logo.png"></img></a>
-				<h3><b>Dynamo</b></h3>
-			</div>
-			<p>Dynamo is chrome extension that was designed to be a dynamic personal
-			agenda. Dynamo sets itself apart from other to-do list apps with its ability
-			to repriotize incomplete tasks based on progress and due date.<br>
-			<br><b><i>HackNY</i> |<i> Fall, 2016. Won Most Self-reliant Hack</i></b></p>
-
-			<hr>
-
-			<div class="tag-container">
-				<a href="https://github.com/11/EduScape" target="_blank"><img class="logo-img" src="img/hack_psu_logo.png"></img></a>
-				<h3><b>EduScape</b></h3>
-			</div>
-			<p>EduScape is a web-application that was created to provide a modern gamified addition to
-			the traditional schooling system. EduScape is engineered to motivate
-			students by allowing them to anonymously challenge and duel one another by wagering
-			credits to see who can get the highest score in the class. 
-			<br><br><b><i>HackPSU </i>|<i> Spring, 2015. Won Microsoft
-			Honorable Mention</i></b></p>
-
-			<hr>
-			
-			<div class="tag-container">
-				<a href="https://github.com/11/GGEngine" target="_blank"><img class="logo-img" src="img/gg_engine_logo.png"></img></a>
-				<h3><b>GuodGameEngine</b></h3>
-			</div>
-			<p>Giving back the ability to be creative as a game developer was the major issue I wanted to 
-			address when developing GuodGameEngine. Unlike modern day game engines that have predefined your
-			developing experience to a cookie-cutter format, I wanted to give developers the option to create 
-			games that stray away from popular game genres. The logic behind this action stems from the fact 
-			that working within a closed system, prohibits the creative aspects to developing not just video games,
-			but any art form. Allowing for developers to have a finite amount possiblities, ensures that their is 
-			a finite amount of applicable creativity. <a href="https://github.com/11/GGEngine">... (Continue Reading)</a>
-			<br><br><b><i>Personal Project</i> |<i> Fall, 2014</i></b></p>
-
-			<hr>
-
-			<div class="tag-container">
-				<a href="https://github.com/11/ics2json" target="_blank"><img class="logo-img" src="img/i2j.png"></img></a>
-				<h3><b>ics2json</b></h3>
-			</div>
-			<p>ics2json is a terminal application for the conversion of
-			iCal files to a ready to use json. The creation of ics2json was
-			motivated by a need for the usacs.rutgers.edu events page to update
-			dynamically.<br><br><b> <i>Rutgers USACS</i> |<i> Summer, 2016.</i></b></p>
-			<hr>
-
-			<div class="tag-container">
-				<a href="http://usacs.rutgers.edu" target="_blank"><img class="logo-img" src="img/usacs_logo.jpg"></img></a>
-				<h3><b>USACS</b></h3>
-			</div>
-			<p>The Rutgers USACS website is a domain where people can come to
-			learn about how to get involved within the Rutgers CS community. 
-			<br><br><b><i>Rutgers USACS</i> |<i> Summer, 2016.</i></b></p>
-
-			<hr>
-
-			<div class="tag-container">
-				<a href="https://github.com/11/Base-sis" target="_blank"><img class="logo-img" src="img/mlh_prime_logo.png"></img></a>
-				<h3><b>Base-sis</b></h3>
-			</div>
-			<p>Base-sis is a music application that interprets data from an
-			audio file and visulizes the base notes in unison with the music.
-			Base-sis utilizes the Box2D-Lights light-mesh library to slowy
-			generate more complex visuals as the song continues playing.
-			<br><br><b><i>MLH Prime</i> |<i> Summer, 2016. Runner up Bose Hack</i></b></h3>
-			</p>
-
-
-			<br>
-			<br>
-		</div>
-
-		<h1 class="text-region-header">Let's get in touch</h1>
-
-		<div class="text-region dark-region" id="contact">
-			<br>
-			<h1><b>Contact</b></h1>
-			<hr>
-			<p style="text-align: center;">Feel free to contact me at <b>drudolph914@gmail.com</b></p>
-
-			<div class="img-link-container">
-				<a href="./Doug_Rudolph_Resume.pdf " target="_tab"><img class="img-links" src="img/resume.png"/></a>
-				<a href="https://www.linkedin.com/in/dougjrudolph" target="_tab"><img class="img-links" src="img/linkedin.png"/></a>
-				<a href="https://github.com/11" target="_tab"><img class="img-links" src="img/github.png"/></a>
-				<a href="mailto:drudolph914@gmail.com?Subject=Hello" target="_top"><img class="img-links" src="img/email.png"/></a>
-				<a href="https://medium.com/@DougRudolph" target="_tab"><img class="img-links" src="img/medium.png"/></a>
-			</div>
-			<hr>
-			<p style="font-size:10px; text-align: center"> DOUG RUDOLPH - 2016</p>
-
-		</div>
-	</body>
+                If you want to get in touch, feel free to email me at <span style="color: #E50053">dougl@srudolph.ninja</span>
+                <br/><br/>
+            </p>
+        </div>
+        <hr/>
+ 
+		<!-- Footer -->
+        <div class="footer">
+            <ul>
+                <li><i><a href="https://gitub.com/11" targe="_tab">                 Github     </a></i></li>
+                <li><i><a href="./Douglas_Rudolph_Resume.pdf" target="_tab">        Résumé/CV  </a></i></li>
+                <li><i><a href="#email" target="_tab">                              Email      </a></i></li>
+                <li><i><a href="https://twitter.com/doug_rudolph" target="_tab">    Twitter    </a></i></li>
+            </ul>		
+        </div>
+    </body>
 </html>
