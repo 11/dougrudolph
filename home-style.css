@@ -14,9 +14,11 @@ a{
 
 .title{
     display: inline-block;
+    font: normal 25px Palatino, "Palatino Linotype", serif;
 }
 
 nav{
+    font: normal 22px Palatino, "Palatino Linotype", serif;
     float: right;
     display: inline-block;
 }
@@ -27,7 +29,11 @@ nav ul{
 
 nav ul li{
     display: inline;
-    padding: 8px;
+}
+
+nav ul li .nav-pad{
+    padding-right: 4px;
+    padding-left: 4px;
 }
 
 .footer ul{
