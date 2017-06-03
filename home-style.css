@@ -14,11 +14,21 @@ a{
 
 .title{
     display: inline-block;
-    font: normal 25px Palatino, "Palatino Linotype", serif;
+    font: normal 20px Palatino, "Palatino Linotype", serif;
+}
+
+.title a{
+    color: #353535;
+}
+
+.title a:hover{
+    color: #E50053;
+    transition-delay: 1s fade;
+    text-decoration: underline;
 }
 
 nav{
-    font: normal 22px Palatino, "Palatino Linotype", serif;
+    font: normal 18px Palatino, "Palatino Linotype", serif;
     float: right;
     display: inline-block;
 }
@@ -36,6 +46,10 @@ nav ul li .nav-pad{
     padding-left: 4px;
 }
 
+nav ul li a:hover{
+    text-decoration: underline;
+}
+
 .footer ul{
     list-style-type: none;
 }
@@ -43,4 +57,8 @@ nav ul li .nav-pad{
 .footer ul li{
     display: inline;
     padding: 6%;
+}
+
+.footer ul li a:hover{
+    text-decoration: underline;
 }
