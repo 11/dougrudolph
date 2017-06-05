@@ -1,3 +1,14 @@
+/* change the padding to fill the screen on mobile*/
+@media screen and (min-width: 600px){
+    body{
+        background-color: #FDFDFD;
+        color: #353535;
+        font: normal 25px Palatino, "Palatino Linotype", serif;
+        text-rendering: optimizeLegibility;
+    }
+}
+
+/* default body template for all webpages */
 body{
     background-color: #FDFDFD;
     color: #353535;
@@ -7,11 +18,13 @@ body{
     padding-left: 20%;
 }
 
+/* make all links pink with no underline*/
 a{
     color: #E50053;
     text-decoration: none;
 }
 
+/* */
 .title{
     display: inline-block;
     font: normal 27px Palatino, "Palatino Linotype", serif;
