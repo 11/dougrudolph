@@ -49,29 +49,61 @@ nav{
 nav ul{
     list-style-type: none;
 } 
-
+/* force text to be inlined in a list */
 nav ul li{
     display: inline;
 }
 
+/* add padding to the '-' character in the nav*/
 nav ul li .nav-pad{
     padding-right: 4px;
     padding-left: 4px;
 }
 
+/* draw a line when hovering over anything in the nav*/
 nav ul li a:hover{
     text-decoration: underline;
 }
 
+/* remove list details in the footer*/
 .footer ul{
     list-style-type: none;
 }
 
+/* display the footer in one line*/
 .footer ul li{
     display: inline;
     padding: 6%;
 }
 
+/* underline the text in the footer on hover*/
 .footer ul li a:hover{
     text-decoration: underline;
+}
+
+.page-container{
+    font: normal 25px Palatino, "Palatino Linotype", serif;
+}
+
+.page-container h2{
+    font: normal 35px Palatino, "Palatino Linotype", serif;
+    padding-bottom:5px;
+}
+
+.page-container ul{
+     font: normal 20px Palatino, "Palatino Linotype", serif;
+}
+
+.page-container li{
+    padding-bottom: 3px;
+}
+
+.page-header h2{
+    font: normal 50px Palatino, "Palatino Linotype", serif;
+    padding-bottom:5px;
+}
+
+.page-header li{
+    font: normal 23px Palatino, "Palatino Linotype", serif;
+    padding-bottom: 2px;
 }
