@@ -24,16 +24,17 @@ a{
     text-decoration: none;
 }
 
-/* */
+/* title is inline block to allow nav to be on the top bar as well, also has custom font */
 .title{
     display: inline-block;
     font: normal 27px Palatino, "Palatino Linotype", serif;
 }
-
+/* hot pink color for all links*/
 .title a{
     color: #353535;
 }
 
+/* on hover, underline the text*/
 .title a:hover{
     color: #E50053;
     transition-delay: 1s fade;
@@ -81,28 +82,34 @@ nav ul li a:hover{
     text-decoration: underline;
 }
 
+/* custom font for anything inside a page container  */
 .page-container{
     font: normal 25px Palatino, "Palatino Linotype", serif;
 }
 
+/* make headers in page container custom font size*/
 .page-container h2{
     font: normal 35px Palatino, "Palatino Linotype", serif;
     padding-bottom:5px;
 }
 
+/* all unordered lists in a page container has size 20 font*/
 .page-container ul{
      font: normal 20px Palatino, "Palatino Linotype", serif;
 }
 
+/* list bottom padding is 3 px*/
 .page-container li{
     padding-bottom: 3px;
 }
 
+/* page header is size 50*/
 .page-header h2{
     font: normal 50px Palatino, "Palatino Linotype", serif;
     padding-bottom:5px;
 }
 
+/* page header list item is 23 px with 2px of bottom padding*/
 .page-header li{
     font: normal 23px Palatino, "Palatino Linotype", serif;
     padding-bottom: 2px;
