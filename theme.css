@@ -115,20 +115,30 @@ nav ul li a:hover{
     padding-bottom: 2px;
 }
 
-.blog-entry{
-	padding-bottom: 20px;
-}
-.blog-entry h2{
-    font: normal 30px Palatino, "Palatino Linotype", serif;    
-}
-
-.blog-entry p{
-    font: normal 18px Palatino, "Palatino Linotype", serif;    
-    color:#333;
-}
-
 .blog-entry a{
     color: #353535;
 	text-decoration: none;
 }
 
+.blog-entry ul{
+    list-style-type: none;    
+    padding-bottom: 0px;
+}
+
+.blog-entry li{
+   padding-bottom: 30px; 
+}
+
+.blog-entry li a{
+	font: normal 23px/32px HoeflerText-Regular, 'Hoefler Text', 'Goudy Old Style', 'Palatino', 'Palatino Linotype', serif;
+}
+
+.blog-entry li a:hover{
+    color: #E50053;
+    text-decoration: underline;
+}
+
+.blog-entry li span{
+    font: normal 18px Palatino, "Palatino Linotype", serif;
+    font-style: italic;
+}
