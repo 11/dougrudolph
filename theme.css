@@ -114,3 +114,21 @@ nav ul li a:hover{
     font: normal 23px Palatino, "Palatino Linotype", serif;
     padding-bottom: 2px;
 }
+
+.blog-entry{
+	padding-bottom: 20px;
+}
+.blog-entry h2{
+    font: normal 30px Palatino, "Palatino Linotype", serif;    
+}
+
+.blog-entry p{
+    font: normal 18px Palatino, "Palatino Linotype", serif;    
+    color:#333;
+}
+
+.blog-entry a{
+    color: #353535;
+	text-decoration: none;
+}
+
