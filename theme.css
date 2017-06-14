@@ -173,3 +173,12 @@ nav ul li a:hover{
 .blog-container p{
     font: normal 20px Palatino, "Palatino Linotype", serif;
 }
+
+.blog-container ol{
+    list-style-type:upper-alpha; 
+}
+
+.blog-container ol li{
+    padding-bottom: 5px;
+    font: normal 20px Palatino, "Palatino Linotype", serif;
+}
