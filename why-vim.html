@@ -1,0 +1,179 @@
+<!-- Author: Douglas Rudolph --> 
+<!-- File:   blog-menu.html -->
+<!-- Date:   June 2nd, 2017 -->
+<!-- About:  Personal website homepage -->
+
+<html>
+    <head>
+        <title> Blog - Doug Rudolph </title>
+        <link rel="stylesheet" 
+              type="text/css" 
+              href="./theme.css" 
+              media="screen" 
+              charset="utf-8"/>
+    </head>
+
+    <body>
+        <!-- Title -->
+        <div class="title">
+            <p><a href="./index.html"> Doug Rudolph </a></p>
+        </div>
+        <!-- Navbar -->
+        <nav>
+            <ul>
+                <li><a href="./blog-menu.html"> blog </a><span class="nav-pad">-</span></li> 
+                <li><a href="./projects.html"> projects </a><span class="nav-pad">-</span></li> 
+                <li><a href="./links.html"> links </a><span class="nav-pad">-</span></li>
+                <li><a href="./about.html"> about </a><span class="nav-pad">-</span></li>
+                <li><a href="./Doug_Rudolph_Resume.pdf" target="_tab"> résumé/cv </a></li>
+            </ul>
+        </nav>
+        <hr/>
+
+        <!-- Blog list -->
+        <div class="blog-header">
+            <h2>Why VIm?</h2>
+            <span>Posted 3 days ago on on June 15th, 2017</span>
+
+            <p>
+                If you have ever seen a someone coding in a terminal, if I had to take a guess, they
+                were coding inside VIm. VIm is one of the most lightweight and dynamic free text editors
+                out there. Read on to learn about why you should use it.
+
+            </p>
+
+            <ol>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#the-first-law-of-vim">The First Law of VIm</a></li>
+            </ol>
+        </div>
+        <hr/>
+
+        <!-- Blog article -->
+        <div class="blog-container">
+            <div id="introduction">
+                <h2>Introduction</h2>
+                <p>
+                    It all started in a database class during my sophomore year of college when studying computer 
+                    science; and at the time, I was zoning out in class - as you do throughout a 3 hour lecture. 
+                    And I guess the professor must have been talking about something boring because I felt unmotivated 
+                    to listen to all details of his lecture. After several minutes of dozing off and trying to just take 
+                    a small break without being spotted, I see my professor quickly open Vim to edit a SQL file that he 
+                    had written as a demo for our lecture. Without hesitation, my professor jumps through several lines 
+                    of code and quickly goes in and out of his editor in under 20 seconds. “What did he write you might 
+                    ask?”, well, it was Perl script that to systematically make changes to a SQL file. And while that 
+                    might have taken me several minutes to write, to him it was just an old flick of the wrist. Now 
+                    real quick, for those of you whom have never seen a true master work with Vim … let this sink in.
+     
+                    <br/><br/>
+                    [gif of fast vim editing]
+                    <br/><br/>
+
+                    You can see how he regained my attention. Typing in Vim is not the same as other editors, it’s 
+                    so … fast … so agile. It enables you to navigate quickly and be dynamic; It lets you think on 
+                    levels beyond what is simply the code. It’s truly a language itself, and one if spoken correctly, 
+                    can be productive. This my friends, is Vim. 
+     
+                    So back in the day, I was using nano, a small, simple, and approachable editor that many noobs 
+                    <i>(like myself)</i> pick up when they first start toying within a unix shell. And let me tell you, 
+                    there is nothing special to this editor. It can save, copy/paste, and well, it can jump to line 
+                    numbers. And … that’s really about all it can do. Here let me show you
+                     
+
+                    <br/><br/>
+                    [gif of boring nano typer]
+                    <br/><br/>
+
+                    And you see, I can already tell some of you are thinking, “How long does it take to learn Vim? 
+                    Why not just learn other text editors like Sublime? Why not just use an IDE? How come u no Emacs? 
+                    Why Vim?” And everyone dances around that question when I bring up this subject. Why Vim?   
+
+                    You see, I get asked this question a lot when I try to share my admiration and excitement
+					for Vim. Often times, people look at me like I have four heads when I try to explain how 
+                    a barely related assortment of characters optimizes my work by what probably is 4 minutes.
+                    And while some people might think I invest too much time into something meaningless, fiddle 
+                    with too many config files, and try to overuse what was suppose to be a simple text editor, 
+                    getting familiar with Vim is arguably one of my most productive hobbies that I have learned. 
+                    So with all this said, I’m trying to make it my job to explain the answer to the question, 
+                    “Why Vim?”. And as long as you are capable of looking past some odd quirks in the beginning, 
+                    then hopefully by the end of this blog, I would have convinced you to at least appreciate 
+                    Vim from a fresh and open perspective. Okay? Okay.
+                </p>
+            </div>
+
+            <div id="the-first-law-of-vim">
+                <p>
+                	So the first thing to learn about Vim, “is why invest all this time?” - and rather explaining 
+                    why you should study Vim by showing off interesting short cuts, or by detailing how customizable 
+                    Vim truly is, I think it’s more useful to take a moment to simply contrast Vim with other text 
+                    editors, and explain what other text editors are doing differently. 
+ 
+                    Now before I get to this topic, I want to add a disclaimer. I don’t want to spend too much time 
+                    on this because I think A.) I will probably start a war with an audience who is surfing the 
+                    internet with soul intent to defend what is their motherland - Emacs users, I’m looking at 
+                    you, and B.) to simply put it, other text editors were built with different intentions in 
+                    mind, and those creations were meant to be used by a wide spectrum of users. So really, what 
+                    you should be taking away from this is not, “Why are other text editors bad”, but rather, 
+                    “What is Vim’s purpose in the text editing realm”. Now with that out of the way, what are 
+                    other text editors doing differently and why should you the reader care?
+ 
+                    As an attempt to explain Vim’s unique perspective, I’m going start off by comparing Vim to 
+                    it’s second cousin Emacs. Okay, it’s hard to talk about this subject without mentioning the 
+                    history and relationship Vim and Emacs have, because … well … these two text editors have 
+                    been in a 10 year long war, and it’s vital to address this. You see, what makes this specific 
+                    topic so interesting is that Emacs, at least in the classical sense, is the superior text 
+                    editor to Vim in every way possible way; and I’ll be the first to comfortably admit this fact. 
+                    No matter how much you love Vim, and no matter the reason you might hate the Emacs user base, 
+                    Vim is only a subset of Emacs, and it’s a fact that has to be accepted as a Vim user. 
+ 
+                    Okay, I know, you didn’t see this coming; but let’s pause - and please, just hear me out.  
+                    Emacs was developed and released to the public in the year 2005, and was designed with the 
+                    original intent of being an operating system. With the scope of a project that vast, you can 
+                    imagine why Emacs gets so much praise. It’s often referred to as a behemoth for a reason, and 
+                    a well thought out one at that. 
+ 
+                    And you see, why Emacs does get all this praise, I want to propose the question I asked you early, 
+                    “Why Vim?” - and the answer to this directly correlates with the problem Emacs tries to solve.  
+ 
+                    So Emacs, once decided it should to be a text editor, was gracefully designed to be a text editor 
+                    you never had to leave. Emacs was given a terminal emulator so that you can compile your code in 
+                    parallel on the same window. Emacs includes its own window managing system so that you can look 
+                    at as much text as you need. And all the while these features were implemented to simply increase 
+                    productivity, it’s easy to forget that these tools are slow to load, and are just one more thing 
+                    to memorize; and this is where Vim and Emacs diverge. While Emacs is designed to essentially be 
+                    a text based OS, vim thrives on being small, agile, and fast. The features that come with Emacs 
+                    are often times unnecessary, and are a core reason as to why Vim is still alive and well. 
+ 
+                    And don’t think I don’t know that some of you whom are professional Emacs users are asking 
+                    yourselves, “Who wouldn’t you want a working terminal emulator, a highly accurate Vim keyboard layout, 
+                    a personal notepad, customizable config files via a Lisp dialect, and about 1.7 more gigabytes of 
+                    highly detailed features?” But that’s just it, Vim is for the minimalist, while Emacs is for the 
+                    bold. This right here is the first law of Vim; and I think both Vim and Emacs users often forget 
+                    this. And while it may be true that Vim has extensions, which has the potential to make Vim just 
+                    as clunky and slow as Emacs, these concepts are contrasting the core differences between both vanilla 
+                    releases of either text editor. 
+ 
+                    So yeah, Vim is designed to be lightweight and is capable of being used in situations that really no 
+                    other text editor is as good at. The most famous of these situations is trying to code on server. 
+                    You see, when a developer SSHs into a server, it is possible to use Emacs, but what makes Vim so 
+                    much better for this problem is that Vim doesn’t slow down as you open more files. Vim is such 
+                    a small project in terms of the amount of RAM it takes up, that opening 15 within a single Vim 
+                    session is really not an issue. And while Emacs can compete in this task with maybe two to three 
+                    files, the more connections Emacs has to handle, the slower the application gets.
+                </p> 
+            </div>
+        </div>
+        <hr/>
+		<!-- Footer -->
+        <div class="footer">
+            <ul>
+                <li><i><a href="mailto:dougl@srudolph.ninja?Subject=Hello" target="_top"> Email </a></i></li>
+                <li><i><a href="https://linkedin.com/in/dougjrudolph" target="_tab"> LinkedIn</a></i></li>
+                <li><i><a href="https://github.com/11" target="_tab"> Github </a></i></li>
+                <li><i><a href="https://twitter.com/doug_rudolph" target="_tab"> Twitter </a></i></li>
+            </ul>		
+        </div>
+    </body>
+</html>
+
+

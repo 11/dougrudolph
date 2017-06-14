@@ -14,8 +14,8 @@ body{
     color: #353535;
     font: normal 25px Palatino, "Palatino Linotype", serif;
     text-rendering: optimizeLegibility;             
-    padding-right: 20%;
-    padding-left: 20%;
+    padding-right: 25%;
+    padding-left: 25%;
 }
 
 /* make all links pink with no underline*/
@@ -115,6 +115,7 @@ nav ul li a:hover{
     padding-bottom: 2px;
 }
 
+/*blog menu*/
 .blog-entry a{
     color: #353535;
 	text-decoration: none;
@@ -141,4 +142,33 @@ nav ul li a:hover{
 .blog-entry li span{
     font: normal 18px Palatino, "Palatino Linotype", serif;
     font-style: italic;
+}
+
+/*blog title*/
+.blog-header h2{
+    font: normal 50px Palatino, "Palatino Linotype", serif;
+    line-height: 0px;
+}
+
+.blog-header span{
+    font: normal 22px Palatino, "Palatino Linotype", serif;
+    font-style: italic;
+}
+
+.blog-header li{
+    font: normal 23px Palatino, "Palatino Linotype", serif;
+    padding-bottom: 2px;
+}
+
+.blog-header p{
+    font: normal 25px Palatino, "Palatino Linotype", serif;
+}
+
+/*Blog article*/
+.blog-container h2{
+    font: normal 35px Palatino, "Palatino Linotype", serif;
+}
+
+.blog-container p{
+    font: normal 20px Palatino, "Palatino Linotype", serif;
 }
