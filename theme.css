@@ -44,7 +44,8 @@ a{
 nav{
     font: normal 18px Palatino, "Palatino Linotype", serif;
     float: right;
-    display: inline-block;
+    display: inline;
+    line-height: 45px;
 }
 
 nav ul{
