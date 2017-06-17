@@ -44,7 +44,8 @@ a{
 nav{
     font: normal 18px Palatino, "Palatino Linotype", serif;
     float: right;
-    display: inline-block;
+    display: inline;
+    line-height: 45px;
 }
 
 nav ul{
@@ -170,5 +171,14 @@ nav ul li a:hover{
 }
 
 .blog-container p{
+    font: normal 20px Palatino, "Palatino Linotype", serif;
+}
+
+.blog-container ol{
+    list-style-type:upper-alpha; 
+}
+
+.blog-container ol li{
+    padding-bottom: 5px;
     font: normal 20px Palatino, "Palatino Linotype", serif;
 }
