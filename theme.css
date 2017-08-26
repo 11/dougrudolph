@@ -25,7 +25,6 @@ a{
 }
 
 /* title is inline block to allow nav to be on the top bar as well, also has custom font */
-p> 
 .title{
 display: inline-block;
 font: normal 27px Palatino, "Palatino Linotype", serif;
