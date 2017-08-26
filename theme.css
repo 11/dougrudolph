@@ -1,4 +1,4 @@
-/* change the padding to fill the screen on mobile*/
+/* change the padding to fill the screen on mobile */
 @media screen and (min-width: 600px){
     body{
         background-color: #FDFDFD;
@@ -18,166 +18,171 @@ body{
     padding-left: 25%;
 }
 
-/* make all links pink with no underline*/
+/* make all links pink with no underline */
 a{
-    color: #E50053;
+    color: #28A28D;
     text-decoration: none;
 }
 
 /* title is inline block to allow nav to be on the top bar as well, also has custom font */
+p> 
 .title{
-    display: inline-block;
-    font: normal 27px Palatino, "Palatino Linotype", serif;
+display: inline-block;
+font: normal 27px Palatino, "Palatino Linotype", serif;
 }
-/* hot pink color for all links*/
+/* hot pink color for all links */
 .title a{
-    color: #353535;
+color: #353535;
 }
 
-/* on hover, underline the text*/
+/* on hover, underline the text */
 .title a:hover{
-    color: #E50053;
-    transition-delay: 1s fade;
-    text-decoration: underline;
+color: #28A28D;
+transition-delay: 1s fade;
+text-decoration: underline;
 }
 
 nav{
-    font: normal 18px Palatino, "Palatino Linotype", serif;
-    float: right;
-    display: inline;
-    line-height: 45px;
+font: normal 18px Palatino, "Palatino Linotype", serif;
+float: right;
+display: inline;
+line-height: 45px;
 }
 
 nav ul{
-    list-style-type: none;
+list-style-type: none;
 } 
 /* force text to be inlined in a list */
 nav ul li{
-    display: inline;
+display: inline;
 }
 
-/* add padding to the '-' character in the nav*/
+/* add padding to the '-' character in the nav */
 nav ul li .nav-pad{
-    padding-right: 4px;
-    padding-left: 4px;
+padding-right: 4px;
+padding-left: 4px;
 }
 
-/* draw a line when hovering over anything in the nav*/
+/* draw a line when hovering over anything in the nav */
 nav ul li a:hover{
-    text-decoration: underline;
+text-decoration: underline;
 }
 
-/* remove list details in the footer*/
+/* remove list details in the footer */
 .footer ul{
-    list-style-type: none;
+list-style-type: none;
 }
 
-/* display the footer in one line*/
+/* display the footer in one line */
 .footer ul li{
-    display: inline;
-    padding: 6%;
+display: inline;
+padding: 6%;
 }
 
-/* underline the text in the footer on hover*/
+/* underline the text in the footer on hover */
 .footer ul li a:hover{
-    text-decoration: underline;
+text-decoration: underline;
 }
 
-/* custom font for anything inside a page container  */
+/* custom font for anything inside a page container */
 .page-container{
-    font: normal 25px Palatino, "Palatino Linotype", serif;
+font: normal 25px Palatino, "Palatino Linotype", serif;
 }
 
-/* make headers in page container custom font size*/
+/* make headers in page container custom font size */
 .page-container h2{
-    font: normal 35px Palatino, "Palatino Linotype", serif;
-    padding-bottom:5px;
+font: normal 35px Palatino, "Palatino Linotype", serif;
+padding-bottom:5px;
 }
 
-/* all unordered lists in a page container has size 20 font*/
+/* all unordered lists in a page container has size 20 font */
 .page-container ul{
-     font: normal 20px Palatino, "Palatino Linotype", serif;
+ font: normal 20px Palatino, "Palatino Linotype", serif;
 }
 
-/* list bottom padding is 3 px*/
+/* list bottom padding is 3 px */
 .page-container li{
-    padding-bottom: 3px;
+padding-bottom: 3px;
 }
 
-/* page header is size 50*/
+/* page header is size 50 */
 .page-header h2{
-    font: normal 50px Palatino, "Palatino Linotype", serif;
-    padding-bottom:5px;
+font: normal 50px Palatino, "Palatino Linotype", serif;
+padding-bottom:5px;
 }
 
-/* page header list item is 23 px with 2px of bottom padding*/
+/* page header list item is 23 px with 2px of bottom padding */
 .page-header li{
-    font: normal 23px Palatino, "Palatino Linotype", serif;
-    padding-bottom: 2px;
+font: normal 23px Palatino, "Palatino Linotype", serif;
+padding-bottom: 2px;
 }
 
-/*blog menu*/
+/* blog menu */
 .blog-entry a{
-    color: #353535;
-	text-decoration: none;
+color: #353535;
+text-decoration: none;
 }
 
 .blog-entry ul{
-    list-style-type: none;    
-    padding-bottom: 0px;
+list-style-type: none;    
+padding-bottom: 0px;
 }
 
 .blog-entry li{
-   padding-bottom: 30px; 
+padding-bottom: 30px; 
 }
 
 .blog-entry li a{
-	font: normal 23px/32px HoeflerText-Regular, 'Hoefler Text', 'Goudy Old Style', 'Palatino', 'Palatino Linotype', serif;
+font: normal 23px/32px HoeflerText-Regular, 'Hoefler Text', 'Goudy Old Style', 'Palatino', 'Palatino Linotype', serif;
 }
 
 .blog-entry li a:hover{
-    color: #E50053;
-    text-decoration: underline;
+color: #28A28D;
+text-decoration: underline;
 }
 
 .blog-entry li span{
-    font: normal 18px Palatino, "Palatino Linotype", serif;
-    font-style: italic;
+font: normal 18px Palatino, "Palatino Linotype", serif;
+font-style: italic;
 }
 
 /*blog title*/
 .blog-header h2{
-    font: normal 50px Palatino, "Palatino Linotype", serif;
-    line-height: 0px;
+font: normal 50px Palatino, "Palatino Linotype", serif;
+line-height: 0px;
 }
 
 .blog-header span{
-    font: normal 22px Palatino, "Palatino Linotype", serif;
-    font-style: italic;
+font: normal 22px Palatino, "Palatino Linotype", serif;
+font-style: italic;
 }
 
+/* Blog table of contents font and list type, add padding between elements */
 .blog-header li{
-    font: normal 23px Palatino, "Palatino Linotype", serif;
-    padding-bottom: 2px;
+font: normal 23px Palatino, "Palatino Linotype", serif;
+padding-bottom: 2px;
 }
-
+/* Blog header font */
 .blog-header p{
-    font: normal 25px Palatino, "Palatino Linotype", serif;
+font: normal 25px Palatino, "Palatino Linotype", serif;
 }
 
-/*Blog article*/
+/*Blog article title font */
 .blog-container h2{
-    font: normal 35px Palatino, "Palatino Linotype", serif;
+font: normal 35px Palatino, "Palatino Linotype", serif;
 }
 
+/* Blog content paragraph font */
 .blog-container p{
-    font: normal 20px Palatino, "Palatino Linotype", serif;
+font: normal 20px Palatino, "Palatino Linotype", serif;
 }
 
+/* Use uppercase letters as list type inside blog */
 .blog-container ol{
-    list-style-type:upper-alpha; 
+list-style-type:upper-alpha; 
 }
 
+/* */
 .blog-container ol li{
     padding-bottom: 5px;
     font: normal 20px Palatino, "Palatino Linotype", serif;
