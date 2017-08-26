@@ -192,7 +192,7 @@ nav ul li a:hover{
  ***************************************************************/
 
 /* inline underline */
-.hover-underline span:hover{
+.hover-underline:hover{
     color: #28A28D;
     transition-delay: 1s fade;
     text-decoration: underline;
