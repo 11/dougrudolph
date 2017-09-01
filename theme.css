@@ -13,14 +13,14 @@ body{
     background-color: #FDFDFD;
     color: #353535;
     font: normal 25px Palatino, "Palatino Linotype", serif;
-    text-rendering: optimizeLegibility;             
+    text-rendering: optimizeLegibility;
     padding-right: 25%;
     padding-left: 25%;
 }
 
 /* make all links pink with no underline */
 a{
-    color: #28A28D;
+    color: #E50053;
     text-decoration: none;
 }
 
@@ -36,7 +36,7 @@ a{
 
 /* on hover, underline the text */
 .title a:hover{
-    color: #28A28D;
+    color: #E50053;
     transition-delay: 1s fade;
     text-decoration: underline;
 }
@@ -50,7 +50,7 @@ nav{
 
 nav ul{
     list-style-type: none;
-} 
+}
 /* force text to be inlined in a list */
 nav ul li{
     display: inline;
@@ -123,12 +123,12 @@ nav ul li a:hover{
 }
 
 .blog-entry ul{
-    list-style-type: none;    
+    list-style-type: none;
     padding-bottom: 0px;
 }
 
 .blog-entry li{
-    padding-bottom: 30px; 
+    padding-bottom: 30px;
 }
 
 .blog-entry li a{
@@ -136,7 +136,7 @@ nav ul li a:hover{
 }
 
 .blog-entry li a:hover{
-    color: #28A28D;
+    color: #E50053;
     text-decoration: underline;
 }
 
@@ -178,7 +178,7 @@ nav ul li a:hover{
 
 /* Use uppercase letters as list type inside blog */
 .blog-container ol{
-    list-style-type:upper-alpha; 
+    list-style-type:upper-alpha;
 }
 
 /* I forget :) */
@@ -193,7 +193,7 @@ nav ul li a:hover{
 
 /* inline underline */
 .hover-underline:hover{
-    color: #28A28D;
+    color: #E50053;
     transition-delay: 1s fade;
     text-decoration: underline;
 }
