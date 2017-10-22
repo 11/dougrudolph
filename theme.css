@@ -116,6 +116,12 @@ nav ul li a:hover{
     padding-bottom: 2px;
 }
 
+/* main webpage text-alignment */
+.home-page-container{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
 /* blog menu */
 .blog-entry a{
     color: #353535;
