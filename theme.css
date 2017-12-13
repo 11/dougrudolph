@@ -235,7 +235,7 @@ nav ul li a:hover{
         text-align: center;
         line-height: 0px;
         float: none;
-        font: normal 120% Palatino, "Palatino Linotype", serif;
+        font: normal 130% Palatino, "Palatino Linotype", serif;
     }
 
     nav ul{
@@ -258,7 +258,7 @@ nav ul li a:hover{
     }
 
     .footer{
-        font: normal 90% Palatino, "Palatino Linotype", serif;
+        font: normal 130% Palatino, "Palatino Linotype", serif;
     }
 
     .blog-entry li a{
