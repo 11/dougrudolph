@@ -206,7 +206,7 @@ nav ul li a:hover{
  ***************************************************************/
 
 /* change the padding to fill the screen on mobile */
-@media screen and (max-width: 700px){
+@media screen and (max-width: 800px){
     body{
         background-color: #FDFDFD;
         color: #353535;
