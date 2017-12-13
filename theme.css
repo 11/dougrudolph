@@ -1,13 +1,3 @@
-/* change the padding to fill the screen on mobile */
-@media screen and (min-width: 600px){
-    body{
-        background-color: #FDFDFD;
-        color: #353535;
-        font: normal 25px Palatino, "Palatino Linotype", serif;
-        text-rendering: optimizeLegibility;
-    }
-}
-
 /* default body template for all webpages */
 body{
     background-color: #FDFDFD;
@@ -67,15 +57,21 @@ nav ul li a:hover{
     text-decoration: underline;
 }
 
+.footer{
+    text-align: center;
+    float: none;
+}
+
 /* remove list details in the footer */
 .footer ul{
     list-style-type: none;
+    padding-left: 0px;
 }
 
 /* display the footer in one line */
 .footer ul li{
     display: inline;
-    padding: 6%;
+    padding: 5%;
 }
 
 /* underline the text in the footer on hover */
@@ -141,14 +137,14 @@ nav ul li a:hover{
     font: normal 23px/32px HoeflerText-Regular, 'Hoefler Text', 'Goudy Old Style', 'Palatino', 'Palatino Linotype', serif;
 }
 
-.blog-entry li a:hover{
-    color: #E50053;
-    text-decoration: underline;
-}
-
 .blog-entry li span{
     font: normal 18px Palatino, "Palatino Linotype", serif;
     font-style: italic;
+}
+
+.blog-entry li a:hover{
+    color: #E50053;
+    text-decoration: underline;
 }
 
 /*blog title*/
@@ -193,6 +189,8 @@ nav ul li a:hover{
     font: normal 20px Palatino, "Palatino Linotype", serif;
 }
 
+
+
 /***************************************************************
  *                         UTILITIES                           *
  ***************************************************************/
@@ -202,4 +200,72 @@ nav ul li a:hover{
     color: #E50053;
     transition-delay: 1s fade;
     text-decoration: underline;
+}
+/***************************************************************
+ *                         MOBILE                              *
+ ***************************************************************/
+
+/* change the padding to fill the screen on mobile */
+@media screen and (max-width: 700px){
+    body{
+        background-color: #FDFDFD;
+        color: #353535;
+        font: normal 150% Palatino, "Palatino Linotype", serif;
+        text-rendering: optimizeLegibility;
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+
+    .header-container{
+        /*position: absolute;*/
+        height: 20%;
+        width: 100%;
+        z-index: -1;
+
+    }
+
+    .title{
+        padding-top: 2%;
+        display: block;
+        text-align: center;
+        font: normal 170% Palatino, "Palatino Linotype", serif;
+    }
+
+    nav{
+        text-align: center;
+        line-height: 0px;
+        float: none;
+    }
+    nav ul{
+        margin-left: 0px;
+        float: none;
+        padding-left: 0px;
+
+    }
+
+    .home-page-container{
+        font: normal 150% Palatino, "Palatino Linotype", serif;
+    }
+
+    .page-header h2{
+        font: normal 300% Palatino, "Palatino Linotype", serif;
+        line-height: 2px;
+    }
+
+    .page-container{
+        font: normal 150% Palatino, "Palatino Linotype", serif;
+    }
+
+    .footer{
+        font: normal 90% Palatino, "Palatino Linotype", serif;
+    }
+
+    .blog-entry li a{
+        font: normal 150% HoeflerText-Regular, 'Hoefler Text', 'Goudy Old Style', 'Palatino', 'Palatino Linotype', serif;
+    }
+
+    .blog-entry li span{
+        font: normal 150% Palatino, "Palatino Linotype", serif;
+        font-style: italic;
+    }
 }
