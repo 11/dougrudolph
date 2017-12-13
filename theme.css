@@ -224,11 +224,9 @@ nav ul li a:hover{
     }
 
     .title{
-        padding-top: 2%;
         display: block;
         text-align: center;
         font: normal 325% Palatino, "Palatino Linotype", serif;
-        line-height: 2%;
     }
 
     nav{
