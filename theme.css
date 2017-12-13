@@ -57,15 +57,21 @@ nav ul li a:hover{
     text-decoration: underline;
 }
 
+.footer{
+    text-align: center;
+    float: none;
+}
+
 /* remove list details in the footer */
 .footer ul{
     list-style-type: none;
+    padding-left: 0px;
 }
 
 /* display the footer in one line */
 .footer ul li{
     display: inline;
-    padding: 6%;
+    padding: 5%;
 }
 
 /* underline the text in the footer on hover */
@@ -204,7 +210,7 @@ nav ul li a:hover{
     body{
         background-color: #FDFDFD;
         color: #353535;
-        font: normal 25px Palatino, "Palatino Linotype", serif;
+        font: normal 150% Palatino, "Palatino Linotype", serif;
         text-rendering: optimizeLegibility;
         padding-right: 5%;
         padding-left: 5%;
@@ -237,4 +243,11 @@ nav ul li a:hover{
 
     }
 
+    .home-page-container{
+        font: normal 150% Palatino, "Palatino Linotype", serif;
+    }
+
+    .footer{
+        font: normal 70% Palatino, "Palatino Linotype", serif;
+    }
 }
