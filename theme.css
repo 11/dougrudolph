@@ -201,6 +201,18 @@ nav ul li a:hover{
     transition-delay: 1s fade;
     text-decoration: underline;
 }
+
+/***************************************************************
+ *                        NIGHT-MODE                           *
+ ***************************************************************/
+.night-mode{
+	background-color: #2DA89C;
+}
+
+.night-mode a{
+    color: #2DA89C;
+}
+
 /***************************************************************
  *                         MOBILE                              *
  ***************************************************************/
@@ -261,7 +273,7 @@ nav ul li a:hover{
         font: normal 130% Palatino, "Palatino Linotype", serif;
     }
     .blog-entry li{
-        padding-bottom: 5%;
+        padding-bottom: 8%;
     }
     .blog-entry li a{
         font: normal 150% HoeflerText-Regular, 'Hoefler Text', 'Goudy Old Style', 'Palatino', 'Palatino Linotype', serif;
@@ -271,6 +283,5 @@ nav ul li a:hover{
         font: normal 150% Palatino, "Palatino Linotype", serif;
         font-style: italic;
     }
-
 
 }
