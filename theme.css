@@ -137,14 +137,14 @@ nav ul li a:hover{
     font: normal 23px/32px HoeflerText-Regular, 'Hoefler Text', 'Goudy Old Style', 'Palatino', 'Palatino Linotype', serif;
 }
 
-.blog-entry li a:hover{
-    color: #E50053;
-    text-decoration: underline;
-}
-
 .blog-entry li span{
     font: normal 18px Palatino, "Palatino Linotype", serif;
     font-style: italic;
+}
+
+.blog-entry li a:hover{
+    color: #E50053;
+    text-decoration: underline;
 }
 
 /*blog title*/
@@ -247,7 +247,25 @@ nav ul li a:hover{
         font: normal 150% Palatino, "Palatino Linotype", serif;
     }
 
+    .page-header h2{
+        font: normal 300% Palatino, "Palatino Linotype", serif;
+        line-height: 2px;
+    }
+
+    .page-container{
+        font: normal 150% Palatino, "Palatino Linotype", serif;
+    }
+
     .footer{
-        font: normal 70% Palatino, "Palatino Linotype", serif;
+        font: normal 90% Palatino, "Palatino Linotype", serif;
+    }
+
+    .blog-entry li a{
+        font: normal 150% HoeflerText-Regular, 'Hoefler Text', 'Goudy Old Style', 'Palatino', 'Palatino Linotype', serif;
+    }
+
+    .blog-entry li span{
+        font: normal 150% Palatino, "Palatino Linotype", serif;
+        font-style: italic;
     }
 }
