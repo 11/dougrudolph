@@ -219,6 +219,8 @@ nav ul li a:hover{
 
 /* change the padding to fill the screen on mobile */
 @media screen and (max-width:1080px){
+
+    /* Adjusting body settings to look better on mobile devices */
     body{
         background-color: #FDFDFD;
         color: #353535;
@@ -228,13 +230,14 @@ nav ul li a:hover{
         padding-left: 5%;
     }
 
+    /* center the header for all pags */
     .header-container{
-        /*position: absolute;*/
         height: 20%;
         width: 100%;
         z-index: -1;
     }
 
+    /* Enlarge title and center it at the top of the screen*/
     .title{
         display: block;
         text-align: center;
@@ -243,6 +246,7 @@ nav ul li a:hover{
         line-height: 1%;
     }
 
+    /* Horizontally centers `nav` */
     nav{
         text-align: center;
         line-height: 0px;
@@ -250,37 +254,47 @@ nav ul li a:hover{
         font: normal 130% Palatino, "Palatino Linotype", serif;
     }
 
+    /* Horizontally centers `nav ul` */
     nav ul{
         margin-left: 0px;
         float: none;
         padding-left: 0px;
     }
 
+    /* Enlarge font by 1.5 times the desktop website */
     .home-page-container{
         font: normal 150% Palatino, "Palatino Linotype", serif;
     }
 
+    /* Increase header font by 3 times the desktop site*/
     .page-header h2{
         font: normal 300% Palatino, "Palatino Linotype", serif;
         line-height: 2px;
     }
 
+    /* Enlarge font by 1.5 times the desktop website */
     .page-container{
         font: normal 150% Palatino, "Palatino Linotype", serif;
     }
 
+    /* Enlarge font by 1.3 times the desktop website */
     .footer{
         font: normal 130% Palatino, "Palatino Linotype", serif;
     }
+
+    /* Add more padding to the blog menu titles*/
     .blog-entry li{
         padding-bottom: 10%;
     }
+
+    /* Increase font inside blog menu */
     .blog-entry li a{
         font: normal 150% HoeflerText-Regular, 'Hoefler Text', 'Goudy Old Style', 'Palatino', 'Palatino Linotype', serif;
     }
 
+    /* Increase font for blog description */
     .blog-entry li span{
-        font: normal 150% Palatino, "Palatino Linotype", serif;
+        font: normal 130% Palatino, "Palatino Linotype", serif;
         font-style: italic;
     }
 
