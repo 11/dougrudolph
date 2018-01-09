@@ -4,6 +4,7 @@
 
 
 ### File Structure
+'''
 .
 ├── about.html
 ├── blog-menu.html
@@ -26,3 +27,4 @@
 ├── static
 │   └── js
 └── theme.css
+'''
