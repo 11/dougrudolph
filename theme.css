@@ -230,14 +230,13 @@ nav ul li a:hover{
         padding-left: 5%;
     }
 
-    /* center the header for all pags */
+    /* center the header for all pages */
     .header-container{
-        height: 20%;
         width: 100%;
         z-index: -1;
     }
 
-    /* Enlarge title and center it at the top of the screen*/
+    /* Enlarge title and center it at the top of the screen */
     .title{
         display: block;
         text-align: center;
