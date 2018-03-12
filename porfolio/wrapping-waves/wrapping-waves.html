@@ -1,0 +1,116 @@
+<!--
+Hello, my name is Doug Rudolph, and I'm a proud user of:
+
+                   #
+  ######          ###
+    ##             #
+    ##         ###    ### ####   ###    ###  ##### #####
+    ##        #  ##    ###    ##  ##     ##    ##   ##
+    ##       #   ##    ##     ##  ##     ##      ###
+    ##          ###    ##     ##  ##     ##      ###
+    ##       # ###     ##     ##  ##     ##     ## ##
+    ##      ## ### #   ##     ##  ###   ###    ##   ##
+  ############  ###   ####   ####   #### ### ##### #####
+
+This website was entirely developed using open-source software.
+
+Credit & Inspiration:
+    - The light & dark colorscheme (ie. Solarized) was entirely created by Ethan Schoonover.
+      Please go checkout his site if enjoy you enjoy the light and dark themes: http://ethanschoonover.com/solarized
+
+    - The layout for this site is heavily inspired by https://vimawesome.com. I do not take
+      any form of credit for the creation of the original works, and admit to the modification
+      of said site.
+
+    - The neutral/default theme for this site is 100% my own and give full permission for
+      others to to use and or edit as they please. All I ask upon use is credit to the
+      original websites that designed these themes, as w:ell as myself for the use
+      of my default theme.
+
+And of course, thanks for visiting :)
+-->
+
+<html>
+    <head>
+        <title> Wrapping Waves</title>
+        <link rel="stylesheet" type="text/css" href="wrapping-waves.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="shortcut icon" href="./imgs/dc-icon.png" type="image/png"/>
+        <script type="text/javascript" src="wrapping-waves.js"></script>
+    </head>
+
+    <body>
+        <!-- Bio / Info -->
+        <div class="profile">
+            <div class="header">
+                <a href="../../index.html"> <span class="cyan">Douglas</span>Codes </a>
+            </div>
+
+            <div class="bio">
+                <div class="bio-top">
+                    Hello I'm Doug
+                </div>
+                <div class="bio-mid">
+                    and
+                </div>
+                <div class="bio-btm">
+                     I like to code
+                </div>
+            </div>
+
+            <div class="links">
+                <ul>
+                    <li class="bl-red"> <a href="#link"> Next Blog </a> </li>
+                    <li class="bl-yellow" ><a href="https://github.com/11" target="tab"> Github </a> </li>
+                    <li class="bl-green"> <a href="https://twitter.com/doug_rudolph" target="tab"> Twitter </a> </li>
+                    <li class="bl-cyan"> <a href="https://www.linkedin.com/in/dougjrudolph/" target="tab"> LinkedIn  </a> </li>
+                    <li class="bl-blue"> <a href="mailto:dougl@srudolph.ninja?Subject=Hello" target="top"> Email </a> </li>
+                    <li class="bl-purple"> <a href="http://www.dougrudolph.com/resume.pdf" target="tab"> Resume </a> </li>
+                    <li class="bl-magenta"> <a href="#link"> About </a> </li>
+                </ul>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <p class="tag bg-purple"> Wrapping Waves </p>
+                <p class="title"> <span class="date"> February 4, 2018 </span> </p>
+                <p class="description"> Illusion of alternating sine and cosine waves within 2D space.</p>
+            </div>
+        </div>
+
+        <!-- Begin Content Here -->
+        <canvas id="sin-waves-canvas"></canvas>
+        <!-- End content here -->
+
+        <div class="blog-container">
+            <br/> <hr> <br/>
+            <span class="blog-title"> Wrapping Waves </span>
+            <p>
+                Okay, so I lied in the last blog. For this animation, I ended up using vanilla JavaScript again, and the
+                overall experience, to my surprise, was enjoyable. Rather than having to constantly search the internet to
+                port my knowledge from one language to another, I was able to find that zen like state of mind. It has been awhile since
+                I have been able to completely focus on nothing but the problem in front of me. It was nice to see that a
+                lot of what I learned from the first project carried over.
+            </p>
+            <p>
+                As for the project itself, my goal with this animation was to make it feel like a sine and cosine wave are
+                wrapping around each other in 2D space. Rather than creating an actual 3D environment, I felt that I could
+                rely on the illusion of creating depth through changing the radius of the each circle. By shrinking the
+                radius as each particle goes up, and enlarging the radius as a given particle goes down, the outcome
+                is as if the 2D scene has depth of field.
+            </p>
+            <p>
+                What’s kind of interesting is that through this, I found out that the illusion for some people is
+                immediately noticeable, and for others, takes some time to really see. What’s also cool is once you
+                see it, you can change the direction the waves are rotating in.
+            </p>
+            <p>
+                Anyways, this post was more of quick update, rather than a showing off my larger creative ideas.
+            </p>
+            <p>
+                And as before, stay tuned for the next post.
+            </p>
+            <br/> <hr/> <br/>
+        </div>
+    </body>
+</html>
