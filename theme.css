@@ -189,6 +189,12 @@ nav ul li a:hover{
     font: normal 20px Palatino, "Palatino Linotype", serif;
 }
 
+.blog-container img{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
 
 
 /***************************************************************
