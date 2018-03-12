@@ -1,7 +1,9 @@
+var canvas;
+
 window.onload = function(){
-    var canvas = document.getElementById('sin-waves-canvas');
-    canvas.width = window.innerWidth  * .7 * .95;
-    canvas.height = window.innerHeight * .5;
+    canvas = document.getElementById('sin-waves-canvas');
+    canvas.width = window.innerWidth  * .49;
+    canvas.height = window.innerHeight * .4;
     var ctx = canvas.getContext("2d");
 
     //NODE CLASS
@@ -83,3 +85,8 @@ window.onload = function(){
     }
     setInterval(run, 16);
 };
+
+window.addEventListener("resize", function() {
+    canvas.width = window.innerWidth * .49;
+});
+

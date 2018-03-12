@@ -121,7 +121,5 @@ window.onload  = function(){
 }
 
 window.addEventListener("resize", function() {
-        console.log('change');
-        canvas.width = window.innerWidth * .49;
-    });
-
+    canvas.width = window.innerWidth * .49;
+});
