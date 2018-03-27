@@ -176,6 +176,8 @@ nav ul li a:hover{
 /* Blog content paragraph font */
 .blog-container p{
     font: normal 20px Palatino, "Palatino Linotype", serif;
+    line-height: 1.4;
+    letter-spacing: .2px;
 }
 
 /* Use uppercase letters as list type inside blog */
