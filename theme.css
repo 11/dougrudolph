@@ -271,7 +271,7 @@ nav ul li a:hover{
 
     /* Enlarge font by 1.5 times the desktop website */
     .home-page-container{
-        font: normal 150% Palatino, "Palatino Linotype", serif;
+        font: normal 50px Palatino, "Palatino Linotype", serif;
     }
 
     /* Increase header font by 3 times the desktop site*/
