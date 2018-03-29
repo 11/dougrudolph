@@ -241,7 +241,7 @@ nav ul li a:hover{
 
     /* center the header for all pages */
     .header-container{
-        font: 40px;
+        font: 50px;
         width: 100%;
         z-index: -1;
     }
