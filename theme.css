@@ -163,6 +163,7 @@ nav ul li a:hover{
     font: normal 23px Palatino, "Palatino Linotype", serif;
     padding-bottom: 2px;
 }
+
 /* Blog header font */
 .blog-header p{
     font: normal 25px Palatino, "Palatino Linotype", serif;
@@ -287,6 +288,36 @@ nav ul li a:hover{
     /* Enlarge font by 1.3 times the desktop website */
     .footer{
         font: normal 130% Palatino, "Palatino Linotype", serif;
+    }
+
+    /*blog title*/
+    .blog-header h2{
+        font: normal 60px Palatino, "Palatino Linotype", serif;
+    }
+
+    .blog-header span{
+        font: normal 40px Palatino, "Palatino Linotype", serif;
+        font-style: italic;
+    }
+
+    /* Blog header font */
+    .blog-header p{
+        font: normal 50px Palatino, "Palatino Linotype", serif;
+    }
+
+    /* Blog table of contents font and list type, add padding between elements */
+    .blog-header li{
+        font: normal 40px Palatino, "Palatino Linotype", serif;
+    }
+
+    /*Blog article title font */
+    .blog-container h2{
+        font: normal 50px Palatino, "Palatino Linotype", serif;
+    }
+
+    /* Increase size of paragraph font */
+    .blog-container p{
+        font: normal 40px Palatino, "Palatino Linotype", serif;
     }
 
     /* Add more padding to the blog menu titles*/
