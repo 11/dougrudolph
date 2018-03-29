@@ -328,12 +328,12 @@ nav ul li a:hover{
 
     /* Increase font inside blog menu */
     .blog-entry li a{
-        font: normal 150% HoeflerText-Regular, 'Hoefler Text', 'Goudy Old Style', 'Palatino', 'Palatino Linotype', serif;
+        font: normal 60px HoeflerText-Regular, 'Hoefler Text', 'Goudy Old Style', 'Palatino', 'Palatino Linotype', serif;
     }
 
     /* Increase font for blog description */
     .blog-entry li span{
-        font: normal 130% Palatino, "Palatino Linotype", serif;
+        font: normal 40px Palatino, "Palatino Linotype", serif;
         font-style: italic;
     }
 
