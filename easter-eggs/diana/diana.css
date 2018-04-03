@@ -1,0 +1,21 @@
+body{
+    font: "Palatino Linotype", serif;
+}
+
+.timer-list{
+    padding-left: 20%;
+    padding-top: 10%;
+
+}
+
+.timer-list .timer{
+    padding-bottom: 15px;
+}
+
+.timer{
+    font-size: 50px;
+}
+
+.highlight{
+    color: #E50053;
+}
