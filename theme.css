@@ -321,9 +321,16 @@ nav ul li a:hover{
         font: normal 40px Palatino, "Palatino Linotype", serif;
     }
 
+    /* centering the list on mobile */
+    .blog-entry{
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
     /* Add more padding to the blog menu titles*/
     .blog-entry li{
-        padding-bottom: 10%;
+        padding-top: 5%;
+        padding-bottom: 5%;
     }
 
     /* Increase font inside blog menu */
