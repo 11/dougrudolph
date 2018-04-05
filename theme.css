@@ -14,6 +14,13 @@ a{
     text-decoration: none;
 }
 
+/* on hover, underline the text */
+a:hover{
+    color: #E50053;
+    transition-delay: 1s fade;
+    text-decoration: underline;
+}
+
 /* title is inline block to allow nav to be on the top bar as well, also has custom font */
 .title{
     display: inline-block;
@@ -22,13 +29,6 @@ a{
 /* hot pink color for all links */
 .title a{
     color: #353535;
-}
-
-/* on hover, underline the text */
-.title a:hover{
-    color: #E50053;
-    transition-delay: 1s fade;
-    text-decoration: underline;
 }
 
 nav{
@@ -52,11 +52,6 @@ nav ul li .nav-pad{
     padding-left: 4px;
 }
 
-/* draw a line when hovering over anything in the nav */
-nav ul li a:hover{
-    text-decoration: underline;
-}
-
 .footer{
     text-align: center;
     float: none;
@@ -72,11 +67,6 @@ nav ul li a:hover{
 .footer ul li{
     display: inline;
     padding: 5%;
-}
-
-/* underline the text in the footer on hover */
-.footer ul li a:hover{
-    text-decoration: underline;
 }
 
 /* custom font for anything inside a page container */
@@ -198,8 +188,6 @@ nav ul li a:hover{
     margin-right:auto;
 }
 
-
-
 /***************************************************************
  *                         UTILITIES                           *
  ***************************************************************/
@@ -209,6 +197,16 @@ nav ul li a:hover{
     color: #E50053;
     transition-delay: 1s fade;
     text-decoration: underline;
+}
+
+.inline-code{
+    background-color: #EDEDED;
+    padding: 5px 5px 5px 5px;
+}
+
+code{
+    background-color: #EDEDED;
+    padding: 5px 5px 5px 5px;
 }
 
 /***************************************************************
