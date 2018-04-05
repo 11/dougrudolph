@@ -26,9 +26,13 @@ a:hover{
     display: inline-block;
     font: normal 27px Palatino, "Palatino Linotype", serif;
 }
-/* hot pink color for all links */
+
 .title a{
     color: #353535;
+}
+
+.title a:hover{
+    color: #E50053;
 }
 
 nav{
