@@ -168,11 +168,25 @@ nav ul li .nav-pad{
     font: normal 35px Palatino, "Palatino Linotype", serif;
 }
 
-/* Blog content paragraph font */
+/*List blog article list element font*/
+.blog-container h3{
+    font: normal 26px Palatino, "Palatino Linotype", serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+/*Blog content paragraph font */
 .blog-container p{
     font: normal 20px Palatino, "Palatino Linotype", serif;
     line-height: 1.4;
     letter-spacing: .2px;
+}
+
+/*Blog minimal top padding*/
+/*Used on p tags for a list type look, without using li or ol tags*/
+.blog-container .list-paragraph{
+    padding-top: 0px;
+    margin-top: 5px;
 }
 
 /* Use uppercase letters as list type inside blog */
@@ -203,19 +217,32 @@ nav ul li .nav-pad{
     text-decoration: underline;
 }
 
-.inline-code{
-    background-color: #EDEDED;
-    padding: 5px 5px 5px 5px;
-}
-
 code{
     border-radius: 3px;
     background-color: #f7f7f9;
-    border: 1px solid #e1e1e8;;
+    border: 1px solid #e1e1e8;
     padding: 2px 2px 2px 2px;
-    font-family: Monaco,Menlo,Consolas,"Courier New",monospace!important;
+    font-family: monaco, menlo, consolas, "courier new", monospace!important;
     color: #E50053;
     font-size: 1.0rem;
+}
+
+div .code-block{
+    border-radius: 3px;
+    background-color: #F7F7F9;
+    border: 1px solid #E1E1E8;
+    padding: 2px 2px 2px 2px;
+    font-family: monaco, menlo, consolas, "courier new", monospace!important;
+    color: #333;
+    font-size: 1.0rem;
+}
+
+span .keyword{
+    color: #E50053;
+}
+
+span .comment{
+    color: #D7D6D5;
 }
 
 /***************************************************************

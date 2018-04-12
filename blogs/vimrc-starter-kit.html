@@ -1,0 +1,167 @@
+<!-- Author: Douglas Rudolph -->
+<!-- File:   why-vim-part-one.html -->
+<!-- Date:   June 13th, 2017 -->
+<!-- About:  Personal website blog -->
+
+<html>
+    <head>
+        <title> Blog - Doug Rudolph </title>
+        <link rel="stylesheet"
+              type="text/css"
+              href="../theme.css"
+              media="screen"
+              charset="utf-8"/>
+    </head>
+
+    <body>
+        <div class="header-container">
+            <!-- Title -->
+            <div class="title">
+                <p><a href="../index.html"> Doug Rudolph </a></p>
+            </div>
+
+            <!-- Navbar -->
+            <nav>
+                <ul>
+                    <li><a href="../blog-menu.html"> blog </a><span class="nav-pad">-</span></li>
+                    <li><a href="../portfolio-menu.html"> portfolio </a><span class="nav-pad">-</span></li>
+                    <li><a href="../about.html"> about </a><span class="nav-pad">-</span></li>
+                    <li><a href="../Doug_Rudolph_Resume.pdf" target="tab"> résumé/cv </a></li>
+                </ul>
+            </nav>
+        </div>
+        <hr/>
+
+        <!-- Blog list -->
+        <div class="blog-header">
+            <h2>Vimrc Starter Kit</h2>
+            <span>Posted on April 11th, 2018</span>
+            <p>
+				I can go on for hours about how intricate vim settings can get, but when searching the internet about
+                creating a bare-bones <code>.vimrc</code>, I couldn't find a single article. So here's a brief list of
+                things to get your <code>.vimrc</code> started.
+			</p>
+            <ol>
+                <li><a href="#settings-list">Starter Kit</a></li>
+                <li><a href="#example-vimrc">Example Raw .vimrc File</a></li>
+            </ol>
+        </div>
+        <hr/>
+
+        <!-- Blog article -->
+        <div class="blog-container">
+            <div id="settings-list">
+                <h2> Starter kit</h2>
+                <h3>Line Numbers: <code>set number</code></h3>
+                <p class="list-paragraph">
+                    Turns on line numbers - a feature that is always necessary.
+                </p>
+
+                <h3>Mouse Navigation: <code>set mouse=a</code></h3>
+                <p class="list-paragraph">
+                    Allows for mouse control that is similar to other GUI editors.
+                </p>
+
+                <h3>Syntax Highlighting: <code>syntax on</code></h3>
+                <p class="list-paragraph">
+                    Turns on syntax highlighting.
+                </p>
+
+                <h3>Set cursorline: <code>set cursorline</code></h3>
+                <p class="list-paragraph">
+                    Highlights the line your cursor is on.
+                </p>
+
+                <h3>Tab length: <code>set tabstop=4</code></h3>
+                <p class="list-paragraph">
+                Sets tab length to four characters. <code>set tabstop=2</code> is also good if you indent a lot.
+                </p>
+
+                <h3>Auto Indenting: <code>set autoindent</code></h3>
+                <p class="list-paragraph">
+                    Autmoatically indents proper amount while inside a block of code.
+                </p>
+
+                <h3>Tabs &amp; Spaces: <code>set expandtab</code></h3>
+                <p class="list-paragraph">
+                    Make all tabs use spaces, rather than a different character.
+                </p>
+
+                <h3>Line Measure: <code>set colorcolumn 100</code></h3>
+                <p class="list-paragraph">
+                    Adds line Measure at the 100th character mark.
+                </p>
+
+                <h3>Realtime Highlight search: <code>set incrsearch</code> <code> set hlsearch</code></h3>
+                <p class="list-paragraph">
+                    <code>set incrseach</code> will highlight code as you search for a phrase, but won't keep the phrase
+                    highlighted after you're done searching. Thus, using <code>set hlsearch</code> allows the search
+                    phrase to say highlighted after you exit search mode. Turning on both settings creates for a normal
+                    feeling search.
+                </p>
+
+                <h3>Non-case Sensistive Commands: <code>command Wq wq</code></h3>
+                <p class="list-paragraph">
+                    When trying to save in vim, you normally must type <code>:w</code>. Similarly, to save and quit, you
+                    must type <code>:wq</code>. If you're as bad at typing as I am, then allowing for <code>:w</code> to
+                    become <code>:W</code> and <code>:wq</code> to become <code>:WQ</code> (and or <code>:Wq</code>)
+                    will make those frustrating moments slightly less infuriating.
+                </p>
+            </div>
+
+            <hr/>
+
+            <div id="example-vimrc">
+                <h2> Example Raw .vimrc File</h2>
+                <div class="code-block"><pre>
+<span class="commen">" Author: Your Name</span>
+" File: .vimrc
+
+" turn on line numbers
+<span class="keyword">set</span> number
+
+" turn on mouse
+set mouse=a
+
+" turn on syntax highlighting
+syntax on
+
+" highlight the line your cursor is on
+set cursorline
+
+" set tab length to 4
+set tabstop=4
+
+" autoindent inside code blocks
+set autoindent
+
+" make all tabs spaces
+set expandtab
+
+" line measure at character 100
+set colorcolumn 100
+
+" highlight search
+set incsearch
+set hlsearch
+
+" non-case sensitive saving &amp; quit commands
+command WQ wq
+command Wq wq
+command W w
+command Q q</pre></div>
+
+            </div>
+        </div>
+        <hr/>
+        <!-- Footer -->
+        <div class="footer">
+            <ul>
+                <li><i><a href="mailto:dougl@srudolph.ninja?Subject=Hello" target="_top"> Email </a></i></li>
+                <li><i><a href="https://linkedin.com/in/dougjrudolph" target="tab"> LinkedIn</a></i></li>
+                <li><i><a href="https://github.com/11" target="tab"> Github </a></i></li>
+                <li><i><a href="https://twitter.com/doug_rudolph" target="tab"> Twitter </a></i></li>
+            </ul>
+        </div>
+    </body>
+</html>
