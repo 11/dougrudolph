@@ -30,7 +30,7 @@ function timer(msg, elementId, countDownDate){
     }
 
 window.onload = function(){
-    timer("Next visit: ", "NV", "April 13, 2018 19:30:00");
+    timer("Next visit: ", "NV", "Apr 20, 2018 19:30:00");
     timer("10 Months: ", "MA", "May 3, 2018 12:00:00");
     timer("1 Year: ", "OY", "Aug 3, 2018 12:00:00");
     timer("End of semester: ", "EOS", "May 9, 2018 15:37:25");
