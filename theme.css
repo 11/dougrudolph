@@ -144,7 +144,7 @@ nav ul li .nav-pad{
 
 /*blog title*/
 .blog-header h2{
-    font: normal 50px Palatino, "Palatino Linotype", serif;
+    font: normal 70px Palatino, "Palatino Linotype", serif;
     line-height: 0px;
 }
 
@@ -166,7 +166,8 @@ nav ul li .nav-pad{
 
 /*Blog article title font */
 .blog-container h2{
-    font: normal 35px Palatino, "Palatino Linotype", serif;
+    font: normal 50px Palatino, "Palatino Linotype", serif;
+    padding-top: 15px;
 }
 
 /*List blog article list element font*/
