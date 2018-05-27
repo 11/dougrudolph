@@ -73,9 +73,11 @@ nav ul li .nav-pad{
     padding: 5%;
 }
 
-/* custom font for anything inside a page container */
+/* main webpage text-alignment */
 .page-container{
     font: normal 25px Palatino, "Palatino Linotype", serif;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 /* make headers in page container custom font size */
@@ -106,8 +108,7 @@ nav ul li .nav-pad{
     padding-bottom: 2px;
 }
 
-/* main webpage text-alignment */
-.home-page-container{
+.blog-entry{
     padding-left: 10%;
     padding-right: 10%;
 }
@@ -120,6 +121,7 @@ nav ul li .nav-pad{
 
 .blog-entry ul{
     list-style-type: none;
+    padding-left: 0px;
     padding-bottom: 0px;
 }
 
