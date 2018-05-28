@@ -62,7 +62,7 @@ And of course, thanks for visiting :)
             <h2>Rippling Grid</h2>
             <span>Posted on May 27th, 2018</span>
             <p>
-                A brief description will go here
+                Rippling effect based on a waving flag
             </p>
         </div>
         <hr/>
@@ -73,7 +73,58 @@ And of course, thanks for visiting :)
 
         <hr/>
         <div class="blog-container">
-            <p> things will happen in here also </p>
+            <p>
+                So because it is memorial day, I was thinking about a new animation to code with the extra day off
+                from work; and because Google is showing a waving American Flag as the banner to Google searches,
+                I decided to create a rippling flag effect.
+            </p>
+
+            <img src="./imgs/mem-day.png" alt="memorial day" align="middle" width="80%"/>
+
+            <p>
+                Now granted, the animation is slightly off, at least I think it is, but nonetheless, the animation was fun to code.
+                Something worth mentioning is that while a lot of the code I used was boilerplate code that I recycled from my previous projects,
+                trying to figure out an elegant solution to giving each node's radius an offset in size was pretty tricky.
+            </p>
+
+            <p>
+                In order to create the offset, I used a fun modulus arithmetic trick:
+            </p>
+
+            <div class="code-block"><pre>
+//iterate over columns
+for(var i = 0; i < this.size; i++){
+
+    // array that has a given row of nodes appended to it
+    var row = [];
+
+    //iterate over rows
+    for(var j = 0; j < this.size; j++){
+
+        // increase the radius for every node by 1
+        // once we have inserted this.size amount of nodes, reset the radius back to 1
+        radius_delta = (radius_delta + 1) % (size-1);
+
+        //append node
+        row.push(new Node(h_center + i*node_displacement,
+                    v_center + j*node_displacement,
+                    radius_delta));
+    }
+
+    // add array of nodes to grid
+    this.nodes.push(row);
+}</pre></div>
+
+
+            <p>
+                As the code shows, the trick I use applies the <code>mod</code> operator in order to limit the max size of the radius.
+                By ensuring a given node's radius is never larger than a certain value - in this case, that value is <code>this.size - 1</code>,
+                the outcome is this offset of varying radii that seem to wrap the grid.
+            </p>
+
+            <p>
+                Thanks for viewing, and as always, until next time :)
+            </p>
             <hr/>
         </div>
 		<!-- Footer -->
