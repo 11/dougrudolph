@@ -17,7 +17,7 @@ window.onload  = function(){
             this.radius = radius;
             this.color = "#F0F0F0";
 
-            this.max_radius = 10;
+            this.max_radius = 12;
             this.min_radius = 1;
             this.radius_delta = 1;
         }
@@ -46,18 +46,27 @@ window.onload  = function(){
     // GRID CLASS
     class Grid{
 
-        constructor(width, height){
-            this.width = width;
-            this.height = height;
-
+        constructor(size){
+            this.size = size;
             this.nodes = [];
 
-            for(var i = 0; i < this.width; i++){
+            //INIT WAVE INSIDE GRID var stk
 
-                // create temp row of nodes
+            var node_displacement = 25;
+            var radius_delta = 1;
+
+            var grid_width = (size-1) * node_displacement;
+            var grid_height = grid_width;
+            var h_center = canvas.width /2 - grid_width/2;
+            var v_center = canvas.height/2 - grid_height/2;
+
+            for(var i = 0; i < this.size; i++){
                 var row = [];
-                for(var j = 0; j < this.height; j++){
-                    row.push(new Node(i*10, j*10, 2));
+                for(var j = 0; j < this.size; j++){
+                    radius_delta = (radius_delta + 1) % (size-1);
+                    row.push(new Node(h_center + i*node_displacement,
+                                v_center + j*node_displacement,
+                                radius_delta));
                 }
 
                 // add array of nodes to grid
@@ -66,16 +75,16 @@ window.onload  = function(){
         }
 
         draw(){
-            for(var i = 0; i < this.width; i++){
-                for(var j = 0; j < this.height; j++){
+            for(var i = 0; i < this.size; i++){
+                for(var j = 0; j < this.size; j++){
                     this.nodes[i][j].draw()
                 }
             }
         }
 
         update(){
-            for(var i = 0; i < this.width; i++){
-                for(var j = 0; j < this.height; j++){
+            for(var i = 0; i < this.size; i++){
+                for(var j = 0; j < this.size; j++){
                     this.nodes[i][j].update()
                 }
             }
@@ -83,7 +92,7 @@ window.onload  = function(){
     }
 
 
-    var grid = new Grid(20, 20);
+    var grid = new Grid(12);
 
     //runs the node simulation
     function run()
@@ -96,7 +105,7 @@ window.onload  = function(){
         grid.draw();
     }
 
-    setInterval(run, 35);
+    setInterval(run, 40);
 }
 
 // changes the size of the canvas
