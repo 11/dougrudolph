@@ -35,16 +35,27 @@ window.onload  = function(){
     class Bar{
 
         constructor(x){
+            // x location
             this.x = x;
-            this.speed = 1;
-            this.top_y_diff = 100;
-            this.bottom_y_diff = 100;
 
+            // speed at which the bar grows and shrinks
+            this.speed = 1;
+
+            // offset of radians for a given bar
+            this.top_radian = 0;
+            this.bottom_radian = Math.PI;
+
+            // y value for each node in a bar
+            this.start_val = canvas.height / 2;
+            this.top_y_diff = this.start_val + Math.cos(this.top_radian) * 50;
+            this.bottom_y_diff = this.start_val + Math.cos(this.bottom_radian) * 50;
+
+            // nodes that are apart of
             this.node_top = new Node(this.x, this.top_y_diff, 7);
             this.node_bottom = new Node(this.x, this.bottom_y_diff, 7);
 
-            this.rippling_up = true;
-            this.radian
+            // sets color of line to white
+            this.color = "#F0F0F0";
         }
 
         draw(){
@@ -52,14 +63,21 @@ window.onload  = function(){
             this.node_bottom.draw();
 
             ctx.beginPath();
+            ctx.strokeStyle = this.color;
             ctx.moveTo(this.x, this.top_y_diff);
             ctx.lineTo(this.x, this.bottom_y_diff);
             ctx.stroke();
         }
 
         update(){
+            this.top_radian -= 0.05;
+            this.top_y_diff = this.start_val + Math.cos(this.top_radian) * 50;
 
-            this.y = Math.cos(this.radianDelta) * 50
+            this.bottom_radian += .05;
+            this.bottom_y_diff = this.start_val + Math.cos(this.bottom_radian) * 50;
+
+            this.node_top.update(this.top_y_diff);
+            this.node_bottom.update(this.bottom_y_diff);
         }
     }
 
