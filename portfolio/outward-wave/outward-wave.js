@@ -34,7 +34,7 @@ window.onload  = function(){
 
     class Bar{
 
-        constructor(x){
+        constructor(x, radian_delta){
             // x location
             this.x = x;
 
@@ -42,8 +42,8 @@ window.onload  = function(){
             this.speed = 1;
 
             // offset of radians for a given bar
-            this.top_radian = 0;
-            this.bottom_radian = Math.PI;
+            this.top_radian = 0 - radian_delta;
+            this.bottom_radian = Math.PI + radian_delta;
 
             // y value for each node in a bar
             this.start_val = canvas.height / 2;
@@ -85,9 +85,12 @@ window.onload  = function(){
 
         constructor(){
             this.waves = [];
+            var waves_length = 15*30;
+            var start_pos = canvas.width/2 - waves_length/2;
+
             for(var i = 0; i < 30; i++){
-                var x_val = i*10;
-                var bar = new Bar(x_val);
+                var x_val = start_pos + i*15;
+                var bar = new Bar(x_val, i*10);
                 this.waves.push(bar);
             }
         }
