@@ -47,8 +47,8 @@ window.onload  = function(){
 
             // y value for each node in a bar
             this.start_val = canvas.height / 2;
-            this.top_y_diff = this.start_val + Math.cos(this.top_radian) * 50;
-            this.bottom_y_diff = this.start_val + Math.cos(this.bottom_radian) * 50;
+            this.top_y_diff = this.start_val + Math.cos(this.top_radian) * 100;
+            this.bottom_y_diff = this.start_val + Math.cos(this.bottom_radian) * 100;
 
             // nodes that are apart of
             this.node_top = new Node(this.x, this.top_y_diff, 7);
@@ -81,8 +81,30 @@ window.onload  = function(){
         }
     }
 
+    class Waves{
 
-    var b = new Bar(100);
+        constructor(){
+            this.waves = [];
+            for(var i = 0; i < 30; i++){
+                var x_val = i*10;
+                var bar = new Bar(x_val);
+                this.waves.push(bar);
+            }
+        }
+        draw(){
+            for(var i = 0; i < this.waves.length; i++){
+                this.waves[i].draw()
+            }
+        }
+        update(){
+            for(var i = 0; i < this.waves.length; i++){
+                this.waves[i].update()
+            }
+        }
+    }
+
+
+    var waves = new Waves();
 
     //runs the node simulation
     function run() {
@@ -90,9 +112,10 @@ window.onload  = function(){
         ctx.clearRect(0,0,canvas.width, canvas.height);
 
         //UPDATE - update the position of all the nodes
-        b.update();
+        waves.update()
+
         //RENDER - render the updated position of all the
-        b.draw();
+        waves.draw();
     }
 
     setInterval(run, 15);
