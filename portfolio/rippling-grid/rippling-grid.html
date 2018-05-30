@@ -76,7 +76,7 @@ And of course, thanks for visiting :)
             <p>
                 So because it is memorial day, I was thinking about a new animation to code with the extra day off
                 from work; and because Google is showing a waving American Flag as the banner to Google searches,
-                I decided to create a rippling flag effect.
+                I decided to create a rippling grid effect inspired by a waving flag.
             </p>
 
             <img src="./imgs/mem-day.PNG" alt="memorial day" align="middle" width="80%"/>
@@ -102,7 +102,8 @@ for(var i = 0; i < this.size; i++){
     for(var j = 0; j < this.size; j++){
 
         // increase the radius for every node by 1
-        // once we have inserted this.size amount of nodes, reset the radius back to 1
+        // once we have inserted this.size amount of nodes,
+        // reset the radius back to 1
         radius_delta = (radius_delta + 1) % (size-1);
 
         //append node
