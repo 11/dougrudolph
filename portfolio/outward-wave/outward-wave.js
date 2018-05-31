@@ -34,7 +34,7 @@ window.onload  = function(){
 
     class Bar{
 
-        constructor(x, radian_delta){
+        constructor(x, radian_delta, height_delta){
             // x location
             this.x = x;
 
@@ -44,11 +44,12 @@ window.onload  = function(){
             // offset of radians for a given bar
             this.top_radian = 0 - radian_delta;
             this.bottom_radian = Math.PI + radian_delta;
+            this.height_delta = height_delta;
 
             // y value for each node in a bar
             this.start_val = canvas.height / 2;
-            this.top_y_diff = this.start_val + Math.cos(this.top_radian) * 100;
-            this.bottom_y_diff = this.start_val + Math.cos(this.bottom_radian) * 100;
+            this.top_y_diff = this.start_val + Math.cos(this.top_radian) * this.height_delta;
+            this.bottom_y_diff = this.start_val + Math.cos(this.bottom_radian) * this.height_delta;
 
             // nodes that are apart of
             this.node_top = new Node(this.x, this.top_y_diff, 7);
@@ -71,10 +72,10 @@ window.onload  = function(){
 
         update(){
             this.top_radian -= 0.05;
-            this.top_y_diff = this.start_val + Math.cos(this.top_radian) * 50;
+            this.top_y_diff = this.start_val + Math.cos(this.top_radian) * this.height_delta;
 
             this.bottom_radian += .05;
-            this.bottom_y_diff = this.start_val + Math.cos(this.bottom_radian) * 50;
+            this.bottom_y_diff = this.start_val + Math.cos(this.bottom_radian) * this.height_delta ;
 
             this.node_top.update(this.top_y_diff);
             this.node_bottom.update(this.bottom_y_diff);
@@ -84,13 +85,25 @@ window.onload  = function(){
     class Waves{
 
         constructor(){
-            this.waves = [];
-            var waves_length = 15*30;
+            // used to horizontally center wave animation
+            var wave_amount = 35
+            var waves_length = 15 * wave_amount ;
             var start_pos = canvas.width/2 - waves_length/2;
 
-            for(var i = 0; i < 30; i++){
+            // keeps track height of the waves
+            var height_delta = 20;
+
+            this.waves = [];
+            for(var i = 0; i < wave_amount; i++){
+                if(i < wave_amount / 2){
+                    height_delta += 2;
+                }
+                else{
+                    height_delta -= 2;
+                }
+
                 var x_val = start_pos + i*15;
-                var bar = new Bar(x_val, i*10);
+                var bar = new Bar(x_val, i*10, height_delta);
                 this.waves.push(bar);
             }
         }
@@ -105,7 +118,6 @@ window.onload  = function(){
             }
         }
     }
-
 
     var waves = new Waves();
 
