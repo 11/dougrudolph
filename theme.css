@@ -215,6 +215,15 @@ nav ul li .nav-pad{
  *                         UTILITIES                           *
  ***************************************************************/
 
+#scroll-bar{
+    background-color: #E50053;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 2px;
+    z-index: 100;
+}
+
 /* inline underline */
 .hover-underline:hover{
     color: #E50053;
