@@ -220,7 +220,7 @@ nav ul li .nav-pad{
     position: fixed;
     top: 0;
     left: 0;
-    height: 2px;
+    height: 3px;
     z-index: 100;
 }
 
