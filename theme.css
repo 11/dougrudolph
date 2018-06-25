@@ -277,6 +277,14 @@ span .comment{
 /* change the padding to fill the screen on mobile */
 @media screen and (max-width:1080px){
 
+    #scroll-bar{
+        background-color: #E50053;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 6px;
+        z-index: 100;
+    }
     code{
         font-size: 30px;
     }
