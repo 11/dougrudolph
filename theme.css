@@ -347,6 +347,12 @@ span .comment{
         padding-left: 0px;
     }
 
+    /* add padding to the '-' character in the nav */
+    nav ul li .nav-pad{
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+
     /* Increase header font by 3 times the desktop site*/
     .page-header h2{
         font: normal 300% Palatino, "Palatino Linotype", serif;
