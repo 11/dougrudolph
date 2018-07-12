@@ -249,6 +249,7 @@ div .code-block{
     font-family: monaco, menlo, consolas, "courier new", monospace!important;
     color: #333;
     font-size: 1.0rem;
+    word-wrap: break-word;
 }
 
 span .keyword{
