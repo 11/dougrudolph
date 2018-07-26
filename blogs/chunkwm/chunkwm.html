@@ -1,0 +1,239 @@
+<!-- Author: Douglas Rudolph -->
+<!-- File:   why-vim-part-one.html -->
+<!-- Date:   June 13th, 2017 -->
+<!-- About:  Personal website blog -->
+
+<html>
+    <head>
+        <title> Blog - Doug Rudolph </title>
+        <link rel="stylesheet"
+              type="text/css"
+              href="../../theme.css"
+              media="screen"
+              charset="utf-8"/>
+
+        <script src="../js/scrollbar.js"></script>
+    </head>
+
+    <body>
+        <div id="scroll-bar"></div>
+        <div class="header-container">
+            <!-- Title -->
+            <div class="title">
+                <p><a href="../../index.html"> Doug Rudolph </a></p>
+            </div>
+
+            <!-- Navbar -->
+            <nav>
+                <ul>
+                    <li><a href="../../blog-menu.html"> blog </a><span class="nav-pad">-</span></li>
+                    <li><a href="../../about.html"> about </a><span class="nav-pad">-</span></li>
+                    <li><a href="../../Doug_Rudolph_Resume.pdf" target="tab"> résumé/cv </a></li>
+                </ul>
+            </nav>
+        </div>
+        <hr/>
+
+        <!-- Blog list -->
+        <div class="blog-header">
+            <h2> Installing ChunkWM </h2>
+            <span>Posted on July 26th, 2018</span>
+            <p>
+                This blog post goes through the process of downloading a tiling window manager (TWM) on OS X and how
+                it can optimize your work flow.
+            </p>
+            <ol>
+                <li><a href="#intro">Introduction</a></li>
+                <li><a href="#what-is-chunkwm">What is ChunkWM</a></li>
+                <li><a href="#installing-chunkwm"> How do I Install ChunkWM </a></li>
+                <li><a href="#installing-skhd">How do I Install SKHD</a></li>
+                <li><a href="#troubleshooting">Troubleshooting</a></li>
+            </ol>
+        </div>
+        <hr/>
+
+        <!-- Blog article -->
+        <div class="blog-container">
+            <div id="intro">
+                <h2> Introduction </h2>
+                    <p>
+                        I recently had to start using OS X for work, and as a former linux user, I felt something missing from my workflow.
+                        OS X is often thought of as a more capable and professional linux machine, yet I still miss that ability to personalize
+                        the user experience to my liking. Sure, Linux can be finicky, but having complete control is a privilege that you adjust
+                        to real fast. So, while I can’t use Linux at work, I can cover up my problems with software that makes me feel more at home.
+                    </p>
+                    <p>
+                        So - without further ado, may I present: ChunkWM.
+                    </p>
+            </div>
+            <div id="what-is-chunkwm">
+                <h2> What is ChunkWM </h2>
+                <p>
+                    ChunkWM is a tiling window manager, and for those of you that don’t know what that is - here … just take a look at this:
+                </p>
+
+                <img src="chunkwm-gif.gif" alt="chunkwm-gif" align="middle" width="640" height="480"/>
+
+                <p>
+                    As you can see, it’s easier to watch a gif rather than read an explanation.
+                    But in essence, ChunkWM is a piece of software that manages the layout of all your windows. And
+                    while it is possible to work with ChunkWM like vanilla OS X, the more compelling
+                    aspect is the ability to navigate around windows with just your keyboard.
+                </p>
+            </div>
+            <div id="installing-chunkwm">
+
+                <h2> Installing ChunkWM </h2>
+                <p>
+                    Installing ChunkWM is quite simple. The only thing you need before hand is <code>homebrew</code> and some patience.
+                    In order to set up ChunkWM, we are going to need to install two pieces of software:
+                    <a href="https://github.com/koekeishiya/skhd">SKHD</a> and
+                    <a href="https://github.com/crisidev/homebrew-chunkwm">Homebrew-ChunkWM</a>.
+                </p>
+                <p>
+                    Quick overview: <a href="https://github.com/koekeishiya/skhd">SKHD</a> and is piece of software
+                    that listens to our keyboard inputs while <a href="https://github.com/crisidev/homebrew-chunkwm">ChunkWM</a>
+					is what manages how our windows are laid out. Together, they listen to our keyboard for
+                    <a href="https://github.com/crisidev/homebrew-chunkwm">ChunkWM</a> commands and convert those commands into
+                    different actions on screen.
+                </p>
+                <p>
+                    To start, the first thing that we need to do is clone the <a href="https://github.com/crisidev/homebrew-chunkwm">ChunkWM</a>
+                    repository from GitHub. To do this with brew, type out:
+                </p>
+                <div class="code-block">
+<pre>
+doug@root-user$ brew tap crisidev/homebrew-chunkwm
+</pre>
+                </div>
+                <p>
+                    This downloads the OS X version of ChunkWM. After cloning the repo, you should see a
+                    <code>chunkwm</code> directory if you run <code>ls /usr/local/Cellar/</code>.
+                    If cloning ChunkWM did not work for you, give <a href="#">this section</a> a glance.
+                    If this did work for you, well good job. Now all that is left is to install ChunkWM with:
+                    <code> brew install chunkwm </code>
+                </p>
+                <p>
+                    If all goes well when installing, you should see a message that prints something along the lines of:
+                </p>
+                <div class="code-block">
+<pre>
+Copy the example configuration into your home directory:
+
+    cp /usr/local/opt/chunkwm/share/chunkwm/examples/chunkwmrc ~/.chunkwmrc
+
+
+Opening chunkwm will prompt for Accessibility API permissions. After access
+has been granted, the application must be restarted with:
+
+    brew services restart chunkwm
+
+
+This has to be done after every update to chunkwm, unless you codesign the
+binary with self-signed certificate before restarting Create code signing
+certificate named “chunkwm-cert” using Keychain Access.app
+
+    codesign -fs “chunkwm-cert” /usr/local/opt/chunkwm/bin/chunkwm
+
+
+NOTE: options “--with-logging” and “--with-tmp-logging” are deprecated since now
+chunkwm supports logging through configuration:
+
+    chunkc core::log_file <stdout | stderr | /path/to/file>
+
+
+NOTE: plugins folder has been moved to /usr/local/opt/chunkwm/share/chunkwm/plugins
+To have launchd start crisidev/chunkwm/chunkwm now and restart at login:
+
+    brew services start crisidev/chunkwm/chunkwm
+
+Or, if you don’t want/need a background service you can just run:
+
+    chunkwm
+</pre>
+                </div>
+                <p>
+                    Copy the first command and run it:
+                </p>
+                <div class="code-block">
+<pre>
+doug@root-user$ cp /usr/local/opt/chunkwm/share/chunkwm/examples/chunkwmrc ~/.chunkwmrc
+</pre>
+                </div>
+                <p>
+                    This command will create a <code>.chunkwrc</code> file inside your home directory. Just for good measure, we are gonna want to
+                    make sure our <code>.chunkwmrc</code> is executable - otherwise, ChunkWM will not run correctly. To do this, type out:
+                    <code> chmod +x ~/.chunkwmrc </code>
+                </p>
+                <p>
+                    Next, we are also going to want to system link the plugins folder to our home directory. Note - this isn’t
+                    necessary in the latest build, but we’re going to do this just for good measure.
+                </p>
+                <div class="code-block">
+<pre>
+doug@root-user$ ln -sf /usr/local/opt/chunkwm/share/chunkwm/plugins ~/.chunkwm_plugins
+</pre>
+                </div>
+                <p>
+                    Good job! You’ve installed chunkwm. To make sure everything was done correctly, running ChunkWM
+                    should result in windows auto-scaling to your screen. To test this, type out:
+                    <code>brew services start chunkwm</code>. Doing this should bring up an OS X prompt asking you to
+                    allow for ChunkWM to be apart of the accessibility list. Allow ChunkWM to be in your accessibility
+                    list. Once you do so, restart ChunkWM by typing: <code> brew services restart chunkwm </code>
+                </p>
+                <p>
+                    After doing so, any program you open should look like this:
+                </p>
+
+                    [IMAGE of CHUNKWM]
+        </div>
+        <div id="installing-skhd">
+            <h2> Installing SKHD </h2>
+                <p>
+                    If you’ve made it this far, the hard part is over! All that is left is to install SKHD. To do this, run:
+                    <code> brew install koekeishiya/formulae/skhd </code>
+                </p>
+                <p>
+                    And just like before, brew is going to output a message:
+                </p>
+                <div class="code-block">
+MESSAGE HERE
+                </div>
+                <p>
+                    From this message, we are going to run:
+                </p>
+                <div class="code-block">
+<pre>
+doug@root-user$ cp /usr/local/Cellar/skhd/examples/skhdrc ~/.skhdrc
+</pre>
+                </div>
+                <p>
+                    And just like before, to start running SKHD, we are going to run: <code>brew services start skhd</code>.
+                    This will again prompt you to add SKHD to your accessibility list - do so and restart SKHD with:
+                    <code> brew services restart skhd </code> If all goes well, you should be able to
+                    rotate two or more windows with the following command: <code>option + r</code>.
+                </p>
+                <p>
+
+                </p>
+                <p>
+                    If installing SKHD didn't work, check that you copied the <code>.skhdrc</code> file correctly and that
+                    SKHD is in your accessibility list. If that doesn't fix the issue, the
+            </div>
+
+            <div class="troubleshooting">
+
+            </div>
+        </div>
+        <hr/>
+		<!-- Footer -->
+        <div class="footer">
+            <ul>
+                <li><i><a href="mailto:dougl@srudolph.ninja?Subject=Hello" target="_top"> Email </a></i></li>
+                <li><i><a href="https://linkedin.com/in/dougjrudolph" target="tab"> LinkedIn</a></i></li>
+                <li><i><a href="https://github.com/11" target="tab"> Github </a></i></li>
+                <li><i><a href="https://twitter.com/doug_rudolph" target="tab"> Twitter </a></i></li>
+            </ul>
+        </div>
+    </body>
+</html>
