@@ -212,14 +212,15 @@ nav ul li .nav-pad{
 }
 
 
-.pic-container{
+.pic-grid{
     position: relative;
+    display: block;
     overflow: hidden;
     width: 250px;
     height: 250px;
 }
 
-.pic-container img{
+.pic-grid img{
     position: absolute;
     left: 50%;
     top: 50%;
@@ -230,7 +231,7 @@ nav ul li .nav-pad{
             transform: translate(-50%,-50%);
 }
 
-.pic-contaner img.portrait{
+.pic-grid img.portrait{
     width: 100%;
     height: auto;
 }
