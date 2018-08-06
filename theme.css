@@ -4,8 +4,8 @@ body{
     color: #353535;
     font: normal 25px Palatino, "Palatino Linotype", serif;
     text-rendering: optimizeLegibility;
-    padding-right: 25%;
-    padding-left: 25%;
+    padding-right: 20%;
+    padding-left: 20%;
 }
 
 /* make all links pink with no underline */
@@ -211,28 +211,19 @@ nav ul li .nav-pad{
     margin-right:auto;
 }
 
-
 .pic-container{
+    width: 32.5%;
+    height: 32.5%;
     position: relative;
     overflow: hidden;
-    width: 250px;
-    height: 250px;
+    display: inline-block;
 }
 
 .pic-container img{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    height: 100%;
-    width: auto;
-    -webkit-transform: translate(-50%,-50%);
-        -ms-transform: translate(-50%,-50%);
-            transform: translate(-50%,-50%);
-}
-
-.pic-contaner img.portrait{
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
 }
 
 /***************************************************************
