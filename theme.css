@@ -136,8 +136,34 @@ nav ul li .nav-pad{
 .blog-list li{
     padding-top: 15px;
     padding-bottom: 15px;
+    width: 100%;
 }
 
+.blog-list .blog-title{
+    display: inline-block;
+    width: 70%;
+}
+
+.blog-tag{
+    display: inline-block;
+    margin-right: 10px;
+    width: 0px;
+    height: 50px;
+}
+
+.blog-tag div{
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+
+    border-color: #E50053;
+    border-style: solid;
+    border-radius: 50%;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+}
 
 .blog-list li a{
     font: normal 22px HoeflerText-Regular, 'Hoefler Text', 'Goudy Old Style', 'Palatino', 'Palatino Linotype', serif;
@@ -152,7 +178,6 @@ nav ul li .nav-pad{
     color: #E50053;
     text-decoration: underline;
 }
-
 
 /*blog title*/
 .blog-header h2{
@@ -293,16 +318,27 @@ span .comment{
     color: #D7D6D5;
 }
 
-/***************************************************************
- *                        NIGHT-MODE                           *
- ***************************************************************/
-.night-mode{
-	background-color: #2DA89C;
+/* Animation tag for animation blog post */
+.outer-animation-tag{
+    width: 40px;
+    height: 40px;
+    animation: animation 5s linear infinite;
+    z-index: 1;
 }
 
-.night-mode a{
-    color: #2DA89C;
+@keyframes animation {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
+
+
 
 /***************************************************************
  *                         MOBILE                              *
