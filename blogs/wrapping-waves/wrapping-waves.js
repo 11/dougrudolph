@@ -2,7 +2,7 @@ var canvas;
 
 window.onload = function(){
     canvas = document.getElementById('sin-waves-canvas');
-    canvas.width = window.innerWidth  * .49;
+    canvas.width = window.innerWidth  * .59;
     canvas.height = window.innerHeight * .4;
     var ctx = canvas.getContext("2d");
 
