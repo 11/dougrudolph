@@ -30,9 +30,9 @@ function timer(msg, elementId, countDownDate){
     }
 
 window.onload = function(){
-    timer("Doug's B-Day: ", "DBD", "Sep 14, 2018 12:00:00");
-    timer("Diana's B-Day: ", "DBD2", "Oct 18, 2018 12:00:00");
+    timer("Doug's B-Day: ", "DBD", "Sep 14, 2018 7:51:00");
+    timer("Diana's B-Day: ", "DBD2", "Oct 18, 2018 8:22:00");
     timer("Moving in: ", "MI", "Feb 20, 2019 12:00:00");
-    timer("2 Years: ", "2YA", "Jul 3, 2019 12:00:00");
+    timer("2 Years: ", "2YA", "Jul 3, 2019 18:00:00");
 }
 
