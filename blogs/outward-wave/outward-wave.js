@@ -3,7 +3,7 @@ var canvas;
 window.onload  = function(){
     //setting up the canvas and the ctx
     canvas = document.getElementById("Canvas");
-    canvas.width = window.innerWidth * .49;
+    canvas.width = window.innerWidth * .59;
     canvas.height = window.innerHeight * .4;
     var ctx = canvas.getContext("2d");
 
