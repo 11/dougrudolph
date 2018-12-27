@@ -1,8 +1,9 @@
+
 window.onload = function(){
 
     let count = 0;
 
-    function create_left_slide(img_src, note){
+    function create_right_slide(img_src, note){
         var slide = document.createElement('div');
 
         var border_div = document.createElement('div');
@@ -12,7 +13,7 @@ window.onload = function(){
         img.src=img_src
 
         var msg_container= document.createElement('div')
-        msg_container.className = 'left-msg';
+        msg_container.className = 'right-msg';
 
         var msg = document.createElement('h1');
         msg.innerHTML = note;
@@ -37,9 +38,9 @@ window.onload = function(){
             "https://scontent.fewr1-1.fna.fbcdn.net/v/t1.0-9/26733999_10156178259048311_7721321596010589094_n.jpg?_nc_cat=108&_nc_ht=scontent.fewr1-1.fna&oh=ed705880eca6e9dc1018645916b6f69f&oe=5C8B4118",
             "https://scontent.fewr1-2.fna.fbcdn.net/v/t1.0-9/45487263_10157100396783311_4107988699382284288_n.jpg?_nc_cat=106&_nc_ht=scontent.fewr1-2.fna&oh=32f9c268983e9da3959f8a0f266344f1&oe=5C92BE10",
         ]
-        let msgs = ["Ever since I", "I always knew", "Merry Christmas to", "PS: Your farts sme"];
+        let msgs = ["first met you,", "you were plump :)", "my other half", "ll REAL BAD 💩"];
 
-        let cur_slide = create_left_slide(imgs[count], msgs[count]);
+        let cur_slide = create_right_slide(imgs[count], msgs[count]);
 
         let slide_show = document.getElementById("slide-show");
         slide_show.appendChild(cur_slide);
