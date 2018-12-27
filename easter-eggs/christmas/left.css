@@ -1,18 +1,14 @@
 html, body{
     overflow-x: hidden;
-    background-color:
+    font-family: "Aleo", sans-serif;
+    background-color: #ffb6c1;
+
+    animation: background 5s infinite;
 }
 
-table{
-    margin-left: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 50px;
-}
-
-table td{
-    text-align: center;
-    padding-right: 100px;
+@keyframes background{
+    0%, 100%{background-color: #ffb6c1;}
+    50%{background-color: #ff6a80;}
 }
 
 .start{
@@ -38,7 +34,8 @@ img{
 
 .left-msg{
     padding-bottom: 200px;
-    font-size: 50px;
+    font-size: 40px;
+    font-weight: 900;
 }
 
 .left-msg h1{

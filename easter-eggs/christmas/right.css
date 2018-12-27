@@ -1,21 +1,16 @@
 html, body{
     overflow-x: hidden;
     white-space: nowrap;
+    font-family: "Aleo", sans-serif;
+    background-color: #ffb6c1;
+
+    animation: background 5s infinite;
 }
 
-table{
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 100px;
+@keyframes background{
+    from{background-color: #ffb6c1;}
+    to{background-color: #ff6a80;}
 }
-
-table td{
-    text-align: center;
-    padding-right: 100px;
-}
-
 
 img{
     margin-left: -470px;
