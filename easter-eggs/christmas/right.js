@@ -56,7 +56,7 @@ window.onload = function(){
         }
     }
 
-    window.addEventListener('touch', function(){
+    window.addEventListener('touchend', function(){
         if(count < 4){
             insert_slide();
             window.scrollTo(0,document.body.scrollHeight);
