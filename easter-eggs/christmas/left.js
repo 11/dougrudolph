@@ -48,14 +48,18 @@ window.onload = function(){
 
     let screen = document.getElementById("body");
     screen.onclick = function(){
-        if(count < 4)
+        if(count < 4){
             insert_slide();
+            window.scrollTo(0,document.body.scrollHeight);
+        }
     }
 
 
     window.addEventListener('touch', function(){
-        if(count < 4)
+        if(count < 4){
             insert_slide();
+            window.scrollTo(0,document.body.scrollHeight);
+        }
     });
 }
 
