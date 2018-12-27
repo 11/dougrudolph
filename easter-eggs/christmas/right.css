@@ -25,12 +25,6 @@ img{
     font-size: 100px;
 }
 
-.me{
-    border-top: 2px solid;
-    border-right: 2px solid;
-    border-bottom: 2px solid;
-    box-shadow: #FFB6C1;
-}
 .right-msg{
     padding-bottom: 200px;
     font-size: 50px;
