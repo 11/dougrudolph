@@ -2,7 +2,7 @@ html, body{
     overflow-x: hidden;
     font-family: "Aleo", sans-serif;
     background-color: #ffb6c1;
-
+    color: #ffffff;
     animation: background 5s infinite;
 }
 

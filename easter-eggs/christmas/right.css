@@ -2,14 +2,14 @@ html, body{
     overflow-x: hidden;
     white-space: nowrap;
     font-family: "Aleo", sans-serif;
+    color: #ffffff;
     background-color: #ffb6c1;
-
     animation: background 5s infinite;
 }
 
 @keyframes background{
-    from{background-color: #ffb6c1;}
-    to{background-color: #ff6a80;}
+    0%, 100%{background-color: #ffb6c1;}
+    50%{background-color: #ff6a80;}
 }
 
 img{
