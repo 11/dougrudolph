@@ -32,10 +32,10 @@ And of course, thanks for visiting :)
 
 <html>
     <head>
-        <title> Wrapping Waves </title>
+        <title> Doug Rudolph - Outward Waves</title>
         <link rel="stylesheet" type="text/css" href="../../theme.css" media="screen" charset="utf-8"/>
-        <link rel="stylesheet" type="text/css" href="./wrapping-waves.css">
-        <script type="text/javascript" src="wrapping-waves.js"></script>
+        <link rel="stylesheet" type="text/css" href="./recursion.css">
+        <script src="../../js/scrollbar.js"></script>
     </head>
 
     <body>
@@ -49,61 +49,47 @@ And of course, thanks for visiting :)
             <nav>
                 <ul>
                     <li><a href="../../blog-menu.html"> blog </a><span class="nav-pad">-</span></li>
+                    <li><a href="../../photos.html"> photos </a><span class="nav-pad">-</span></li>
                     <li><a href="../../about.html"> about </a><span class="nav-pad">-</span></li>
                     <li><a href="../../resume.pdf" target="tab"> résumé/cv </a></li>
                 </ul>
             </nav>
+            <hr/>
         </div>
-        <hr/>
 
         <!-- Blog list -->
         <div class="blog-header">
-            <h2> Wrapping Waves </h2>
-            <span>Posted on February 2nd, 2018</span>
-            <p>
-                Illusion of alternating sine and cosine waves
-            </p>
+            <h2>Recursion</h2>
+            <span>Posted on September 3rd, 2018</span>
+            <p> Some description goes in here </p>
         </div>
-        <hr/>
-        <br/>
-
-        <!-- Begin Content Here -->
-        <canvas id="sin-waves-canvas"></canvas>
-        <!-- End content here -->
-
-        <br/>
         <hr/>
 
         <div class="blog-container">
+            <p>
+                In computer science, recursion is way of programming that is served to be quite useful in certain situations.
+                Generally, recursion is considered to be a good problem solving tool when there is a lack of iterative
+                approaches for a problem.
+            </p>
+            <p>
+                Recursion in practice is the act of calling the same function within itself and guiding a program through
+                a set of if-statements. Recursion as a tool is only made possible through a concept called the
+                <code>Call Stack</code>. The <code>Call Stack</code> keeps track of the state for all the variables every time a
+                function is called.
+            </p>
+
+            [Call Stack Animation]
 
             <p>
-                Okay, so I lied in the last blog. For this animation, I ended up using vanilla JavaScript again, and the
-                overall experience, to my surprise, was enjoyable. Rather than having to constantly search the internet to
-                port my knowledge from one language to another, I was able to find that zen like state of mind. It has been awhile since
-                I have been able to completely focus on nothing but the problem in front of me. It was nice to see that a
-                lot of what I learned from the first project carried over.
+                Recursion is often found most useful when creating an algorithm that runs for an undetermined amount of
+                time on certain data structures. Some of the classic data structures where it is common to apply recursion
+                are lists, trees, graphs.
             </p>
-            <p>
-                As for the project itself, my goal with this animation was to make it feel like a sine and cosine wave are
-                wrapping around each other in 2D space. Rather than creating an actual 3D environment, I felt that I could
-                rely on the illusion of creating depth through changing the radius of the each circle. By shrinking the
-                radius as each particle goes up, and enlarging the radius as a given particle goes down, the outcome
-                is as if the 2D scene has depth of field.
-            </p>
-            <p>
-                What’s kind of interesting is that through this, I found out that the illusion for some people is
-                immediately noticeable, and for others, takes some time to really see. What’s also cool is once you
-                see it, you can change the direction the waves are rotating in.
-            </p>
-            <p>
-                Anyways, this post was more of quick update, rather than a showing off my larger creative ideas.
-            </p>
-            <p>
-                And as before, stay tuned for the next post.
-            </p>
-             <hr/>
         </div>
-        <!-- Footer -->
+        <!-- End Content Here -->
+
+        <hr/>
+		<!-- Footer -->
         <div class="footer">
             <ul>
                 <li><i><a href="mailto:dougl@srudolph.ninja?Subject=Hello" target="_top"> Email </a></i></li>

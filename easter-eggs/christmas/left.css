@@ -1,0 +1,36 @@
+html, body{
+    overflow-x: hidden;
+    font-family: "Aleo", sans-serif;
+    background-color: #ffb6c1;
+    color: #ffffff;
+    animation: background 5s infinite;
+}
+
+@keyframes background{
+    0%, 100%{background-color: #ffb6c1;}
+    50%{background-color: #ff6a80;}
+}
+
+.start{
+    padding-top: 40%;
+    text-align: right;
+    font-size: 100px;
+}
+
+img{
+    padding-left: 570px;
+    height: 1300px;
+    width: 900px;
+    border-radius: 100px;
+    display: block;
+}
+
+.left-msg{
+    padding-bottom: 200px;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.left-msg h1{
+    text-align: right;
+}
