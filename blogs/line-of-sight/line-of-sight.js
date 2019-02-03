@@ -11,7 +11,40 @@ window.onload  = function(){
     // defining mouse vars
     var MOUSE_X = canvas.width  / 2 - 2;
     var MOUSE_Y = canvas.height / 2 - 2;
-    var COUNT = 0;
+
+
+    function intersect(){
+
+    }
+
+
+    class EdgePool{
+
+        constructor(wallList){
+           this.edgePool = this.initEdgePool(wallList);
+        }
+
+        initEdgePool(wallList){
+            let edgePool = [];
+
+            for(let i=0; i<wallList.length; i++){
+                for(let j=0; j<wallList[i].length; j++){
+                    this.edgeList.push(wallList[i][j]);
+                }
+            }
+            return edgePool;
+        }
+
+        draw(ctx){
+            let wall;
+            for(let i=0; i<this.edgePool.length; i++){
+                wall = this.edgePool[i];
+                wall.draw(ctx);
+            }
+        }
+
+    }
+
 
 
     class Wall{
@@ -63,32 +96,38 @@ window.onload  = function(){
             this.radius = radius;
         }
 
-        draw(ctx){
+        draw(ctx, edgePool){
             ctx.beginPath();
             ctx.fillStyle = this.color;
             ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
             ctx.fill();
             ctx.closePath();
+
         }
 
-        update(){
+        updatePos(){
             this.x = MOUSE_X;
             this.y = MOUSE_Y;
         }
     }
 
-    let lightSource = new LightSource(canvas.width/2, canvas.height/2, 5);
+    // set of walls
     let wall1 = new Wall([[50,180], [120,120], [200, 130], [250,90]]);
 
+
+    // main objects for interacting with the simulation
+    let lightSource = new LightSource(canvas.width/2, canvas.height/2, 5);
+    let edgePool= new EdgePool([wall1]);
+
     function run(){
-        //clear previous frame
+        // clear previous frame
         ctx.clearRect(0,0,canvas.width, canvas.height);
 
-        //update
-        //
-        //render
+        // update
+
+        // render
         lightSource.draw(ctx);
-        wall1.draw(ctx);
+        edgePool.draw(ctx);
 
     }
     setInterval(run, 30);
@@ -103,7 +142,7 @@ window.onload  = function(){
     });
 
     ctx.canvas.addEventListener('onmousedown', function(event){
-        lightSource.update();
+        lightSource.updatePos();
     });
 
 }
