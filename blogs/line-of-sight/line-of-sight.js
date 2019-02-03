@@ -4,7 +4,7 @@ var canvas;
 window.onload  = function(){
     // setting up the canvas and the ctx
     canvas = document.getElementById("Canvas");
-    canvas.width = window.innerWidth * .49;
+    canvas.width = window.innerWidth * .59;
     canvas.height = window.innerHeight * .4;
     var ctx = canvas.getContext("2d");
 
@@ -83,20 +83,19 @@ window.onload  = function(){
                     let EAST  = this.TILE_MAP[i][j+1];
                     let WEST  = this.TILE_MAP[i][j-1];
 
-
                     //if cell exists
                     if(CUR.exists()){
 
                         // extend the NORTH's western edge down
-                        if(!WEST.exists() && NORTH.exists(){
+                        if(!WEST.exists() && NORTH.exists()){
 
                         }
+
+                        //
                         else if(!WEST.exists() && !NORTH.exists()){
                             CUR.edgeExists['west'] = true;
                             CUR.edgeId['west']     = COUNT;
-
-                            this.edgePool{COUNT: CUR};
-
+                            this.edgePool[COUNT] = CUR;
                         }
 
                     }
