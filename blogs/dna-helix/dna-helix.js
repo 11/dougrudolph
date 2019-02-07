@@ -32,7 +32,6 @@ window.onload  = function(){
         update(){
             this.radianDelta += 0.05;
             this.x = this.startPos + Math.cos(this.radianDelta) * 50;
-            console.log(this.x);
         }
     }
 
@@ -69,12 +68,14 @@ window.onload  = function(){
             this.radianOffset = radianOffset;
             this.isOscillating = isOscillating;
 
+            var deltaY = (canvas.height/2) - (16*20/2);
+            var nodeWidth = 6;
+
             this.helixList = []
             for(var i = 0; i < totalHelixes; i++){
-                var nodeWidth = 6;
 
-                var n1 = new Node(xPos, (i+1) * 20, nodeWidth, 0 + i*this.radianOffset);
-                var n2 = new Node(xPos, (i+1) * 20, nodeWidth, Math.PI +i*this.radianOffset);
+                var n1 = new Node(xPos, deltaY + (i+1)*20, nodeWidth, 0 + i*this.radianOffset);
+                var n2 = new Node(xPos, deltaY + (i+1)*20, nodeWidth, Math.PI +i*this.radianOffset);
                 var helix = new HelixLine(n1, n2);
 
                 this.helixList.push(helix);
@@ -94,16 +95,15 @@ window.onload  = function(){
         }
     }
 
-    var delta = canvas.width/9*2.8 - canvas.width/9;
-    console.log(delta);
+    var deltaX = canvas.width/9*2.8 - canvas.width/9;
     var helix1 = new Helix(canvas.width/9, 15, .2, true);
-    var helix2 = new Helix(canvas.width/9 + delta, 15, .3, true);
-    var helix3 = new Helix(canvas.width/9 + delta*2, 15, .4, true);
-    var helix4 = new Helix(canvas.width/9 + delta*3, 15, .5, true);
+    var helix2 = new Helix(canvas.width/9 + deltaX,   15, .3, true);
+    var helix3 = new Helix(canvas.width/9 + deltaX*2, 15, .4, true);
+    var helix4 = new Helix(canvas.width/9 + deltaX*3, 15, .5, true);
 
-    var helix5 = new Helix(canvas.width/9 + delta*4, 15, .2, true);
-    var helix6 = new Helix(canvas.width/9 + delta*4, 15, .3, true);
-    var helix7 = new Helix(canvas.width/9 + delta*4, 15, .4, true);
+    var helix5 = new Helix(canvas.width/9 + deltaX*4, 15, .2, true);
+    var helix6 = new Helix(canvas.width/9 + deltaX*4, 15, .3, true);
+    var helix7 = new Helix(canvas.width/9 + deltaX*4, 15, .4, true);
 
     //runs the node simulation
     function run() {
