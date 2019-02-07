@@ -89,14 +89,15 @@
                     <a href="https://github.com/crisidev/homebrew-chunkwm">Homebrew-ChunkWM</a>.
                 </p>
                 <p>
-                    Quick overview: <a href="https://github.com/koekeishiya/skhd">SKHD</a> is piece of software
+                    Quick overview: <a href="https://github.com/koekeishiya/skhd">SKHD</a> is a piece of software
                     that listens to our keyboard inputs, while <a href="https://github.com/crisidev/homebrew-chunkwm">ChunkWM</a>
 					is what manages how our windows are laid out. Together, they listen to our keyboard for
-                    <a href="https://github.com/crisidev/homebrew-chunkwm">ChunkWM</a> commands.
+                    <a href="https://github.com/crisidev/homebrew-chunkwm">ChunkWM</a> commands and relay the commands
+                    to a selected window.
                 </p>
                 <p>
                     To start, the first thing that we need to do is clone the <a href="https://github.com/crisidev/homebrew-chunkwm">ChunkWM</a>
-                    repository from GitHub. To do this with brew, type out:
+                    repository from GitHub. To do this with <code>homebrew</code>, type out:
                 </p>
                 <div class="code-block">
 <pre>
@@ -144,7 +145,9 @@ Or, if you don’t want/need a background service you can just run:
                 </div>
 
                 <p>
-                    After cloning, you should see a <code>chunkwm</code> directory if you run:
+                    That long output explains how to copy the default config file to our home directory, but
+                    before doing that, we want to make sure ChunkWM downloaded to the right directory.
+                    To check, try running:
                 </p>
 
                 <div class="code-block">
@@ -155,7 +158,8 @@ doug@root-user$ ls /usr/local/Cellar/
 
                 <p>
                     If you don't see a directory, try going to Github and manually cloning the project to your homebrew folder.
-                    If you do see the ChunkWM directory, copy the first command and run it - it should like something the long the lines of:
+                    If you do see the ChunkWM directory, copy the first command that was printed after installing.
+                    I went ahead and copied the command you need here:
                 </p>
                 <div class="code-block">
 <pre>
@@ -216,7 +220,8 @@ doug@root-user$ brew install koekeishiya/formulae/skhd
                     </div>
 
                     <p>
-                        And just like before, brew is going to output a message that defines where to copy a config file.
+                        And just like before, brew is going to output a message that defines where to copy a
+                        config file - just this time it's a <code>.skhdrc</code> file.
                         To keep things brief, I'm going to give you the command directly:
                     </p>
                     <div class="code-block">
@@ -252,8 +257,8 @@ doug@root-user$ brew services restart skhd
             <div id="closing">
                 <h2> Closing </h2>
                 <p>
-                    Stay tuned for my next post where I'll go over how to navigate inside ChunkWM.
-                    Thanks for reading! And as always, see you in the next blog :).
+                    Stay tuned for my next post where I'll go over how to navigate windows with ChunkWM.
+                    Thanks for reading! And as always, see you in the next blog :)
                 </p>
             </div>
         </div>
