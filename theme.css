@@ -12,14 +12,13 @@ body{
 /* make all links pink with no underline */
 a{
     color: #E50053;
-    text-decoration: none;
+    text-decoration: underline solid transparent;
+    transition: text-decoration 250ms ease;
 }
 
 /* on hover, underline the text */
 a:hover{
-    color: #E50053;
-    transition-delay: 1s fade;
-    text-decoration: underline;
+    text-decoration: underline solid Currentcolor;
 }
 
 .header-container{
@@ -248,13 +247,6 @@ nav ul li .nav-pad{
     left: 0;
     height: 3px;
     z-index: 100;
-}
-
-/* inline underline */
-.hover-underline:hover{
-    color: #E50053;
-    transition-delay: 1s fade;
-    text-decoration: underline;
 }
 
 code{
