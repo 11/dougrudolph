@@ -2,6 +2,9 @@ body, html {
     color: #353535;
     font: normal 25px Palatino, "Palatino Linotype", serif;
     text-rendering: optimizeLegibility;
+    height: 100%;
+    width: calc(100%-60px);
+    max-height: 100%;
 }
 
 /* make all links pink with no underline */
@@ -22,13 +25,14 @@ a:hover {
     top: 0px;
     width: 23%;
     height: 100%;
+    max-height: 100%;
 
     padding: 30px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     border-right: solid 1px #E6E6E6;
-    overflow: hidden;
+    overflow-y: hidden;
 }
 
 .bio-container > div {
@@ -144,19 +148,21 @@ a:hover {
     top: 0px;
     left: calc(23% + 60px);
     width: calc(67% - 60px);
+    height: 100%;
+    max-height: 100%;
     padding: 30px 5% 0px;
     overflow-y: scroll;
  }
 
 .blog-post-link-container {
-    border-left: 1px solid #888888;
+    border-right: 1px solid #888888;
     padding: 10px;
     margin-bottom: 30px;
     cursor: pointer;
 }
 
 .blog-post-link-container:hover {
-    border-left: 4px solid #E5005E;
+    border-right: 4px solid #E5005E;
     box-shadow: 0px 3px 3px rgba(0,0,0,0.15);
     transform: scale(1, 1.01);
     transition: 0.3s ease-out;
@@ -209,6 +215,8 @@ a:hover {
     top: 0px;
     left: calc(23% + 60px);
     width: calc(67% - 60px);
+    height: 100%;
+    overflow-y: scroll;
     padding: 30px 5% 0px;
 }
 
