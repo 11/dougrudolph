@@ -42,15 +42,20 @@ a:hover {
 
 /* title is inline block to allow nav to be on the top bar as well, also has custom font */
 .profile{
-    font: normal 27px Palatino, "Palatino Linotype", serif;
+    width: 100%;
+    font: normal 1.35rem Palatino, "Palatino Linotype", serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: baseline;
 }
 
 .profile img {
     border: solid 1px #E6E6E6;
     border-radius: 100%;
-    width: 150px;
-    height: 150px;
-    margin-bottom: 10px;
+    width: 3rem;
+    height: 3rem;
+    margin-right: 1rem;
 }
 
 .profile a {
@@ -79,7 +84,6 @@ a:hover {
     font-weight: 200;
     font-size: 18px;
     letter-spacing: 1px;
-    color: #EFEFEF;
 
     width: 100%;
 
@@ -90,7 +94,7 @@ a:hover {
 
 .page-menu a {
     display: inline-block;
-    color: #353535;
+    color: #888888;
     text-decoration: none;
 
     padding: 5px 10px;
@@ -112,9 +116,29 @@ a:hover {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: space-between;
     font-size: 15px;
     width: 100%;
+}
+
+.icon-container {
+    border-radius: 100px;
+    border: 2px solid #EFEFEF;
+    padding: 10px;
+    margin-right: 10px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.icon-container:hover {
+    border: 2px solid #E5005E;
+    transition: 0.2s ease-out;
+}
+
+.icon {
+    width: .65rem;
+    height: .65rem;
 }
 
 /* main webpage text-alignment */
@@ -200,7 +224,7 @@ a:hover {
     font-family: 'Roboto', sans-serif;
     font-size: 10px;
     font-weight: 100;
-    letter-spacing: 1px;;
+    letter-spacing: 2px;
     text-transform: uppercase;
     color: #353535;
 
