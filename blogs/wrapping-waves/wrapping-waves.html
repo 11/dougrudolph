@@ -1,35 +1,3 @@
-<!--
-Hello, my name is Doug Rudolph, and I'm a proud user of:
-
-                   #
-  ######          ###
-    ##             #
-    ##         ###    ### ####   ###    ###  ##### #####
-    ##        #  ##    ###    ##  ##     ##    ##   ##
-    ##       #   ##    ##     ##  ##     ##      ###
-    ##          ###    ##     ##  ##     ##      ###
-    ##       # ###     ##     ##  ##     ##     ## ##
-    ##      ## ### #   ##     ##  ###   ###    ##   ##
-  ############  ###   ####   ####   #### ### ##### #####
-
-This website was entirely developed using open-source software.
-
-Credit & Inspiration:
-    - The light & dark colorscheme (ie. Solarized) was entirely created by Ethan Schoonover.
-      Please go checkout his site if enjoy you enjoy the light and dark themes: http://ethanschoonover.com/solarized
-
-    - The layout for this site is heavily inspired by https://vimawesome.com. I do not take
-      any form of credit for the creation of the original works, and admit to the modification
-      of said site.
-
-    - The neutral/default theme for this site is 100% my own and give full permission for
-      others to to use and or edit as they please. All I ask upon use is credit to the
-      original websites that designed these themes, as w:ell as myself for the use
-      of my default theme.
-
-And of course, thanks for visiting :)
--->
-
 <html>
     <head>
         <title> Wrapping Waves </title>
@@ -39,78 +7,88 @@ And of course, thanks for visiting :)
     </head>
 
     <body>
-        <div class="header-container">
-            <!-- Title -->
-            <div class="title">
-                <p><a href="../../index.html"> Doug Rudolph </a></p>
+        <div class="bio-container">
+            <!-- profile info -->
+            <div class="profile">
+                <img alt="profile-pic" src="../../imgs/profile_img.jpg"/>
+                <div><a href="../../index.html"> Doug Rudolph </a></div>
             </div>
 
-            <!-- Navbar -->
-            <nav>
-                <ul>
-                    <li><a href="../../blog-menu.html"> blog </a><span class="nav-pad">-</span></li>
-                    <li><a href="../../about.html"> about </a><span class="nav-pad">-</span></li>
-                    <li><a href="../../doug_rudolph_resume.pdf" target="tab"> résumé/cv </a></li>
-                </ul>
-            </nav>
+            <!-- Description -->
+            <div class="description">
+                <div class="description-entry"> First engineer <a target="_blank" href="https://www.interseller.io/about">@interseller.io</a> </div>
+                <div class="description-entry"> Former back-end Engineer <a href="https://buzzfeed.com">@BuzzFeed</a> </div>
+                <div class="description-entry"> Former SWE intern <a target="_blank" href="https://tech.buzzfeed.com/meet-buzzfeed-techs-2017-intern-squad-7d9d3bcefa05">@BuzzFeed</a> </div>
+                <div class="description-entry"> <a target="_blank" href="https://hackny.org/blog/2017/06/announcing-the-class-of-2017-hackny-fellows">@hackNY Fellow </a> – 2017 </div>
+                <div class="description-entry"> Rendering 👾 – Rust Lang 🦀 – Haskell <b>λ</b></div>
+            </div>
+
+            <div class="page-menu">
+                <a href="../../index.html"> Blog posts </a>
+                <a href="../../about.html"> About me </a>
+                <a href="../../contact.html"> Contact info </a>
+            </div>
+
+            <div class="footer">
+                <div><a href="mailto:drudolph914@gmail.com?Subject=Hello" target="_top"> Email </a></div>
+                <div> - </div>
+                <div><a href="https://linkedin.com/in/dougjrudolph" target="tab"> LinkedIn</a></div>
+                <div> - </div>
+                <div><a href="https://github.com/11" target="tab"> Github </a></div>
+                <div> - </div>
+                <div><a href="https://twitter.com/_dougrudolph" target="tab"> Twitter </a></div>
+                <div> - </div>
+                <div><a href="./doug_rudolph_resume.pdf" target="tab"> Résumé</a></div>
+            </div>
         </div>
-        <hr/>
 
-        <!-- Blog list -->
-        <div class="blog-header">
-            <h2> Wrapping Waves </h2>
-            <span>Posted on February 2nd, 2018</span>
-            <p>
-                Illusion of alternating sine and cosine waves
-            </p>
-        </div>
-        <hr/>
-        <br/>
+        <div class="blog">
 
-        <!-- Begin Content Here -->
-        <canvas id="sin-waves-canvas"></canvas>
-        <!-- End content here -->
+            <div class="blog-header">
+                <h2> Wrapping Waves </h2>
+                <span>Posted on February 2nd, 2018</span>
+                <p>
+                    Illusion of alternating sine and cosine waves
+                </p>
+            </div>
+            <hr/>
+            <br/>
 
-        <br/>
-        <hr/>
+            <!-- Begin Content Here -->
+            <canvas id="sin-waves-canvas"></canvas>
+            <!-- End content here -->
 
-        <div class="blog-container">
+            <br/>
+            <hr/>
 
-            <p>
-                Okay, so I lied in the last blog. For this animation, I ended up using vanilla JavaScript again, and the
-                overall experience, to my surprise, was enjoyable. Rather than having to constantly search the internet to
-                port my knowledge from one language to another, I was able to find that zen like state of mind. It has been awhile since
-                I have been able to completely focus on nothing but the problem in front of me. It was nice to see that a
-                lot of what I learned from the first project carried over.
-            </p>
-            <p>
-                As for the project itself, my goal with this animation was to make it feel like a sine and cosine wave are
-                wrapping around each other in 2D space. Rather than creating an actual 3D environment, I felt that I could
-                rely on the illusion of creating depth through changing the radius of the each circle. By shrinking the
-                radius as each particle goes up, and enlarging the radius as a given particle goes down, the outcome
-                is as if the 2D scene has depth of field.
-            </p>
-            <p>
-                What’s kind of interesting is that through this, I found out that the illusion for some people is
-                immediately noticeable, and for others, takes some time to really see. What’s also cool is once you
-                see it, you can change the direction the waves are rotating in.
-            </p>
-            <p>
-                Anyways, this post was more of quick update, rather than a showing off my larger creative ideas.
-            </p>
-            <p>
-                And as before, stay tuned for the next post.
-            </p>
-             <hr/>
-        </div>
-        <!-- Footer -->
-        <div class="footer">
-            <ul>
-                <li><i><a href="mailto:dougl@srudolph.ninja?Subject=Hello" target="_top"> Email </a></i></li>
-                <li><i><a href="https://linkedin.com/in/dougjrudolph" target="tab"> LinkedIn</a></i></li>
-                <li><i><a href="https://github.com/11" target="tab"> Github </a></i></li>
-                <li><i><a href="https://twitter.com/_dougrudolph" target="tab"> Twitter </a></i></li>
-            </ul>
+            <div class="blog-container">
+
+                <p>
+                    Okay, so I lied in the last blog. For this animation, I ended up using vanilla JavaScript again, and the
+                    overall experience, to my surprise, was enjoyable. Rather than having to constantly search the internet to
+                    port my knowledge from one language to another, I was able to find that zen like state of mind. It has been awhile since
+                    I have been able to completely focus on nothing but the problem in front of me. It was nice to see that a
+                    lot of what I learned from the first project carried over.
+                </p>
+                <p>
+                    As for the project itself, my goal with this animation was to make it feel like a sine and cosine wave are
+                    wrapping around each other in 2D space. Rather than creating an actual 3D environment, I felt that I could
+                    rely on the illusion of creating depth through changing the radius of the each circle. By shrinking the
+                    radius as each particle goes up, and enlarging the radius as a given particle goes down, the outcome
+                    is as if the 2D scene has depth of field.
+                </p>
+                <p>
+                    What’s kind of interesting is that through this, I found out that the illusion for some people is
+                    immediately noticeable, and for others, takes some time to really see. What’s also cool is once you
+                    see it, you can change the direction the waves are rotating in.
+                </p>
+                <p>
+                    Anyways, this post was more of quick update, rather than a showing off my larger creative ideas.
+                </p>
+                <p>
+                    And as before, stay tuned for the next post.
+                </p>
+            </div>
         </div>
     </body>
 </html>

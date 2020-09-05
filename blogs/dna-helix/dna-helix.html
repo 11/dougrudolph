@@ -1,35 +1,3 @@
-<!--
-Hello, my name is Doug Rudolph, and I'm a proud user of:
-
-                   #
-  ######          ###
-    ##             #
-    ##         ###    ### ####   ###    ###  ##### #####
-    ##        #  ##    ###    ##  ##     ##    ##   ##
-    ##       #   ##    ##     ##  ##     ##      ###
-    ##          ###    ##     ##  ##     ##      ###
-    ##       # ###     ##     ##  ##     ##     ## ##
-    ##      ## ### #   ##     ##  ###   ###    ##   ##
-  ############  ###   ####   ####   #### ### ##### #####
-
-This website was entirely developed using open-source software.
-
-Credit & Inspiration:
-    - The light & dark colorscheme (ie. Solarized) was entirely created by Ethan Schoonover.
-      Please go checkout his site if enjoy you enjoy the light and dark themes: http://ethanschoonover.com/solarized
-
-    - The layout for this site is heavily inspired by https://vimawesome.com. I do not take
-      any form of credit for the creation of the original works, and admit to the modification
-      of said site.
-
-    - The neutral/default theme for this site is 100% my own and give full permission for
-      others to to use and or edit as they please. All I ask upon use is credit to the
-      original websites that designed these themes, as w:ell as myself for the use
-      of my default theme.
-
-And of course, thanks for visiting :)
--->
-
 <html>
     <head>
         <title> Doug Rudolph - DNA Helix</title>
@@ -39,69 +7,78 @@ And of course, thanks for visiting :)
     </head>
 
     <body>
-        <div class="header-container">
-            <!-- Title -->
-            <div class="title">
-                <p><a href="../../index.html"> Doug Rudolph </a></p>
+        <div class="bio-container">
+            <!-- profile info -->
+            <div class="profile">
+                <img alt="profile-pic" src="../../imgs/profile_img.jpg"/>
+                <div><a href="../../index.html"> Doug Rudolph </a></div>
             </div>
 
-            <!-- Navbar -->
-            <nav>
-                <ul>
-                    <li><a href="../../blog-menu.html"> blog </a><span class="nav-pad">-</span></li>
-                    <li><a href="../../about.html"> about </a><span class="nav-pad">-</span></li>
-                    <li><a href="../../doug_rudolph_resume.pdf" target="tab"> résumé/cv </a></li>
-                </ul>
-            </nav>
+            <!-- Description -->
+            <div class="description">
+                <div class="description-entry"> First engineer <a target="_blank" href="https://www.interseller.io/about">@interseller.io</a> </div>
+                <div class="description-entry"> Former back-end Engineer <a href="https://buzzfeed.com">@BuzzFeed</a> </div>
+                <div class="description-entry"> Former SWE intern <a target="_blank" href="https://tech.buzzfeed.com/meet-buzzfeed-techs-2017-intern-squad-7d9d3bcefa05">@BuzzFeed</a> </div>
+                <div class="description-entry"> <a target="_blank" href="https://hackny.org/blog/2017/06/announcing-the-class-of-2017-hackny-fellows">@hackNY Fellow </a> – 2017 </div>
+                <div class="description-entry"> Rendering 👾 – Rust Lang 🦀 – Haskell <b>λ</b></div>
+            </div>
+
+            <div class="page-menu">
+                <a href="../../index.html"> Blog posts </a>
+                <a href="../../about.html"> About me </a>
+                <a href="../../contact.html"> Contact info </a>
+            </div>
+
+            <div class="footer">
+                <div><a href="mailto:drudolph914@gmail.com?Subject=Hello" target="_top"> Email </a></div>
+                <div> - </div>
+                <div><a href="https://linkedin.com/in/dougjrudolph" target="tab"> LinkedIn</a></div>
+                <div> - </div>
+                <div><a href="https://github.com/11" target="tab"> Github </a></div>
+                <div> - </div>
+                <div><a href="https://twitter.com/_dougrudolph" target="tab"> Twitter </a></div>
+                <div> - </div>
+                <div><a href="./doug_rudolph_resume.pdf" target="tab"> Résumé</a></div>
+            </div>
+        </div>
+
+        <div class="blog">
+            <div class="blog-header">
+                <h2>DNA Helix</h2>
+                <span>Posted on March 28th, 2018</span>
+                <p>
+                    Trig functions, take number 2 - plus a happy accident.
+                </p>
+            </div>
             <hr/>
-        </div>
 
-        <!-- Blog list -->
-        <div class="blog-header">
-            <h2>DNA Helix</h2>
-            <span>Posted on March 28th, 2018</span>
-            <p>
-                Trig functions, take number 2 - plus a happy accident.
-            </p>
-        </div>
-        <hr/>
+            <!-- Begin Content Here -->
+            <canvas id="Canvas"></canvas>
+            <!-- End content here -->
 
-        <!-- Begin Content Here -->
-        <canvas id="Canvas"></canvas>
-        <!-- End content here -->
+            <hr/>
+            <div class="blog-container">
+                <p>
+                    So recently, I've just been obsessed with using trig in my animations. I felt that my previous <a href="../wrapping-waves/wrapping-waves.html">Wrapping Waves</a>
+                    post didn't create the illusion I wanted, so I decided to give it another go. Also, I noticed that my last post didn't come off as nicely because
+                    I accidentally used both <code> Math.sin()</code> and <code>Math.cos()</code> - rather than just picking one trig identity. I'll make note to not do that again.
+                </p>
 
-        <hr/>
-        <div class="blog-container">
-            <p>
-                So recently, I've just been obsessed with using trig in my animations. I felt that my previous <a href="../wrapping-waves/wrapping-waves.html">Wrapping Waves</a>
-                post didn't create the illusion I wanted, so I decided to give it another go. Also, I noticed that my last post didn't come off as nicely because
-                I accidentally used both <code> Math.sin()</code> and <code>Math.cos()</code> - rather than just picking one trig identity. I'll make note to not do that again.
-            </p>
+                <p>
+                    Anyways, because I was able to reuse a lot of the logic from <a href="../wrapping-waves/wrapping-waves.html">Wrapping Waves</a>, I was able to spend more time experimenting here.
+                    So, If you look at all the different Helix objects from left to right, you can actually see that the far most right Helix object is made up of all the individual
+                    Helix objects that come before it. The only reason this happened was because there was a bug that didn't update the <code>x-pos</code> of each helix, thus all Helix objects
+                    were overlaid atop one another.
+                </p>
 
-            <p>
-                Anyways, because I was able to reuse a lot of the logic from <a href="../wrapping-waves/wrapping-waves.html">Wrapping Waves</a>, I was able to spend more time experimenting here.
-                So, If you look at all the different Helix objects from left to right, you can actually see that the far most right Helix object is made up of all the individual
-                Helix objects that come before it. The only reason this happened was because there was a bug that didn't update the <code>x-pos</code> of each helix, thus all Helix objects
-                were overlaid atop one another.
-            </p>
+                <p>
+                    This bug was oddly hard to fix, but it gave me some cool ideas for my next animation.
+                </p>
 
-            <p>
-                This bug was oddly hard to fix, but it gave me some cool ideas for my next animation.
-            </p>
-
-            <p>
-                Anyways, this was just a short fun post. As always, until next time!
-            </p>
-        </div>
-        <hr/>
-		<!-- Footer -->
-        <div class="footer">
-            <ul>
-                <li><i><a href="mailto:dougl@srudolph.ninja?Subject=Hello" target="_top"> Email </a></i></li>
-                <li><i><a href="https://linkedin.com/in/dougjrudolph" target="tab"> LinkedIn</a></i></li>
-                <li><i><a href="https://github.com/11" target="tab"> Github </a></i></li>
-                <li><i><a href="https://twitter.com/_dougrudolph" target="tab"> Twitter </a></i></li>
-            </ul>
+                <p>
+                    Anyways, this was just a short fun post. As always, until next time!
+                </p>
+            </div>
         </div>
     </body>
 </html>
