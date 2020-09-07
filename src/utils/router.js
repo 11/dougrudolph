@@ -1,7 +1,7 @@
 import Navigo from 'navigo';
 import { html } from 'lit-element';
 
-import "views/dr-homepage";
+import "views/view-homepage";
 
 
 export class Router {
@@ -14,7 +14,7 @@ export class Router {
     let router = new Navigo('/', true, '#!');
     router
       .on('')
-      .on('*', () => this.view = html`<dr-homepage />`)
+      .on('*', () => this.view = html`<view-homepage />`)
 
     router.resolve();
 

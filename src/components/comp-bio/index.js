@@ -1,145 +1,152 @@
 import { LitElement, html, css } from 'lit-element';
 
+import {
+  pink,
+  gray10,
+  gray20,
+  gray30,
+  black
+} from 'styles/colors';
+
 import "svgs/github";
 import "svgs/linkedin";
 import "svgs/mail";
 import "svgs/resume";
 import "svgs/twitter";
 
-export const BioStyle = css`
-.bio-container {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 23%;
-  height: 100%;
-  max-height: 100%;
-
-  padding: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  border-right: solid 1px #E6E6E6;
-  overflow-y: hidden;
-}
-
-.bio-container > div {
-  margin-bottom: 50px;
-}
-
-
-/* title is inline block to allow nav to be on the top bar as well, also has custom font */
-.profile{
-  width: 100%;
-  font: normal 1.35rem Palatino, "Palatino Linotype", serif;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: baseline;
-}
-
-.profile img {
-  border: solid 1px #E6E6E6;
-  border-radius: 100%;
-  width: 3rem;
-  height: 3rem;
-  margin-right: 1rem;
-}
-
-.profile a {
-  color: #353535;
-}
-
-.profile a:hover {
-  color: #E50053;
-}
-
-.description {
-  color: #888888;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.description .description-entry {
-  font-family: 'Roboto', sans-serif;
-  font-size: 15px;
-}
-
-.page-menu {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 200;
-  font-size: 18px;
-  letter-spacing: 1px;
-
-  width: 100%;
-
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.page-menu a {
-  display: inline-block;
-  color: #888888;
-  text-decoration: none;
-
-  padding: 5px 10px;
-
-  border-left: 1px solid #353535;
-  margin-bottom: .25rem;
-  width: 100%;
-}
-
-.page-menu a:hover {
-  color: #E5005E;
-  text-decoration: none;
-  border-left: 4px solid #E5005E;
-  transform: scale(1, 1.01);
-  transition: 0.2s ease-out;
-}
-
-.bio-links {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  font-size: 15px;
-  width: 100%;
-}
-
-.icon-container {
-  border-radius: 100px;
-  border: 2px solid #EFEFEF;
-  padding: 10px;
-  margin-right: 10px;
-
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.icon-container:hover {
-  border: 2px solid #E5005E;
-  transition: 0.2s ease-out;
-}
-
-.icon {
-  width: .65rem;
-  height: .65rem;
-}
-
-.bio-footer {
-  font-family: 'Roboto', sans-serif;
-  font-size: .5rem;
-  color: #888888;
-}
-`;
-
 
 class Bio extends LitElement {
-
   static get styles() {
-    return [ BioStyle ];
+    return css`
+      .bio-container {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 23%;
+        height: 100%;
+        max-height: 100%;
+
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        border-right: solid 1px ${gray20};
+
+        overflow-y: hidden;
+      }
+
+      .bio-container > div {
+        margin-bottom: 50px;
+      }
+
+
+      /* title is inline block to allow nav to be on the top bar as well, also has custom font */
+      .profile{
+        font: normal 1.35rem Palatino, "Palatino Linotype", serif;
+        width: 100%;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: baseline;
+      }
+
+      .profile img {
+        border: solid 1px ${gray20};
+        border-radius: 100%;
+        width: 3rem;
+        height: 3rem;
+        margin-right: 1rem;
+      }
+
+      .profile a {
+        color: ${black};
+      }
+
+      .profile a:hover {
+        color: ${pink};
+      }
+
+      .description {
+        color: ${gray30};
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .description .description-entry {
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+      }
+
+      .page-menu {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 200;
+        font-size: 18px;
+        letter-spacing: 1px;
+
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .page-menu a {
+        display: inline-block;
+        color: ${gray30};
+        text-decoration: none;
+
+        padding: 5px 10px;
+
+        border-left: 1px solid ${black};
+        margin-bottom: .25rem;
+        width: 100%;
+      }
+
+      .page-menu a:hover {
+        color: ${pink};
+        text-decoration: none;
+        border-left: 4px solid ${pink};
+        transform: scale(1, 1.01);
+        transition: 0.2s ease-out;
+      }
+
+      .bio-links {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        font-size: 15px;
+        width: 100%;
+      }
+
+      .icon-container {
+        border-radius: 100px;
+        border: 2px solid ${gray10};
+        padding: 10px;
+        margin-right: 10px;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+
+      .icon-container:hover {
+        border: 2px solid ${pink};
+        transition: 0.2s ease-out;
+      }
+
+      .icon {
+        width: .65rem;
+        height: .65rem;
+      }
+
+      .bio-footer {
+        font-family: 'Roboto', sans-serif;
+        font-size: .5rem;
+        color: ${gray30};
+      }
+    `;
   }
 
   render() {
@@ -214,4 +221,4 @@ class Bio extends LitElement {
   }
 }
 
-customElements.define('dr-bio', Bio);
+customElements.define('comp-bio', Bio);

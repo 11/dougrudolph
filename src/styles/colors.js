@@ -1,16 +1,18 @@
 import { css } from 'lit-element';
 
 
-const pink = css`#E50053`;
+const black = css`#353535`;  // NOTE: main font color
 const white = css`#FFF`;
-const gray10= css`#EFEFEF`;
-const gray20 = css`#888888`;
-const gray30 = css`#353535`;  // NOTE: main font color
+const pink = css`#E50053`;
+const gray10 = css`#EFEFEF`;
+const gray20 = css`#E6E6E6`;
+const gray30 = css`#888888`;
 
 
-export default {
-  pink,
+export {
+  black,
   white,
+  pink,
   gray10,
   gray20,
   gray30,

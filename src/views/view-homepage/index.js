@@ -1,6 +1,6 @@
 import { LitElement, html, css } from 'lit-element';
 
-import "components/dr-bio/";
+import "components/comp-bio/";
 
 
 const HomepageStyle = css`
@@ -476,7 +476,7 @@ class Homepage extends LitElement {
 
   render() {
     return html `
-      <dr-bio></dr-bio>
+      <comp-bio></comp-bio>
 
       <div class="blog-list-container">
         <div class="blog-post-link-container">
@@ -621,4 +621,4 @@ class Homepage extends LitElement {
 
 }
 
-customElements.define('dr-homepage', Homepage);
+customElements.define('view-homepage', Homepage);

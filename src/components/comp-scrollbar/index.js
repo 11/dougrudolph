@@ -53,4 +53,4 @@ class Scrollbar extends LitElement {
 }
 
 
-customElements.define('dr-scrollbar', Scrollbar);
+customElements.define('comp-scrollbar', Scrollbar);
