@@ -1,5 +1,4 @@
 import { LitElement, html, css } from 'lit-element';
-
 import "components/comp-bio/";
 
 
@@ -470,6 +469,7 @@ class Homepage extends LitElement {
   static get styles() {
     return [ HomepageStyle ];
   }
+
   constructor() {
     super();
   }
@@ -480,7 +480,7 @@ class Homepage extends LitElement {
 
       <div class="blog-list-container">
         <div class="blog-post-link-container">
-          <a href="./blogs/chunkwm/chunkwm.html">
+          <a href="/blog/installing-chunkwm">
             <div class="blog-post-link-header">
               <div>
                 <span class="blog-post-link-title">Installing ChunkWM</span>
@@ -586,7 +586,7 @@ class Homepage extends LitElement {
 
 
           <div class="blog-post-link-container">
-            <a href="./blogs/particle-net/particle-net.html">
+            <a href="/blog/particle-net">
               <div class="blog-post-link-header">
                 <div>
                   <span class="blog-post-link-title"> Particle Net </span>
@@ -616,9 +616,7 @@ class Homepage extends LitElement {
           </div>
       </div>
     `;
-
   }
-
 }
 
 customElements.define('view-homepage', Homepage);

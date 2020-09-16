@@ -171,7 +171,7 @@ class Bio extends LitElement {
 
         <div class="page-menu">
           <a href="./index.html"> Blog posts </a>
-          <a href="./about.html"> About me </a>
+          <a href="/about"> About me </a>
           <a href="./contact.html"> Contact info </a>
         </div>
 

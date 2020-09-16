@@ -5,6 +5,7 @@ const path = require('path');
 module.exports = {
   resolve: {
     alias: {
+      src: path.resolve(__dirname, './src/'),
       components: path.resolve(__dirname, './src/components/'),
       fonts: path.resolve(__dirname, './src/fonts/'),
       styles: path.resolve(__dirname, './src/styles/'),

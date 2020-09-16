@@ -27,27 +27,31 @@ class BlogParticleNet extends LitElement {
     document.title = 'Doug Rudolph - Blog';
 
     this.handleResize = this.handleResize.bind(this);
+    this.mountCanvas = this.mountCanvas.bind(this);
   }
 
   connectedCallback() {
-    const canvas = this.shadowRoot.getElementById('blog-canvas');
-    canvas.width = window.innerWidth * .59;
-    canvas.height = window.innerHeight * .4;
-
-    const ctx = canvas.getContext("2d");
-
     // TODO: link the animation to the page
-
+    window.addEventListener('load', this.mountCanvas);
     window.addEventListener("resize", this.handleResize);
   }
 
   disconnectedCallback() {
+    window.removeEventListener('load', this.mountCanvas);
     window.removeEventListener("resize", this.handleResize);
   }
 
   handleResize = () => {
     const canvas = this.shadowRoot.getElementById('blog-canvas');
     canvas.width = window.innerWidth * .49;
+  }
+
+  mountCanvas = () => {
+    const canvas = this.shadowRoot.getElementById('blog-canvas');
+    canvas.width = window.innerWidth * .59;
+    canvas.height = window.innerHeight * .4;
+
+    const ctx = canvas.getContext("2d");
   }
 
   startAnimation = () => {

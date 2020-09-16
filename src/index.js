@@ -1,16 +1,10 @@
-import { LitElement } from 'lit-element';
-import { Router } from 'utils/router';
+import { Router } from '@vaadin/router' ;
+import { ROUTING_TABLE } from 'utils/routes';
 
 
-class AppRoot extends LitElement {
-  constructor() {
-    super();
-    this.router = new Router();
-  }
+const output = document.querySelector('output');
+const router = new Router(output);
+router.setRoutes(ROUTING_TABLE);
 
-  render() {
-    return this.router.render();
-  }
-}
 
-customElements.define('app-root', AppRoot);
+export { router };
