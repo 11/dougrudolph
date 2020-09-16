@@ -1,5 +1,6 @@
 import { LitElement, html, css } from 'lit-element';
 
+import { runAnimation } from './particle-net';
 import "components/comp-bio/";
 
 
@@ -30,37 +31,40 @@ class BlogParticleNet extends LitElement {
     this.mountCanvas = this.mountCanvas.bind(this);
   }
 
+  firstUpdated() {
+    super.firstUpdated();
+    this.mountCanvas();
+  }
+
   connectedCallback() {
-    // TODO: link the animation to the page
-    window.addEventListener('load', this.mountCanvas);
+    super.connectedCallback();
     window.addEventListener("resize", this.handleResize);
   }
 
   disconnectedCallback() {
-    window.removeEventListener('load', this.mountCanvas);
+    super.disconnectedCallback();
     window.removeEventListener("resize", this.handleResize);
   }
 
   handleResize = () => {
     const canvas = this.shadowRoot.getElementById('blog-canvas');
-    canvas.width = window.innerWidth * .49;
+    // canvas.width = canvas.parentElement.clientWidth;
   }
 
   mountCanvas = () => {
     const canvas = this.shadowRoot.getElementById('blog-canvas');
-    canvas.width = window.innerWidth * .59;
-    canvas.height = window.innerHeight * .4;
-
     const ctx = canvas.getContext("2d");
-  }
 
-  startAnimation = () => {
+    // set default width and height of canvas
+    // canvas.width = canvas.parentElement.clientWidth;
+    canvas.width = 200;
+    canvas.height = canvas.width*.33;
 
+    runAnimation(canvas, ctx);
   }
 
   render() {
     return html`
-
       <comp-bio></comp-bio>
 
       <div class="blog">

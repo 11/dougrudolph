@@ -3,13 +3,16 @@ import 'views/view-about';
 
 import 'views/blogs/view-particle-net';
 import 'views/blogs/view-installing-chunkwm';
+
+
 /*
+ * TODO: figure out how to make this work
  * Purpose: wait to load files when requested from the router
  *   - prevents importing/loading all website routes on startup
  */
-async function lazyLoad(viewFilepath) {
-  await import (viewFilepath);
-}
+// async function lazyLoad(viewFilepath) {
+//   await import (viewFilepath);
+// }
 
 export const ROUTING_TABLE = [
   // Top Level Routes:
