@@ -12,7 +12,7 @@ class Link extends LitElement {
         color: ${pink};
         text-decoration: underline solid transparent;
 
-        transition: text-decoration 250ms ease;
+        transition: text-decoration 150ms ease;
       }
 
       /* on hover, underline the text */
@@ -25,19 +25,20 @@ class Link extends LitElement {
   static get properties() {
     return {
       url: { type: String },
-      target: { type: String },
-    }
+      text: { type: String },
+    };
   }
 
   constructor() {
+    super();
+
     this.url = "#";
+    this.text = "default text";
   }
 
   render() {
     return html`
-      <a href="${this.url}">
-       <slot></slot>
-      </a>
+      <a href="${this.url}">${this.text}</a>
     `;
   }
 }
