@@ -3,6 +3,7 @@ import 'views/view-about';
 
 import 'views/blogs/view-particle-net';
 import 'views/blogs/view-installing-chunkwm';
+import 'views/blogs/view-vimrc-starter-kit';
 
 
 /*
@@ -22,6 +23,7 @@ export const ROUTING_TABLE = [
 
   // Blog Routes:
   { path: '/blog/installing-chunkwm', component: 'view-installing-chunkwm' },
+  { path: '/blog/vimrc-starter-kit', component: 'view-vimrc-starter-kit' },
   { path: '/blog/just-concentrate', component: 'view-just-concentrate' },
   { path: '/blog/particle-net', component: 'view-particle-net' },
 

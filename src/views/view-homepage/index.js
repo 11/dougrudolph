@@ -364,7 +364,7 @@ class Homepage extends LitElement {
           </div>
 
           <div class="blog-post-link-container">
-            <a href="./blogs/vimrc-starter-kit.html">
+            <a href="/blog/vimrc-starter-kit">
               <div class="blog-post-link-header">
                 <div>
                   <span class="blog-post-link-title"> Vimrc Starter Kit </span>
