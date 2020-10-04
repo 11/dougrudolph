@@ -29,7 +29,7 @@ class BlogParticleNet extends LitElement {
 
   constructor() {
     super();
-    document.title = 'Doug Rudolph - Blog';
+    document.title = 'Doug Rudolph - Particle Net';
 
     this.handleResize = this.handleResize.bind(this);
     this.mountCanvas = this.mountCanvas.bind(this);

@@ -1,6 +1,6 @@
 import { LitElement, html } from 'lit-element';
 import { BlogStyle } from 'views/blogs/style.js';
-import ChunkWMGif from './chunkwm-vid.gif';
+import ChunkWMGif from './assets/chunkwm-vid.gif';
 import "components/comp-bio";
 
 
@@ -51,7 +51,7 @@ class BlogInstallingChunkwm extends LitElement {
             <h2> What is ChunkWM </h2>
             <p> So this is ChunkWM: </p>
 
-            <img src="./chunkwm-vid.gif" alt="chunkwm-gif" align="middle" width="640" height="480"/>
+            <img src="./assets/chunkwm-vid.gif" alt="chunkwm-gif" align="middle" width="640" height="480"/>
 
             <p>
               ChunkWM is a Window Manager - which is just software that manages the layout of all your windows.

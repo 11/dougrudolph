@@ -15,15 +15,24 @@ import 'views/blogs/view-vimrc-starter-kit';
 //   await import (viewFilepath);
 // }
 
+
 export const ROUTING_TABLE = [
-  // Top Level Routes:
+  /*** TOP LEVEL ROUTES: ***/
   { path: '/', component: 'view-homepage' },
   { path: '/about',   component: 'view-about' },
-  // { path: '/contact',   component: 'view-contact' },
+  { path: '/contact',   component: 'view-contact' },
 
-  // Blog Routes:
+
+
+  /*** BLOG ROUTES ***/
+  // Tutorials
   { path: '/blog/installing-chunkwm', component: 'view-installing-chunkwm' },
   { path: '/blog/vimrc-starter-kit', component: 'view-vimrc-starter-kit' },
+
+  // Animations
+
+
+  // Articles
   { path: '/blog/just-concentrate', component: 'view-just-concentrate' },
   { path: '/blog/particle-net', component: 'view-particle-net' },
 
