@@ -5,7 +5,7 @@ class Node {
     this.radius = radius;
     this.dx = randFromZero(7)/10;
     this.dy = randFromZero(7)/10;
-    this.color="#F0F0F0";
+    this.color = "#F0F0F0";
 
     this.canvas = canvas;
     this.ctx = ctx;
@@ -24,11 +24,11 @@ class Node {
     this.y += this.dy;
 
     if (this.x + this.dx > this.canvas.width || this.x + this.dx < 0) {
-      this.dx = -(this.dx);
+      this.dx = (-this.dx);
     }
 
     if (this.y + this.dy > this.canvas.height || this.y + this.dy < 0) {
-      this.dy = -(this.dy);
+      this.dy = (-this.dy);
     }
   }
 

@@ -379,7 +379,7 @@ class Homepage extends LitElement {
           </div>
 
           <div class="blog-post-link-container">
-            <a href="./blogs/just-concentrate.html">
+            <a href="/blog/just-concentrate">
               <div class="blog-post-link-header">
                 <div>
                   <span class="blog-post-link-title"> Just Concentrate </span>
@@ -394,7 +394,7 @@ class Homepage extends LitElement {
           </div>
 
           <div class="blog-post-link-container">
-            <a href="./blogs/dna-helix/dna-helix.html">
+            <a href="/blog/dna-helix">
               <div class="blog-post-link-header">
                 <div>
                   <span class="blog-post-link-title"> DNA Helix </span>
@@ -435,21 +435,6 @@ class Homepage extends LitElement {
               </div>
               <div class="blog-post-link-description">
                 <span> So this small animation is my first ever JavaScript canvas project, and let me tell you, this project has made me grow as a developer.  </span>
-              </div>
-            </a>
-          </div>
-
-          <div class="blog-post-link-container">
-            <a href="./blogs/why-vim-part-one.html">
-              <div class="blog-post-link-header">
-                <div>
-                  <span class="blog-post-link-title"> Why Vim? - Part One </span>
-                  <span class="tag"> Article </span>
-                </div>
-                <span class="blog-post-link-date"> July 2017 </span>
-              </div>
-              <div class="blog-post-link-description">
-                <span>It all started in a database class during my sophomore year of college when studying computer science; and at the time, I was zoning out in class - as you do throughout a 3 hour lecture.</span>
               </div>
             </a>
           </div>
