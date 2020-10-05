@@ -6,6 +6,8 @@ import 'views/blogs/view-particle-net';
 import 'views/blogs/view-installing-chunkwm';
 import 'views/blogs/view-vimrc-starter-kit';
 import 'views/blogs/view-dna-helix';
+import 'views/blogs/view-oscillations';
+import 'views/blogs/view-just-concentrate';
 
 
 /*

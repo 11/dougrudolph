@@ -1,7 +1,9 @@
 import { LitElement, html } from 'lit-element';
 
 import { BlogStyle } from 'views/blogs/style.js';
+import { runAnimation } from './oscillations.js';
 import 'components/comp-bio';
+
 
 
 class BlogOscillations extends LitElement {
@@ -46,6 +48,8 @@ class BlogOscillations extends LitElement {
 
   render() {
     return html`
+      <comp-bio></comp-bio>
+
       <div class="blog">
         <div class="blog-header">
           <h2>Oscillations</h2>

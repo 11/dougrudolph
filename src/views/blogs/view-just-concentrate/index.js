@@ -1,7 +1,12 @@
 import { LitElement, html, css } from 'lit-element';
-
+import { BlogStyle } from 'views/blogs/style.js';
+import "components/comp-bio"
 
 class BlogJustConcetrate extends LitElement {
+  static get styles() {
+    return [ BlogStyle ];
+  }
+
   constructor() {
     super();
 
@@ -10,6 +15,7 @@ class BlogJustConcetrate extends LitElement {
 
   render() {
     return html`
+      <comp-bio></comp-bio>
       <div class="blog">
         <div class="blog-header">
           <h2>Just Concentrate</h2>
