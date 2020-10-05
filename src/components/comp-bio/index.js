@@ -164,7 +164,7 @@ class Bio extends LitElement {
 
         <!-- Description -->
         <div class="description">
-          <div class="description-entry"> Creator of <comp-link url="https://schoolofthought.io" text="@SchoolOfThought.io"></comp-link></b></div>
+          <div class="description-entry"> Creator of <comp-link url="https://schoolofthought.io" text="@schoolofthought.io"></comp-link></b></div>
           <div class="description-entry"> First engineer <comp-link url="https://www.Interseller.io/about" text="@interseller.io"></comp-link> </div>
           <div class="description-entry"> Former back-end engineer <comp-link url="https://buzzfeed.com" text="@BuzzFeed"></comp-link> </div>
           <div class="description-entry"> Former engineering intern <comp-link url="https://tech.buzzfeed.com/meet-buzzfeed-techs-2017-intern-squad-7d9d3bcefa05" text="@BuzzFeed"></comp-link> </div>
