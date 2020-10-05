@@ -13,7 +13,9 @@ class Contact extends LitElement {
   }
 
   render() {
-    return html``;
+    return html`
+      <comp-bio></comp-bio>
+    `;
   }
 }
 

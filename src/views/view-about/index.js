@@ -1,5 +1,6 @@
 import { LitElement, html } from 'lit-element';
 import { router } from 'src/index';
+import 'components/comp-bio';
 
 class About extends LitElement {
   static get properties() {
@@ -15,7 +16,7 @@ class About extends LitElement {
 
   render() {
     return html`
-      <h1> about </h1>
+      <comp-bio></comp-bio>
     `;
   }
 }

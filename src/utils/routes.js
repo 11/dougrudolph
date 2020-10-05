@@ -1,5 +1,6 @@
 import 'views/view-homepage';
 import 'views/view-about';
+import 'views/view-contact';
 
 import 'views/blogs/view-particle-net';
 import 'views/blogs/view-installing-chunkwm';
