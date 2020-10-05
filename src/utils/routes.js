@@ -20,8 +20,8 @@ import 'views/blogs/view-dna-helix';
 export const ROUTING_TABLE = [
   /****** TOP LEVEL ROUTES: *****/
   { path: '/', component: 'view-homepage' },
-  { path: '/about',   component: 'view-about' },
-  { path: '/contact',   component: 'view-contact' },
+  { path: '/about', component: 'view-about' },
+  { path: '/contact', component: 'view-contact' },
 
 
   /****** BLOG ROUTES ******/
@@ -32,9 +32,8 @@ export const ROUTING_TABLE = [
   // Animations
   { path: '/blog/particle-net', component: 'view-particle-net' },
   { path: '/blog/dna-helix', component: 'view-dna-helix' },
-
+  { path: '/blog/oscillations', component: 'view-oscillations' },
 
   // Articles
   { path: '/blog/just-concentrate', component: 'view-just-concentrate' },
-
 ];

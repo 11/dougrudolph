@@ -8,7 +8,7 @@ import {
   black
 } from 'styles/colors';
 
-import profileImg from "./profile_img.jpg";
+import profileImg from "./assets/profile_img.jpg";
 import "svgs/github";
 import "svgs/linkedin";
 import "svgs/mail";
@@ -164,11 +164,11 @@ class Bio extends LitElement {
 
         <!-- Description -->
         <div class="description">
+          <div class="description-entry"> Creator of <comp-link url="https://schoolofthought.io" text="@schoolofthought.io"></comp-link></b></div>
           <div class="description-entry"> First engineer <comp-link url="https://www.Interseller.io/about" text="@interseller.io"></comp-link> </div>
           <div class="description-entry"> Former back-end engineer <comp-link url="https://buzzfeed.com" text="@BuzzFeed"></comp-link> </div>
           <div class="description-entry"> Former SWE intern <comp-link url="https://tech.buzzfeed.com/meet-buzzfeed-techs-2017-intern-squad-7d9d3bcefa05" text="@BuzzFeed"></comp-link> </div>
           <div class="description-entry"> <comp-link url="https://hackny.org/blog/2017/06/announcing-the-class-of-2017-hackny-fellows" text="@hackNY Fellow"></comp-link> – 2017 </div>
-          <div class="description-entry"> Rendering 👾 – Rust 🦀 – Haskell <b style="color: purple">λ</b></div>
         </div>
 
         <div class="page-menu">

@@ -294,13 +294,6 @@ a:hover {
     }
 
 }
-
-
-/***************************************************************
- *                         MOBILE                              *
- ***************************************************************/
-
-
 `;
 
 class Homepage extends LitElement {
@@ -337,7 +330,7 @@ class Homepage extends LitElement {
             <a href="./blogs/outward-wave/outward-wave.html">
               <div class="blog-post-link-header">
                 <div>
-                  <span class="blog-post-link-title">Outward Wave</span>
+                  <span class="blog-post-link-title">Oscillations</span>
                     <span class="tag"> Animation </span>
                 </div>
                 <span class="blog-post-link-date"> May 2018</span>
@@ -346,21 +339,6 @@ class Homepage extends LitElement {
                 <span> I've come to the conclusion that I'm obsessed with wave animations and it's an actual problem. This is the fifth animation where I have used some form of unit circle logic, and I think it's time to create something with a little more creativity.  </span>
                 </div>
               </a>
-          </div>
-
-          <div class="blog-post-link-container">
-            <a href="./blogs/reflective-grid/reflective-grid.html">
-              <div class="blog-post-link-header">
-                <div>
-                  <span class="blog-post-link-title"> Reflective Grid</span>
-                  <span class="tag"> Animation </span>
-                </div>
-                <span class="blog-post-link-date"> May 2018 </span>
-              </div>
-              <div class="blog-post-link-description">
-                <span> So because it is memorial day, I was thinking about a new animation to code with the extra day off from work; and because Google is showing a waving American Flag as the banner to Google searches, I decided to create a rippling/reflective grid effect inspired by a waving flag. </span>
-              </div>
-            </a>
           </div>
 
           <div class="blog-post-link-container">
@@ -407,22 +385,6 @@ class Homepage extends LitElement {
               </div>
             </a>
           </div>
-
-          <div class="blog-post-link-container">
-            <a href="./blogs/wrapping-waves/wrapping-waves.html">
-              <div class="blog-post-link-header">
-                <div>
-                  <span class="blog-post-link-title"> Wrapping Waves </span>
-                  <span class="tag"> Animation </span>
-                </div>
-                <span class="blog-post-link-date"> February 2018</span>
-              </div>
-              <div class="blog-post-link-description">
-                <span> Okay, so I lied in the last blog. For this animation, I ended up using vanilla JavaScript again, and the overall experience, to my surprise, was enjoyable. </span>
-              </div>
-            </a>
-          </div>
-
 
           <div class="blog-post-link-container">
             <a href="/blog/particle-net">
