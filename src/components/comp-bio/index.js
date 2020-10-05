@@ -216,7 +216,7 @@ class Bio extends LitElement {
         </div>
 
         <div class="bio-footer">
-          © All rights reserved – Theme by: <comp-link url="https://twitter.com/_dougrudolph" text="@_dougrudolph"></comp-link>
+          © All rights reserved – Theme by <comp-link url="https://twitter.com/_dougrudolph" text="@_dougrudolph"></comp-link>
         </div>
       </div>
     `;
