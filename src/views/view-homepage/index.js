@@ -354,7 +354,6 @@ class Homepage extends LitElement {
     return html`
       ${this.blogList.map((blogData) => {
         const { title, tag, date, description, route, } = blogData;
-        debugger;
         return html`
           <div class="blog-post-link-container">
             <a href="${route}">
