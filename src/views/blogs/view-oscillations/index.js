@@ -12,6 +12,9 @@ class BlogOscillations extends LitElement {
   constructor() {
     super();
     document.title = 'Doug Rudolph - Oscillations';
+
+    this.handleResize = this.handleResize.bind(this);
+    this.mountCanvas = this.mountCanvas.bind(this);
   }
 
   firstUpdated() {
