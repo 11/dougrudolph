@@ -1,2 +1,2 @@
 # dougrudolph.com
-Personal website created with <a href="https://lit-element.polymer-project.org/">Lit-Element</a>
+Personal website created with <a href="https://lit-element.polymer-project.org/">Lit-Element</a>. If you'd like to work off this project, check out the project licensing and other info <a href="https://github.com/11/dougrudolph.com/tree/master/markdown/other">here</a>.
