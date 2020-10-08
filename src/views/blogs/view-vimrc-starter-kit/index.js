@@ -10,6 +10,8 @@ class BlogVimrcStarterKit extends LitElement {
 
   constructor() {
     super();
+
+    document.title = 'Vimrc Starter Kit';
   }
 
   render() {

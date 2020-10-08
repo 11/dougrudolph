@@ -13,7 +13,7 @@ class BlogInstallingChunkwm extends LitElement {
   constructor() {
     super();
 
-    document.title = 'Doug Rudolph - Blog';
+    document.title = 'Doug Rudolph - Installing ChunkWM';
   }
 
   render() {

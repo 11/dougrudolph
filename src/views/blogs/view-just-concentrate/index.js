@@ -12,7 +12,7 @@ class BlogJustConcetrate extends LitElement {
   constructor() {
     super();
 
-    document.title = 'Doug Rudolph - Blog';
+    document.title = 'Doug Rudolph - Just Concentrate';
   }
 
   render() {
