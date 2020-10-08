@@ -6,10 +6,8 @@ export const BlogStyle = css`
   position: fixed;
   top: 0px;
   left: calc(23% + 60px);
-  width: calc(67% - 60px);
   height: 100%;
-  padding: 2rem;
-
+  padding: 0 2rem;
   overflow-y: scroll;
 }
 
