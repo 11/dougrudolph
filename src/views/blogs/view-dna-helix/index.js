@@ -18,12 +18,13 @@ class BlogDnaHelix extends LitElement {
     document.title = 'Doug Rudolph - Helix';
 
     this.handleResize = this.handleResize.bind(this);
-    this.mountcnvs = this.mountCanvas.bind(this)
+    this.startAnimation = this.startAnimation.bind(this);
   }
 
   firstUpdated() {
-    super.firstUpdated();
-    this.mountcnvs();
+    super.connectedCallback();
+    this.handleResize();
+    this.startAnimation();
   }
 
   connectedCallback() {
@@ -37,20 +38,16 @@ class BlogDnaHelix extends LitElement {
   }
 
   handleResize = () => {
-    const cnvs = this.shadowRoot.getElementById('blog-canvas');
-    // cnvs.width = cnvs.parentElement.clientWidth;
+    const canvas = this.shadowRoot.getElementById('blog-canvas');
+    const blogPadding = window.getComputedStyle(canvas.parentElement).padding;
+    const offset = parseInt(blogPadding, 10);
+    canvas.width = canvas.parentElement.clientWidth - offset*2;
   }
 
-  mountCanvas = () => {
-    const cnvs = this.shadowRoot.getElementById('blog-canvas');
-    const ctx = cnvs.getContext("2d");
-
-    // set default width and height of cnvs
-    // cnvs.width = cnvs.parentElement.clientWidth;
-    cnvs.width = 200;
-    cnvs.height = cnvs.width*.33;
-
-    runAnimation(cnvs, ctx);
+  startAnimation() {
+    const canvas = this.shadowRoot.getElementById('blog-canvas');
+    const ctx = canvas.getContext("2d");
+    runAnimation(canvas, ctx);
   }
 
   render() {

@@ -1,5 +1,5 @@
 class Node {
-  constructor(cnvs, ctx, x, y, radius, radianDelta) {
+  constructor(canvas, ctx, x, y, radius, radianDelta) {
     this.x = x;
     this.startPos = x;
     this.y = y;
@@ -7,7 +7,7 @@ class Node {
     this.radianDelta = radianDelta;
     this.color = "#F0F0F0";
 
-    this.cnvs = cnvs;
+    this.canvas = canvas;
     this.ctx = ctx;
   }
 
@@ -26,8 +26,8 @@ class Node {
 }
 
 class HelixLine {
-  constructor(cnvs, ctx, n1, n2) {
-    this.cnvs = cnvs;
+  constructor(canvas, ctx, n1, n2) {
+    this.canvas = canvas;
     this.ctx = ctx;
 
     this.n1 = n1;
@@ -56,22 +56,22 @@ class HelixLine {
 }
 
 class Helix {
-  constructor(cnvs, ctx, xPos, totalHelixes, radianOffset, isOscillating) {
-    this.cnvs = cnvs;
+  constructor(canvas, ctx, xPos, totalHelixes, radianOffset, isOscillating) {
+    this.canvas = canvas;
     this.ctx = ctx;
 
     this.totalHelixes = totalHelixes;
     this.radianOffset = radianOffset;
     this.isOscillating = isOscillating;
 
-    let deltaY = (cnvs.height/2) - (16*20/2);
+    let deltaY = (canvas.height/2) - (16*20/2);
     let nodeWidth = 6;
 
     this.helixList = []
     for(let i = 0; i < totalHelixes; i++){
-      let n1 = new Node(this.cnvs, this.ctx, xPos, deltaY + (i+1)*20, nodeWidth, 0 + i*this.radianOffset);
-      let n2 = new Node(this.cnvs, this.ctx, xPos, deltaY + (i+1)*20, nodeWidth, Math.PI +i*this.radianOffset);
-      let helix = new HelixLine(cnvs, ctx, n1, n2);
+      let n1 = new Node(this.canvas, this.ctx, xPos, deltaY + (i+1)*20, nodeWidth, 0 + i*this.radianOffset);
+      let n2 = new Node(this.canvas, this.ctx, xPos, deltaY + (i+1)*20, nodeWidth, Math.PI +i*this.radianOffset);
+      let helix = new HelixLine(canvas, ctx, n1, n2);
 
       this.helixList.push(helix);
     }
@@ -90,22 +90,22 @@ class Helix {
   }
 }
 
-export function runAnimation(cnvs, ctx) {
-  let deltaX = cnvs.width/9*2.8 - cnvs.width/9;
+export function runAnimation(canvas, ctx) {
+  let deltaX = canvas.width/9*2.8 - canvas.width/9;
   const helixs = [
-    new Helix(cnvs, ctx, cnvs.width / 9,              15, .2, true),
-    new Helix(cnvs, ctx, cnvs.width / 9 + deltaX,     15, .3, true),
-    new Helix(cnvs, ctx, cnvs.width / 9 + deltaX * 2, 15, .4, true),
-    new Helix(cnvs, ctx, cnvs.width / 9 + deltaX * 3, 15, .5, true),
-    new Helix(cnvs, ctx, cnvs.width / 9 + deltaX * 4, 15, .2, true),
-    new Helix(cnvs, ctx, cnvs.width / 9 + deltaX * 4, 15, .3, true),
-    new Helix(cnvs, ctx, cnvs.width / 9 + deltaX * 4, 15, .4, true),
+    new Helix(canvas, ctx, canvas.width / 9,              15, .2, true),
+    new Helix(canvas, ctx, canvas.width / 9 + deltaX,     15, .3, true),
+    new Helix(canvas, ctx, canvas.width / 9 + deltaX * 2, 15, .4, true),
+    new Helix(canvas, ctx, canvas.width / 9 + deltaX * 3, 15, .5, true),
+    new Helix(canvas, ctx, canvas.width / 9 + deltaX * 4, 15, .2, true),
+    new Helix(canvas, ctx, canvas.width / 9 + deltaX * 4, 15, .3, true),
+    new Helix(canvas, ctx, canvas.width / 9 + deltaX * 4, 15, .4, true),
   ];
 
   const render = () => {
-    ctx.clearRect(0,0,cnvs.width, cnvs.height);
-    helixs.forEach(idx => helixs[idx].draw());
-    helixs.forEach(idx => helixs[idx].update());
+    ctx.clearRect(0,0,canvas.width, canvas.height);
+    helixs.forEach(helix => helix.draw());
+    helixs.forEach(helix => helix.update());
     requestAnimationFrame(render);
   }
 
