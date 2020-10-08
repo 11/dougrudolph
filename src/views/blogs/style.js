@@ -7,6 +7,7 @@ export const BlogStyle = css`
   top: 0px;
   left: calc(23% + 60px);
   height: 100%;
+  width: calc(67%);
   padding: 0 2rem;
   overflow-y: scroll;
 }

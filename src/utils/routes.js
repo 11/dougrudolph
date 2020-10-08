@@ -29,14 +29,14 @@ export const ROUTING_TABLE = [
 
   /****** BLOG ROUTES ******/
   // Tutorials
-  { path: '/blog/installing-chunkwm', component: 'view-installing-chunkwm' },
-  { path: '/blog/vimrc-starter-kit', component: 'view-vimrc-starter-kit' },
+  { path: '/installing-chunkwm', component: 'view-installing-chunkwm' },
+  { path: '/vimrc-starter-kit', component: 'view-vimrc-starter-kit' },
 
   // Animations
-  { path: '/blog/particle-net', component: 'view-particle-net' },
-  { path: '/blog/dna-helix', component: 'view-dna-helix' },
-  { path: '/blog/oscillations', component: 'view-oscillations' },
+  { path: '/particle-net', component: 'view-particle-net' },
+  { path: '/dna-helix', component: 'view-dna-helix' },
+  { path: '/oscillations', component: 'view-oscillations' },
 
   // Articles
-  { path: '/blog/just-concentrate', component: 'view-just-concentrate' },
+  { path: '/just-concentrate', component: 'view-just-concentrate' },
 ];
