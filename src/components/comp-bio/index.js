@@ -21,20 +21,17 @@ class Bio extends LitElement {
   static get styles() {
     return css`
       .bio-container {
-        position: absolute;
+        position: fixed;
         left: 0px;
-        top: 0px;
+        top: 0;
         width: 23%;
         height: 100%;
-        max-height: 100%;
 
         padding: 30px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         border-right: solid 1px ${gray20};
-
-        overflow-y: hidden;
       }
 
       .bio-container > div {
@@ -153,8 +150,6 @@ class Bio extends LitElement {
 
   render() {
     return html`
-      <link rel="stylesheet" type="module" href="./style.css"/>
-
       <div class="bio-container">
         <!-- profile info -->
         <div class="profile">

@@ -62,7 +62,7 @@ a:hover {
 }
 
 .blog-list-container {
-  position: absolute;
+  position: fixed;
   top: 0px;
   left: calc(23% + 60px);
   width: calc(67% - 60px);

@@ -3,13 +3,14 @@ import { css } from 'lit-element';
 
 export const BlogStyle = css`
 .blog {
-  position: absolute;
+  position: fixed;
   top: 0px;
   left: calc(23% + 60px);
   width: calc(67% - 60px);
   height: 100%;
-  overflow-y: scroll;
   padding: 2rem;
+
+  overflow-y: scroll;
 }
 
 .blog-header {
