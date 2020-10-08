@@ -2,30 +2,15 @@ import { LitElement, html, css } from 'lit-element';
 import { BlogStyle } from 'views/blogs/style';
 
 import { runAnimation } from './dna-helix';
+
 import "components/comp-bio";
 import "components/comp-link";
 
 
-const CanvasStyle = css`
-  canvas {
-    background-color: #DD2176;
-    margin-bottom: 20px;
-  }
-
-
-  @media screen and (max-width: 1080px){
-    canvas {
-      background-color: #E50053;
-      margin: 0;
-      padding: 0;
-    }
-  }
-`;
-
 
 class BlogDnaHelix extends LitElement {
   static get styles() {
-    return [ BlogStyle, CanvasStyle, ];
+    return [ BlogStyle ];
   }
 
   constructor() {

@@ -17,14 +17,18 @@ class BlogOscillations extends LitElement {
     document.title = 'Doug Rudolph - Oscillations';
 
     this.handleResize = this.handleResize.bind(this);
-    this.mountCanvas = this.mountCanvas.bind(this);
+    this.startAnimation = this.startAnimation.bind(this);
   }
 
   firstUpdated() {
     super.connectedCallback();
-    window.addEventListener("resize", this.handleResize);
+    this.handleResize();
+    this.startAnimation();
+  }
 
-    this.mountCanvas();
+  connectedCallback() {
+    super.connectedCallback();
+    window.addEventListener("resize", this.handleResize);
   }
 
   disconnectedCallback() {
@@ -34,17 +38,14 @@ class BlogOscillations extends LitElement {
 
   handleResize = () => {
     const canvas = this.shadowRoot.getElementById('blog-canvas');
-    // canvas.width = canvas.parentElement.clientWidth;
+    const blogPadding = window.getComputedStyle(canvas.parentElement).padding;
+    const offset = parseInt(blogPadding, 10);
+    canvas.width = canvas.parentElement.clientWidth - offset*2;
   }
 
-  mountCanvas = () => {
+  startAnimation() {
     const canvas = this.shadowRoot.getElementById('blog-canvas');
     const ctx = canvas.getContext("2d");
-
-    // set default width and height of canvas
-    // canvas.width = canvas.parentElement.clientWidth;
-    canvas.width = 200;
-    canvas.height = canvas.width*.33;
     runAnimation(canvas, ctx);
   }
 

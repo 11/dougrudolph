@@ -9,7 +9,7 @@ export const BlogStyle = css`
   width: calc(67% - 60px);
   height: 100%;
   overflow-y: scroll;
-  padding: 30px 5% 0px;
+  padding: 2rem;
 }
 
 .blog-header {
