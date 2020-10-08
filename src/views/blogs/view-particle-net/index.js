@@ -18,6 +18,7 @@ class BlogParticleNet extends LitElement {
     this.handleResize = this.handleResize.bind(this);
     this.startAnimation = this.startAnimation.bind(this);
   }
+
   firstUpdated() {
     super.connectedCallback();
     this.handleResize();
