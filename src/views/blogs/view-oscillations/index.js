@@ -23,6 +23,8 @@ class BlogOscillations extends LitElement {
   firstUpdated() {
     super.connectedCallback();
     window.addEventListener("resize", this.handleResize);
+
+    this.mountCanvas();
   }
 
   disconnectedCallback() {
@@ -43,7 +45,6 @@ class BlogOscillations extends LitElement {
     // canvas.width = canvas.parentElement.clientWidth;
     canvas.width = 200;
     canvas.height = canvas.width*.33;
-
     runAnimation(canvas, ctx);
   }
 

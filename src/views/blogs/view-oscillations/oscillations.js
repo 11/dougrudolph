@@ -44,8 +44,8 @@ class Bar {
     this.bottom_y_diff = this.start_val + Math.cos(this.bottom_radian) * this.height_delta;
 
     // nodes that are apart of
-    this.node_top = new Node(this.x, this.top_y_diff, 7);
-    this.node_bottom = new Node(this.x, this.bottom_y_diff, 7);
+    this.node_top = new Node(canvas, ctx, this.x, this.top_y_diff, 7);
+    this.node_bottom = new Node(canvas, ctx, this.x, this.bottom_y_diff, 7);
 
     // sets color of line to white
     this.color = "#F0F0F0";
@@ -104,17 +104,17 @@ class Waves {
   }
 
   draw() {
-    this.waves.forEach((_, wave) => wave.draw());
+    this.waves.forEach(wave => wave.draw());
   }
 
   update() {
-    this.waves.forEach((_, wave) => wave.update());
+   this.waves.forEach(wave => wave.update());
   }
 }
 
 
 //runs the node simulation
-function runAnimation(canvas, ctx) {
+export function runAnimation(canvas, ctx) {
   const waves = new Waves(canvas, ctx);
   const render = () => {
     ctx.clearRect(0,0,canvas.width, canvas.height);
