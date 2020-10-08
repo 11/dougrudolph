@@ -8,7 +8,7 @@
   "scripts": {
     "build": "webpack --mode=production",
     "start": "webpack-dev-server",
-    "dev": "webpack-dev-server --port 8080 --open"
+    "dev": "webpack-dev-server --port 8000 --open"
   },
   "dependencies": {
     "@vaadin/router": "^1.7.2",

@@ -1,6 +1,8 @@
 import { LitElement, html, css } from 'lit-element';
+
 import { BlogStyle } from 'views/blogs/style.js';
 import "components/comp-bio"
+import "components/comp-link";
 
 class BlogJustConcetrate extends LitElement {
   static get styles() {
@@ -22,7 +24,7 @@ class BlogJustConcetrate extends LitElement {
           <span>Posted on April 3rd, 2018</span>
           <p> This post if for myself and others that may have trouble overcoming personal uncertainty.</p>
           <ol>
-            <li><a href="#self-doubt">The Logical Path to Beating Self-Doubt-Doubt</a></li>
+            <li><comp-link url="#self-doubt">The Logical Path to Beating Self-Doubt-Doubt</comp-link></li>
           </ol>
         </div>
         <hr/>

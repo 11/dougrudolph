@@ -1,6 +1,7 @@
 import { LitElement, html, css } from 'lit-element';
 import { BlogStyle } from 'views/blogs/style.js'
 
+import "components/comp-link";
 
 class BlogVimrcStarterKit extends LitElement {
   static get styles() {
@@ -24,9 +25,9 @@ class BlogVimrcStarterKit extends LitElement {
             So here's a brief post to start off your <code>.vimrc</code>.
           </p>
           <ol>
-            <li><a href="#creating-vimrc">Creating Your .vimrc</a></li>
-            <li><a href="#settings-list">First Set of Commands</a></li>
-            <li><a href="#example-vimrc">Example Raw .vimrc File</a></li>
+            <li><comp-link url="#creating-vimrc">Creating Your .vimrc</comp-link></li>
+            <li><comp-link url="#settings-list">First Set of Commands</comp-link></li>
+            <li><comp-link url="#example-vimrc">Example Raw .vimrc File</comp-link></li>
           </ol>
           <hr/>
         </div>
@@ -47,7 +48,7 @@ class BlogVimrcStarterKit extends LitElement {
 
 
               To start, open your terminal and write <code>touch ~/.vimrc</code> - press enter when you're done.
-              If you know what you're doing, you can skip to the <a href="#settings-list">next section</a>,
+              If you know what you're doing, you can skip to the <comp-link url="#settings-list">next section</comp-link>,
               otherwise, keep reading.
             </p>
             <p>

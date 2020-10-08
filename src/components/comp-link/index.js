@@ -31,14 +31,12 @@ class Link extends LitElement {
 
   constructor() {
     super();
-
     this.url = "#";
-    this.text = "default text";
   }
 
   render() {
     return html`
-      <a href="${this.url}">${this.text}</a>
+      <a href="${this.url}"><slot></slot></a>
     `;
   }
 }

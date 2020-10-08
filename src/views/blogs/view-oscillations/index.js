@@ -2,8 +2,9 @@ import { LitElement, html } from 'lit-element';
 
 import { BlogStyle } from 'views/blogs/style.js';
 import { runAnimation } from './oscillations.js';
-import 'components/comp-bio';
 
+import 'components/comp-bio';
+import "components/comp-link";
 
 
 class BlogOscillations extends LitElement {
@@ -70,8 +71,8 @@ class BlogOscillations extends LitElement {
             out of me.
           </p>
           <p>
-            Now while this animation looks a lot like my previous <a href="../dna-helix/dna-helix.html">DNA Helix</a>
-            project, the feel of the wave is a lot different. In the <a href="../dna-helix/dna-helix.html">DNA Helix</a>
+            Now while this animation looks a lot like my previous <comp-link url="../dna-helix/dna-helix.html">DNA Helix</comp-link>
+            project, the feel of the wave is a lot different. In the <comp-link url="../dna-helix/dna-helix.html">DNA Helix</comp-link>
             animation, the waves come off as if they are rotating in a circle, where as this animation's main effect
             is the oscillation in the waves.
           </p>

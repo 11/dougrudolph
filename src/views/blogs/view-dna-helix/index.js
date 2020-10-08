@@ -3,6 +3,7 @@ import { BlogStyle } from 'views/blogs/style';
 
 import { runAnimation } from './dna-helix';
 import "components/comp-bio";
+import "components/comp-link";
 
 
 const CanvasStyle = css`
@@ -85,12 +86,12 @@ class BlogDnaHelix extends LitElement {
 
         <div class="blog-container">
           <p>
-            So recently, I've just been obsessed with using trig in my animations. I felt that my previous <a href="../wrapping-waves/wrapping-waves.html">Wrapping Waves</a>
+            So recently, I've just been obsessed with using trig in my animations. I felt that my previous <comp-link url="../wrapping-waves/wrapping-waves.html">Wrapping Waves</comp-link>
             post didn't create the illusion I wanted, so I decided to give it another go. Also, I noticed that my last post didn't come off as nicely because
             I accidentally used both <code> Math.sin()</code> and <code>Math.cos()</code> - rather than just picking one trig identity. I'll make note to not do that again.
           </p>
           <p>
-            Anyways, because I was able to reuse a lot of the logic from <a href="../wrapping-waves/wrapping-waves.html">Wrapping Waves</a>, I was able to spend more time experimenting here.
+            Anyways, because I was able to reuse a lot of the logic from <comp-link url="../wrapping-waves/wrapping-waves.html">Wrapping Waves</comp-link>, I was able to spend more time experimenting here.
             So, If you look at all the different Helix objects from left to right, you can actually see that the far most right Helix object is made up of all the individual
             Helix objects that come before it. The only reason this happened was because there was a bug that didn't update the <code>x-pos</code> of each helix, thus all Helix objects
             were overlaid atop one another.

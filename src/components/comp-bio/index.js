@@ -164,11 +164,11 @@ class Bio extends LitElement {
 
         <!-- Description -->
         <div class="description">
-          <div class="description-entry"> Creator of <comp-link url="https://schoolofthought.io" text="@schoolofthought.io"></comp-link></b></div>
-          <div class="description-entry"> First engineer <comp-link url="https://www.Interseller.io/about" text="@interseller.io"></comp-link> </div>
-          <div class="description-entry"> Former back-end engineer <comp-link url="https://buzzfeed.com" text="@BuzzFeed"></comp-link> </div>
-          <div class="description-entry"> Former engineering intern <comp-link url="https://tech.buzzfeed.com/meet-buzzfeed-techs-2017-intern-squad-7d9d3bcefa05" text="@BuzzFeed"></comp-link> </div>
-          <div class="description-entry"> <comp-link url="https://hackny.org/blog/2017/06/announcing-the-class-of-2017-hackny-fellows" text="@hackNY Fellow"></comp-link> – 2017 </div>
+          <div class="description-entry"> Creator of <comp-link url="https://schoolofthought.io">@schoolofthought.io</comp-link></b></div>
+          <div class="description-entry"> First engineer <comp-link url="https://www.Interseller.io/about">@interseller.io</comp-link> </div>
+          <div class="description-entry"> Former back-end engineer <comp-link url="https://buzzfeed.com">@BuzzFeed</comp-link> </div>
+          <div class="description-entry"> Former engineering intern <comp-link url="https://tech.buzzfeed.com/meet-buzzfeed-techs-2017-intern-squad-7d9d3bcefa05">@BuzzFeed</comp-link> </div>
+          <div class="description-entry"> <comp-link url="https://hackny.org/blog/2017/06/announcing-the-class-of-2017-hackny-fellows">@hackNY Fellow</comp-link> – 2017 </div>
         </div>
 
         <div class="page-menu">
@@ -179,44 +179,44 @@ class Bio extends LitElement {
 
         <div class="bio-links">
           <div>
-            <a href="./doug_rudolph_resume.pdf" target="_blank">
+            <comp-link url="./doug_rudolph_resume.pdf" target="_blank">
               <span class="icon-container">
                 <svg-resume></svg-resume>
               </span>
-            </a>
+            </comp-link>
           </div>
           <div>
-            <a href="mailto:drudolph914@gmail.com?Subject=Hello" target="_top">
+            <comp-link url="mailto:drudolph914@gmail.com?Subject=Hello" target="_top">
               <span class="icon-container">
                 <svg-mail></svg-mail>
               </span>
-            </a>
+            </comp-link>
           </div>
           <div>
-            <a href="https://twitter.com/_dougrudolph" target="_blank">
+            <comp-link url="https://twitter.com/_dougrudolph" target="_blank">
               <span class="icon-container">
                 <svg-twitter></svg-twitter>
               </span>
-            </a>
+            </comp-link>
           </div>
           <div>
-            <a href="https://github.com/11" target="_blank">
+            <comp-link url="https://github.com/11" target="_blank">
               <span class="icon-container">
                 <svg-github></svg-github>
               </span>
-            </a>
+            </comp-link>
           </div>
           <div>
-            <a href="https://linkedin.com/in/dougjrudolph" target="_blank">
+            <comp-link url="https://linkedin.com/in/dougjrudolph" target="_blank">
               <span class="icon-container">
                 <svg-linkedin></svg-linkedin>
               </span>
-            </a>
+            </comp-link>
           </div>
         </div>
 
         <div class="bio-footer">
-          © All rights reserved – Theme by <comp-link url="https://twitter.com/_dougrudolph" text="@_dougrudolph"></comp-link>
+          © All rights reserved – Theme by <comp-link url="https://twitter.com/_dougrudolph">@_dougrudolph</comp-link>
         </div>
       </div>
     `;

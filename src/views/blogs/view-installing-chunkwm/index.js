@@ -1,8 +1,9 @@
 import { LitElement, html } from 'lit-element';
 import { BlogStyle } from 'views/blogs/style.js';
 import ChunkWMGif from './assets/chunkwm-vid.gif';
-import "components/comp-bio";
 
+import "components/comp-bio";
+import "components/comp-link";
 
 class BlogInstallingChunkwm extends LitElement {
   static get styles() {
@@ -28,11 +29,11 @@ class BlogInstallingChunkwm extends LitElement {
             as how it can optimize your workflow.
           </p>
           <ol>
-            <li><a href="#intro">Introduction</a></li>
-            <li><a href="#what-is-chunkwm">What is ChunkWM</a></li>
-            <li><a href="#installing-chunkwm"> How do I Install ChunkWM </a></li>
-            <li><a href="#installing-skhd">How do I Install SKHD</a></li>
-            <li><a href="#closing">Closing</a></li>
+            <li><comp-link url="#intro">Introduction</comp-link></li>
+            <li><comp-link url="#what-is-chunkwm">What is ChunkWM</comp-link></li>
+            <li><comp-link url="#installing-chunkwm"> How do I Install ChunkWM </comp-link></li>
+            <li><comp-link url="#installing-skhd">How do I Install SKHD</comp-link></li>
+            <li><comp-link url="#closing">Closing</comp-link></li>
           </ol>
         </div>
         <hr/>
@@ -64,20 +65,20 @@ class BlogInstallingChunkwm extends LitElement {
             <p>
               Installing ChunkWM is not as simple as I hoped. The one thing you need before hand is
               <code>homebrew</code> - feel free to install that from
-              <a href="https://brew.sh/">here</a>. Once <code>homebrew</code> is installed,
+              <comp-link url="https://brew.sh/">here</comp-link>. Once <code>homebrew</code> is installed,
               we are going to need to install two pieces of software:
-              <a href="https://github.com/koekeishiya/skhd">SKHD</a> and
-              <a href="https://github.com/crisidev/homebrew-chunkwm">Homebrew-ChunkWM</a>.
+              <comp-link url="https://github.com/koekeishiya/skhd">SKHD</comp-link> and
+              <comp-link url="https://github.com/crisidev/homebrew-chunkwm">Homebrew-ChunkWM</comp-link>.
             </p>
             <p>
-              Quick overview: <a href="https://github.com/koekeishiya/skhd">SKHD</a> is a piece of software
-              that listens to our keyboard inputs, while <a href="https://github.com/crisidev/homebrew-chunkwm">ChunkWM</a>
+              Quick overview: <comp-link url="https://github.com/koekeishiya/skhd">SKHD</comp-link> is a piece of software
+              that listens to our keyboard inputs, while <comp-link url="https://github.com/crisidev/homebrew-chunkwm">ChunkWM</comp-link>
               is what manages how our windows are laid out. Together, they listen to our keyboard for
-              <a href="https://github.com/crisidev/homebrew-chunkwm">ChunkWM</a> commands and relay the commands
+              <comp-link url="https://github.com/crisidev/homebrew-chunkwm">ChunkWM</comp-link> commands and relay the commands
               to a selected window.
             </p>
             <p>
-              To start, the first thing that we need to do is clone the <a href="https://github.com/crisidev/homebrew-chunkwm">ChunkWM</a>
+              To start, the first thing that we need to do is clone the <comp-link url="https://github.com/crisidev/homebrew-chunkwm">ChunkWM</comp-link>
               repository from GitHub. To do this with <code>homebrew</code>, type out:
             </p>
             <div class="code-block">
