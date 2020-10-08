@@ -1,30 +1,14 @@
-import { LitElement, html, css } from 'lit-element';
+import { LitElement, html } from 'lit-element';
 
 import { BlogStyle } from 'views/blogs/style.js'
 import { runAnimation } from './particle-net';
+
 import "components/comp-bio/";
-
-
-const CanvasStyle = css`
-  canvas{
-    background-color: #DD2176;
-    margin-bottom: 20px;
-  }
-
-
-  @media screen and (max-width: 1080px){
-    canvas{
-      background-color: #E50053;
-      margin: 0;
-      padding: 0;
-    }
-  }
-`;
 
 
 class BlogParticleNet extends LitElement {
   static get styles() {
-    return [CanvasStyle, BlogStyle];
+    return [ BlogStyle ];
   }
 
   constructor() {
