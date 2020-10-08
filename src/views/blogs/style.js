@@ -144,4 +144,18 @@ span .keyword {
 span .comment {
   color: #D7D6D5;
 }
+
+canvas{
+  background-color: #dd2176;
+  margin-bottom: 20px;
+}
+
+
+@media screen and (max-width: 1080px){
+  canvas{
+    background-color: #e50053;
+    margin: 0;
+    padding: 0;
+  }
+}
 `;
