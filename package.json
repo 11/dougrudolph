@@ -6,7 +6,7 @@
   "license": "ISC",
   "main": "./src/index.js",
   "scripts": {
-    "build": "webpack --mode=production && cp _redirects build/_redirects",
+    "build": "webpack --mode=production && cp _redirects dist/_redirects",
     "start": "webpack-dev-server",
     "dev": "webpack-dev-server --port 8000 --open"
   },
