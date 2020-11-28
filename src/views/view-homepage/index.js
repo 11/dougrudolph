@@ -1,22 +1,26 @@
 import { LitElement, html, css } from 'lit-element';
+import { colors } from 'styles/colors';
+
 import "components/comp-bio/";
 
 
 const HomepageStyle = css`
 body, html {
-  color: #353535;
+  color: ${colors.white};
   font: normal 25px Palatino, "Palatino Linotype", serif;
   text-rendering: optimizeLegibility;
+
+  max-height: 100%;
   height: 100%;
   width: calc(100%-60px);
-  max-height: 100%;
+
   margin: 0;
   padding: 0;
 }
 
 /* make all links pink with no underline */
 a {
-  color: #E50053;
+  color: ${colors.pink};
   text-decoration: underline solid transparent;
   transition: text-decoration 250ms ease;
 }
@@ -25,8 +29,6 @@ a {
 a:hover {
   text-decoration: underline solid Currentcolor;
 }
-
-
 
 /* main webpage text-alignment */
 .page-container {
@@ -69,10 +71,11 @@ a:hover {
   height: 100%;
   padding: 30px 5% 0px;
   overflow-y: scroll;
+  background-color: ${colors.darkBlue};
  }
 
 .blog-post-link-container {
-  border-right: 1px solid #888888;
+  border-right: 1px solid ${colors.white};
   padding: 10px;
   margin-bottom: 30px;
   cursor: pointer;
@@ -80,21 +83,19 @@ a:hover {
 
 .blog-post-link-container:hover {
   padding: 13px;
-  border-right: 4px solid #E5005E;
-  box-shadow: 0px 3px 3px rgba(0,0,0,0.15);
-  transform: scale(1.01, 1.01);
+  border-right: 4px solid ${colors.pink};
   transition: 0.3s ease-out;
 }
 
 .blog-post-link-container:hover .blog-post-link-title {
   transition: 0.3s ease-out;
   text-decoration: underline;
-  text-decoration-color: #E5005E;
-  color: #E5005E;
+  text-decoration-color: ${colors.pink};
+  color: ${colors.pink};
 }
 
 .blog-post-link-container a {
-  color: #353535;
+  color: ${colors.black};
   text-decoration: none;
 }
 
@@ -112,21 +113,23 @@ a:hover {
   font-weight: 100;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #353535;
+  color: ${colors.white};
 
   padding: 10px;
   margin-top: 10px;
   margin-left: 20px;
   border-radius: 10px;
-  background-color: #EFEFEF;
+  background-color: ${colors.gray70};
 }
 
 .blog-post-link-title {
+  color: ${colors.white};
   font: normal 28px HoeflerText-Regular, 'Hoefler Text', 'Goudy Old Style', 'Palatino', 'Palatino Linotype', serif;
 }
 
 /* TODO: update font and spacing for date */
 .blog-post-link-date {
+  color: ${colors.gray60};
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   font-weight: 300;
@@ -134,6 +137,7 @@ a:hover {
 }
 
 .blog-post-link-description {
+  color: ${colors.white};
   font: normal 16px Palatino, "Palatino Linotype", serif;
   font-style: italic;
   line-height: 22px;
@@ -149,7 +153,7 @@ a:hover {
 @media screen and (max-width:1080px) {
 
   #scroll-bar {
-    background-color: #E50053;
+    background-color: ${colors.pink};
     position: fixed;
     top: 0;
     left: 0;
@@ -175,7 +179,7 @@ a:hover {
   /* Adjusting body settings to look better on mobile devices */
   body {
     background-color: #FDFDFD;
-    color: #353535;
+    color: ${colors.black};
     font: normal 150% Palatino, "Palatino Linotype", serif;
     text-rendering: optimizeLegibility;
     padding-right: 5%;

@@ -1,5 +1,5 @@
 import { css } from 'lit-element';
-
+import { colors } from 'styles/colors';
 
 export const BlogStyle = css`
 .blog {
@@ -100,7 +100,7 @@ export const BlogStyle = css`
 }
 
 #scroll-bar {
-  background-color: #E50053;
+  background-color: #${colors.pink};
   position: fixed;
   top: 0;
   left: 0;
@@ -114,7 +114,7 @@ code {
   border: 1px solid #e1e1e8;
   padding: 2px 2px 2px 2px;
   font-family: monaco, menlo, consolas, "courier new", monospace!important;
-  color: #E50053;
+  color: #${colors.pink};
   font-size: 1.0rem;
 }
 pre {
@@ -138,7 +138,7 @@ div .code-block {
 }
 
 span .keyword {
-  color: #E50053;
+  color: #${colors.pink};
 }
 
 span .comment {
@@ -153,7 +153,7 @@ canvas{
 
 @media screen and (max-width: 1080px){
   canvas{
-    background-color: #e50053;
+    background-color: #${colors.pink};
     margin: 0;
     padding: 0;
   }
